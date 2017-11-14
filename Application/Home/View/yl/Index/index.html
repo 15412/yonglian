@@ -9,37 +9,12 @@
     </header>-->
     <header class=" subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
         <div class="container" style="height:26px;">
-            <!--<marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px">
+            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px">
                 <img src="__IMG__/yl/car.jpg" width="140px" style="">
-            </marquee>-->
-        </div>
-        <div id="scroll" style="width:250px; height:26px; overflow:hidden">
-            <img src="__IMG__/yl/car.jpg" width="140px" style="">
+            </marquee>
         </div>
     </header>
 </block>
-<script type="text/javascript" charset="utf-8">
-    $(function(){ 
-    alert(1111);
-    　　scrollDivDown();
-    }); 
-    window.onload = function(){ 
-    　　scrollDivDown();
-    }
-    step=1;
-    timerDown="";
-    function scrollDivDown(){
-        console.debug(el);
-        el=document.getElementById("scroll");
-        clearTimeout(timerDown);
-        el.scrollTop+=step;
-        timerDown=setTimeout("scrollDivDown()",10);
-         
-        if(el.scrollTop>=el.scrollHeight-el.offsetHeight){
-            el.scrollTop=0;
-        }
-    }
-</script>
 
 <block name="side">
 <!-- 左侧 nav
