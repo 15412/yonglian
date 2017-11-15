@@ -9,7 +9,7 @@
     </header>-->
     <header class=" subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
         <div class="container" style="height:26px;">
-            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
+            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" width="100px">
                 <img src="__IMG__/yl/car.jpg" width="140px" style="">
             </marquee>
         </div>
@@ -21,18 +21,17 @@
 ================================================== -->
     <div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
-            <!--{:W('Category/lists', array(1, true))}-->
+            {:W('Category/lists', array(1, true))}
         </ul>
     </div>
 </block>
 
 <block name="body">
-        <img src="__IMG__/yl/index.jpg">
     <div class="span9">
         <!-- Contents
         ================================================== -->
         <section id="contents">
-            <!--<article:list name="article" category="1" child="true">
+            <article:list name="article" category="1" child="true">
                 <div class="">
                     <h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
                 </div>
@@ -48,7 +47,8 @@
                     </span>
                 </div>
                 <hr/>
-            </article:list>-->
+            </article:list>
+
         </section>
     </div>
 </block>
