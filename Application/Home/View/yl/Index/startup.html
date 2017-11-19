@@ -18,7 +18,7 @@
 
 </head>
 
-<body onclick="location.href='http://test.rohochan.com'">
+<body onclick="location.href={:U('Home/Index/index')}">
 
 
     <div class="hAdBox" id="f_litimg">
@@ -50,7 +50,7 @@
             if (evt.wheelDelta < 0) {
                 $(".hAdBox").addClass("animated fadeOutUp").siblings().removeClass('animated fadeIn');
                 setTimeId = setTimeout(function () {
-                    location.href = "http://test.rohochan.com";
+                    location.href = "{:U('Home/Index/index')}";
                 }, 500);
 
             } else {
