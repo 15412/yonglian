@@ -1,0 +1,79 @@
+﻿/*首页*/
+.hAdBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+    top:0;
+    left:0;
+    z-index:888;
+}
+.hAdBox .img{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.txtBox{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.txtBox .txtCon{
+	width:100%;
+	text-align:center;
+}
+.txtBox .txtCon p.cn{
+	font-size:44px;
+	color:#7ccd3a;
+	padding-top:30px;
+	padding-bottom:19px;
+}
+.txtBox .txtCon p.en{
+	color:#7ccd3a;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:24px;
+	text-transform:uppercase;
+	padding-bottom:4px;
+}
+.icon11{
+	position:absolute;
+	bottom:71px;
+	left:50%;
+	margin-left:-33px;
+	z-index:2;
+}
+
+
+#loginBox {
+    display:none;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background:url(../images/bg.png);
+}
+#loginBox .loginBk{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#loginBox form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-150px;
+    margin-left:-195px;
+
+}
+#loginBox form .txt{
+    color:#fff;
+}
+#loginBox form .error{
+    color:#fff;
+}
