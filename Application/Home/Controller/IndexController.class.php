@@ -20,11 +20,14 @@ class IndexController extends HomeController
     /**
      * 开始页
      */
-    public function start()
-    {
+    public function start(){
         $this->display('startup');
     }
-
+    
+    /**
+     * 首页
+     */
+    public function index(){
         //$category = D('Category')->getTree();
         //$lists    = D('Document')->lists(null);
 
