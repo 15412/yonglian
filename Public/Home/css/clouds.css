@@ -10,10 +10,10 @@ html, body {
     /*overflow: hidden;*/
     top:0;
     left: 0;
-    -webkit-animation: sky_background 120s ease-out infinite;
-    -moz-animation: sky_background 120s ease-out infinite;
-    -o-animation: sky_background 120s ease-out infinite;
-    animation: sky_background 120s ease-out infinite;
+    -webkit-animation: sky_background 100s ease-out infinite;
+    -moz-animation: sky_background 100s ease-out infinite;
+    -o-animation: sky_background 100s ease-out infinite;
+    animation: sky_background 100s ease-out infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -27,11 +27,11 @@ html, body {
     top: -30%;
     /*top: 30%;*/
     height: 100%;
-    width: 300%;
-    -webkit-animation: cloud_one 120s linear infinite;
-    -moz-animation: cloud_one 120s linear infinite;
-    -o-animation: cloud_one 120s linear infinite;
-    animation: cloud_one 120s linear infinite;
+    width: 200%;
+    -webkit-animation: cloud_one 80s linear infinite;
+    -moz-animation: cloud_one 80s linear infinite;
+    -o-animation: cloud_one 80s linear infinite;
+    animation: cloud_one 80s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -42,19 +42,20 @@ html, body {
     background: url("../images/yl/cloud_two.png") no-repeat scroll;
     position: absolute;
     left: 0;
-    top: -40%;
+    top: -10%;
     /*top: 40%;*/
     height: 100%;
     width: 300%;
-    -webkit-animation: cloud_two 75s linear infinite;
-    -moz-animation: cloud_two 75s linear infinite;
-    -o-animation: cloud_two 75s linear infinite;
-    animation: cloud_two 75s linear infinite;
+    -webkit-animation: cloud_two 100s linear infinite;
+    -moz-animation: cloud_two 100s linear infinite;
+    -o-animation: cloud_two 100s linear infinite;
+    animation: cloud_two 100s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+
 
 .sky .clouds_three {
     background: url("../images/yl/cloud_three.png") no-repeat scroll;
@@ -72,6 +73,24 @@ html, body {
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.fromFarToClose{
+    position: absolute;
+    left: 20%;
+    top: 60%;
+    /*top: 20%;*/
+    height: 20px;
+    width: 20px;
+    -webkit-animation: fromFarToClose 50s linear infinite;
+    -moz-animation: fromFarToClose 50s linear infinite;
+    -o-animation: fromFarToClose 50s linear infinite;
+    animation: fromFarToClose 50s linear infinite;
+    animation-fill-mode: forwards;
+    -webkit-transform: translate3d(0, 1, 0);
+    -ms-transform: translate3d(0, 1, 0);
+    -o-transform: translate3d(0, 1, 0);
+    transform: translate3d(0, 1, 0);
 }
 /*
 @-webkit-keyframes sky_background {
@@ -119,6 +138,40 @@ html, body {
     }
 }
 */
+@-webkit-keyframes fromFarToClose {
+    0% {
+        top: 60%;
+    }
+    100% {
+        top: -20%;
+        height:200px;
+        width: 500px;
+    }
+}
+
+@-moz-keyframes fromFarToClose {
+    0% {
+        top: 60%;
+    }
+    100% {
+        top: -20%;
+        height:200px;
+        width: 500px;
+    }
+}
+
+@keyframes fromFarToClose {
+    0% {
+        top: 60%;
+    }
+    100% {
+        top: -20%;
+        height:200px;
+        width: 500px;
+    }
+}
+
+
 @-webkit-keyframes cloud_one {
     0% {
         left: 0
