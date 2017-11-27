@@ -5,14 +5,15 @@ html, body {
 }
 
 .sky {
-    height: 480px;
-    /*background: #007fd5;*/
+    height: 100%;
     position: relative;
-    overflow: hidden;
-    -webkit-animation: sky_background 100s ease-out infinite;
-    -moz-animation: sky_background 100s ease-out infinite;
-    -o-animation: sky_background 100s ease-out infinite;
-    animation: sky_background 100s ease-out infinite;
+    /*overflow: hidden;*/
+    top:0;
+    left: 0;
+    -webkit-animation: sky_background 120s ease-out infinite;
+    -moz-animation: sky_background 120s ease-out infinite;
+    -o-animation: sky_background 120s ease-out infinite;
+    animation: sky_background 120s ease-out infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -20,16 +21,17 @@ html, body {
 }
 
 .sky .clouds_one {
-    background: url("../images/yl/cloud_one.png");
+    background: url("../images/yl/cloud_one.png") no-repeat scroll;
     position: absolute;
     left: 0;
     top: -30%;
+    /*top: 30%;*/
     height: 100%;
     width: 300%;
-    -webkit-animation: cloud_one 100s linear infinite;
-    -moz-animation: cloud_one 100s linear infinite;
-    -o-animation: cloud_one 100s linear infinite;
-    animation: cloud_one 100s linear infinite;
+    -webkit-animation: cloud_one 120s linear infinite;
+    -moz-animation: cloud_one 120s linear infinite;
+    -o-animation: cloud_one 120s linear infinite;
+    animation: cloud_one 120s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -37,10 +39,11 @@ html, body {
 }
 
 .sky .clouds_two {
-    background: url("../images/yl/cloud_two.png");
+    background: url("../images/yl/cloud_two.png") no-repeat scroll;
     position: absolute;
     left: 0;
     top: -40%;
+    /*top: 40%;*/
     height: 100%;
     width: 300%;
     -webkit-animation: cloud_two 75s linear infinite;
@@ -54,16 +57,17 @@ html, body {
 }
 
 .sky .clouds_three {
-    background: url("../images/yl/cloud_three.png");
+    background: url("../images/yl/cloud_three.png") no-repeat scroll;
     position: absolute;
     left: 0;
     top: -20%;
+    /*top: 20%;*/
     height: 100%;
     width: 300%;
-    -webkit-animation: cloud_three 100s linear infinite;
-    -moz-animation: cloud_three 100s linear infinite;
-    -o-animation: cloud_three 100s linear infinite;
-    animation: cloud_three 100s linear infinite;
+    -webkit-animation: cloud_three 120s linear infinite;
+    -moz-animation: cloud_three 120s linear infinite;
+    -o-animation: cloud_three 120s linear infinite;
+    animation: cloud_three 120s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
