@@ -24,14 +24,14 @@ html, body {
     background: url("../images/yl/cloud_one.png") no-repeat scroll;
     position: absolute;
     left: 0;
-    top: -30%;
+    top: -10rem;
     /*top: 30%;*/
     height: 100%;
     width: 200%;
-    -webkit-animation: cloud_one 80s linear infinite;
-    -moz-animation: cloud_one 80s linear infinite;
-    -o-animation: cloud_one 80s linear infinite;
-    animation: cloud_one 80s linear infinite;
+    -webkit-animation: range_one 120s linear infinite;
+    -moz-animation: range_one 120s linear infinite;
+    -o-animation: range_one 120s linear infinite;
+    animation: range_one 120s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -42,14 +42,14 @@ html, body {
     background: url("../images/yl/cloud_two.png") no-repeat scroll;
     position: absolute;
     left: 0;
-    top: -10%;
+    top: -8rem;
     /*top: 40%;*/
     height: 100%;
     width: 300%;
-    -webkit-animation: cloud_two 100s linear infinite;
-    -moz-animation: cloud_two 100s linear infinite;
-    -o-animation: cloud_two 100s linear infinite;
-    animation: cloud_two 100s linear infinite;
+    -webkit-animation: range_one 140s linear infinite;
+    -moz-animation: range_one 140s linear infinite;
+    -o-animation: range_one 140s linear infinite;
+    animation: range_one 140s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -61,14 +61,14 @@ html, body {
     background: url("../images/yl/cloud_three.png") no-repeat scroll;
     position: absolute;
     left: 0;
-    top: -20%;
+    top: -5rem;
     /*top: 20%;*/
     height: 100%;
     width: 300%;
-    -webkit-animation: cloud_three 120s linear infinite;
-    -moz-animation: cloud_three 120s linear infinite;
-    -o-animation: cloud_three 120s linear infinite;
-    animation: cloud_three 120s linear infinite;
+    -webkit-animation: range_two 280s linear infinite;
+    -moz-animation: range_two 280s linear infinite;
+    -o-animation: range_two 280s linear infinite;
+    animation: range_two 280s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -91,6 +91,61 @@ html, body {
     -ms-transform: translate3d(0, 1, 0);
     -o-transform: translate3d(0, 1, 0);
     transform: translate3d(0, 1, 0);
+}
+
+.sky .clouds_one2 {
+    background: url("../images/yl/cloud_one.png") no-repeat scroll;
+    position: absolute;
+    left: 0;
+    top: -30%;
+    /*top: 30%;*/
+    height: 100%;
+    width: 200%;
+    -webkit-animation: range_two 200s linear infinite;
+    -moz-animation: range_two 200s linear infinite;
+    -o-animation: range_two 200s linear infinite;
+    animation: range_two 200s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.sky .clouds_two2 {
+    background: url("../images/yl/cloud_two.png") no-repeat scroll;
+    position: absolute;
+    left: 0;
+    top: -30%;
+    /*top: 40%;*/
+    height: 100%;
+    width: 300%;
+    -webkit-animation: range_two 250s linear infinite;
+    -moz-animation: range_two 250s linear infinite;
+    -o-animation: range_two 250s linear infinite;
+    animation: range_two 250s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+
+.sky .clouds_three2 {
+    background: url("../images/yl/cloud_three.png") no-repeat scroll;
+    position: absolute;
+    left: 0;
+    top: -20%;
+    /*top: 20%;*/
+    height: 100%;
+    width: 300%;
+    -webkit-animation: range_two 300s linear infinite;
+    -moz-animation: range_two 300s linear infinite;
+    -o-animation: range_two 300s linear infinite;
+    animation: range_two 300s linear infinite;
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 /*
 @-webkit-keyframes sky_background {
@@ -172,81 +227,53 @@ html, body {
 }
 
 
-@-webkit-keyframes cloud_one {
+@-webkit-keyframes range_one {
     0% {
-        left: 0
+        left: 80%
     }
     100% {
         left: -200%
     }
 }
 
-@-moz-keyframes cloud_one {
+@-moz-keyframes range_one {
     0% {
-        left: 0
+        left: 80%
     }
     100% {
         left: -200%
     }
 }
 
-@keyframes cloud_one {
+@keyframes range_one {
     0% {
-        left: 0
+        left: 80%
+    }
+    100% {
+        left: -200%
+    }
+}
+@-webkit-keyframes range_two {
+    0% {
+        left: 280%
     }
     100% {
         left: -200%
     }
 }
 
-@-webkit-keyframes cloud_two {
+@-moz-keyframes range_two {
     0% {
-        left: 0
+        left: 280%
     }
     100% {
         left: -200%
     }
 }
 
-@-moz-keyframes cloud_two {
+@keyframes range_two {
     0% {
-        left: 0
-    }
-    100% {
-        left: -200%
-    }
-}
-
-@keyframes cloud_two {
-    0% {
-        left: 0
-    }
-    100% {
-        left: -200%
-    }
-}
-
-@-webkit-keyframes cloud_three {
-    0% {
-        left: 0
-    }
-    100% {
-        left: -200%
-    }
-}
-
-@-moz-keyframes cloud_three {
-    0% {
-        left: 0
-    }
-    100% {
-        left: -200%
-    }
-}
-
-@keyframes cloud_three {
-    0% {
-        left: 0
+        left: 280%
     }
     100% {
         left: -200%
