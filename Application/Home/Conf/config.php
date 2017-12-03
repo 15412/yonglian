@@ -97,5 +97,13 @@ return array(
         'hash'     => true, //是否生成hash编码
         'callback' => false, //检测文件是否存在回调函数，如果存在返回文件信息数组
     ), //附件上传配置（文件上传类配置）
-
+    
+    /**
+     * 多语言配置
+     */
+	'LANG_SWITCH_ON' => true, //开启语言包功能
+	'LANG_AUTO_DETECT' => true, // 自动侦测语言
+	'DEFAULT_LANG' => 'zh-cn', // 默认语言
+	'LANG_LIST' => 'zh-cn,zh-tw,en-us', //必须写可允许的语言列表
+	'VAR_LANGUAGE' => 'l', // 默认语言切换变量
 );

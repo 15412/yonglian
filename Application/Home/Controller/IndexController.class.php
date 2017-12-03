@@ -37,7 +37,7 @@ class IndexController extends HomeController{
     /**
      * 公司简介
      */
-    public function introduction(){
+    public function about(){
         $this->display();
     }
     
@@ -51,7 +51,7 @@ class IndexController extends HomeController{
     /**
      * 合作伙伴
      */
-    public function cooperate(){
+    public function partners(){
         $this->display();
     }
     
