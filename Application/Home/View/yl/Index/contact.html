@@ -21,6 +21,10 @@
     </header>
 </block>
 
+<block name="style">
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</block>
+
 <block name="side">
 <!-- 左侧 nav
 ================================================== -->
@@ -56,4 +60,90 @@
             </article:list>
         </section>-->
     <!--</div>-->
+	<div class="container">
+		<div id="allmap1" class="content-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
+东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg" style="height: 500px;width:1170px;overflow: hidden;display: block;">
+		</div>
+	</div>
+</block>
+<block name="script">
+<script src="http://api.map.baidu.com/api?v=2.0&ak=RvufqHb1h9WY4qwhBmGWs2Wv">
+	//v1.5版本的引用方式：src="http://api.map.baidu.com/api?v=1.5&ak=您的密钥"
+	//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+</script>
+<script src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<script src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<script src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script>
+	$(function(){
+		
+	});
+	
+	$(".content-address-map").each(function(index,element){
+		var userlng = $(this).attr('data-lng');
+		var userlat = $(this).attr('data-lat');
+		var title = $(this).attr('data-title');
+		//var obj	 = "allmap"+index;
+		var obj	 = $(this).attr('id');
+		var address = $(this).attr('address');
+		var phone = $(this).attr('data-phone');
+		var url = $(this).attr('data-url');
+		var img = $(this).attr('data-img');
+		createMap(userlng,userlat,obj,address,title,phone,url,img);//生成地图
+	});
+	
+	function panoramaMap(obj,userlng,userlat){
+		//var map = new BMap.Map('panorama');
+		//map.centerAndZoom(new BMap.Point(userlng, userlat), 12);
+		//map.centerAndZoom(poi, 12);
+		//map.addTileLayer(new BMap.PanoramaCoverageLayer());
+		
+		//var panorama = new BMap.Panorama('panorama'); 
+		var panorama = new BMap.Panorama(obj); 
+		panorama.setPov({heading: -40, pitch: 6});
+		//document.getElementById(obj+'_panorama').onclick = function(){ 
+			panorama.setPosition(new BMap.Point(userlng, userlat)); //根据经纬度坐标展示全景图
+			//$(".pano_close").css('display','block'); 
+		//};
+	}
+	
+	// 百度地图API功能
+	function createMap(userlng,userlat,obj,address,title,phone,url,img){
+		var map = new BMap.Map(obj);
+		var poi = new BMap.Point(userlng,userlat);
+		map.centerAndZoom(poi, 16);//位置，默认放大倍数
+		
+		var content = '<div style="margin:0;line-height:15px;">'+
+			  				'<div class="panoInfoBox" onclick="panoramaMap(\''+ obj +'\',' + userlng+','+userlat+');">'+
+								  '<img src="'+img+'" alt="" style="zoom:1;overflow:hidden;width:100%;height:82px;"/>' +
+								  '<div class="panoInfoBoxTitleBg"></div>'+
+								  '<a href="javascript:void(0)" class="panoInfoBoxTitleContent" id="'+obj+'_panorama">进入全景&gt;&gt;</a>'+
+							  '</div>'+
+							  '<p style="line-height:22px">地址：'+address+'</p><p style="line-height:22px">电话：'+phone+'</p>'+
+						  '</div>';
+		
+		//创建检索信息窗口对象
+		// var searchInfoWindow = null;
+		var searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : title+'<a href="'+url+'"><span>详情 ></span></a>',	  //标题
+			width  : 282,			 //宽度
+			// height : 115,			  //高度
+			panel  : "panel",		 //检索结果面板
+			enableAutoPan : true,	 //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE, //从这里出发
+				BMAPLIB_TAB_SEARCH   //周边检索
+			]
+			,enableSendToPhone:false //是否启用发送到手机
+		});
+		var marker = new BMap.Marker(poi); //创建marker对象
+		// marker.enableDragging(); //marker可拖拽
+		marker.addEventListener("click", function(e){
+			searchInfoWindow.open(marker);
+		})
+		map.addOverlay(marker); //在地图中添加marker
+		map.enableScrollWheelZoom();
+	}
+</script>
 </block>
