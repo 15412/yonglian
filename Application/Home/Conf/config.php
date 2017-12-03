@@ -19,6 +19,8 @@ return array(
     /* 主题设置 */
     //'DEFAULT_THEME' =>  'default',  // 默认模板主题名称
     'DEFAULT_THEME' =>  'yl',  // 默认模板主题名称
+    
+    'DEFAULT_ACTION'        =>  'start', // 默认操作名称
 
     /* 数据缓存设置 */
     'DATA_CACHE_PREFIX' => 'onethink_', // 缓存前缀

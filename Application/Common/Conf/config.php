@@ -16,7 +16,7 @@ return array(
     'AUTOLOAD_NAMESPACE' => array('Addons' => ONETHINK_ADDON_PATH), //扩展模块列表
     'DEFAULT_MODULE'     => 'Home',
     'DEFAULT_CONTROLLER'    =>  'Index', // 默认控制器名称
-    'DEFAULT_ACTION'        =>  'start', // 默认操作名称
+    'DEFAULT_ACTION'        =>  'index', // 默认操作名称
     'MODULE_DENY_LIST'   => array('Common','User','Admin','Install'),
     //'MODULE_ALLOW_LIST'  => array('Home','Admin'),
 
@@ -41,7 +41,7 @@ return array(
     'DB_HOST'   => '127.0.0.1', // 服务器地址
     'DB_NAME'   => 'yl', // 数据库名
     'DB_USER'   => 'root', // 用户名
-    'DB_PWD'    => '',  // 密码
+    'DB_PWD'    => 'root',  // 密码
     'DB_PORT'   => '3306', // 端口
     'DB_PREFIX' => 'yl_', // 数据库表前缀
 
