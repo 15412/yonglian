@@ -34,7 +34,7 @@ class HomeController extends Controller {
         //移动设备浏览，则切换模板
         if (is_mobile()) {
             //设置默认默认主题为 Mobile
-            C('DEFAULT_THEME','Mobile');
+            C('DEFAULT_THEME','yl_mobile');
         }
     }
 
