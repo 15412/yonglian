@@ -3,7 +3,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{:U('index/index')}">永联</a>
+            <a class="brand" href="{:U('index/index')}">{:L('COMPANY_NAME')}</a>
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -14,7 +14,7 @@
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
                         <li>
-                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{$nav.title}</a>
+                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{:L($nav['title'])}</a>
                         </li>
                         </eq>
                     </think:nav>
