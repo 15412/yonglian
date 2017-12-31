@@ -30,6 +30,12 @@ class HomeController extends Controller {
         if(!C('WEB_SITE_CLOSE')){
             $this->error('站点已经关闭，请稍后访问~');
         }
+        
+        //移动设备浏览，则切换模板
+        if (is_mobile()) {
+            //设置默认默认主题为 Mobile
+            C('DEFAULT_THEME','Mobile');
+        }
     }
 
 	/* 用户登录检测 */
