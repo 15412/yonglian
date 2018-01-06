@@ -9,16 +9,15 @@ return array(
 	
 	'CONTACT_US'=>'Contact Us',
 	'CONTACT_NAME'=>'Name',
-	'CONTACT_NAME_VALUE'=>'永聯製造廠',
+	'CONTACT_NAME_VALUE'=>'WingLuen Weaving Mill',
 	'CONTACT_ADDRESS'=>'Address',
-	'CONTACT_ADDRESS_VALUE'=>'廣東省東莞市茶山鎮南社工業區立本工業園China',
+	'CONTACT_ADDRESS_VALUE'=>'Liben industrial park, Nanshe industrial zone, Chashan town, Dongguan City, Guangdong Province, China',
 	'CONTACT_ZIP_CODE'=>'Zip Code',
 	'CONTACT_TEL'=>'Tel',
 	'CONTACT_FAX'=>'Fax',
 	'CONTACT_WEBSITE'=>'Website',
 	'CONTACT_PERSON'=>'Contacts',
-	'CONTACT_PERSON_VALUE'=>'朱瑩瑩',
+	'CONTACT_PERSON_VALUE'=>'Yingying Zhu',
 	'CONTACT_EMAIL'=>'Email',
 	'CONTACT_SHOP'=>'Shop',
-);
 );
