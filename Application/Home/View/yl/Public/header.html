@@ -3,21 +3,35 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{:U('index/index')}">{:L('COMPANY_NAME')}</a>
+        	<div class="nav-collapse collapse pull-left">
+	        	<a class="brand" href="{:U('index/index')}">
+		        	<img src="__IMG__/yl/logo_min.png">
+		        	<span>since 1972</span>
+		        	<div>{:L('CONTACT_NAME_VALUE')}</div>
+	        	</a>
+            	<span style="margin-left:50px">
+            		<img src="__IMG__/yl/cotton_merge.png">
+            	</span>
+        	</div>
+            <!--<a class="brand" href="{:U('index/index')}">{:L('CONTACT_NAME')}</a>-->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
             <div class="nav-collapse collapse">
-                <ul class="nav">
+                <ul class="nav" style="margin-top: 50px;margin-left: 50px;">
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
                         <li>
                             <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{:L($nav['title'])}</a>
+                            <!--<span>|</span>-->
                         </li>
                         </eq>
                     </think:nav>
+                    <li>
+                        <a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank" style="padding:0px 15px 0px;"><img src="__IMG__/yl/tmall.png"></a>
+                    </li>
                 </ul>
             </div>
             <div class="nav-collapse collapse pull-right">
@@ -42,6 +56,11 @@
                     </ul>
                 </if>-->
             </div>
+        </div>
+    	<div class="" style="height:50px;">
+            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
+                <img src="__IMG__/yl/car.jpg" width="275px" style="">
+            </marquee>
         </div>
     </div>
 </div>
