@@ -1,12 +1,17 @@
-<extend name="Base/common"/>
+<extend name="Base/common" />
 
 <block name="header">
-    <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">            
+    <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
+        <link rel="stylesheet" href="__CSS__ /photoswipe.css">
+        <link rel="stylesheet" href="__CSS__ /default-skin.css">
+        <script src="__JS__/photoswipe.min.js"></script>
+        <script src="__JS__/photoswipe-ui-default.min.js"></script>
+        <script src="__JS__/aboutStyle.js"></script>
     </header>
 </block>
 
 <block name="side">
-<!-- 左侧 nav
+    <!-- 左侧 nav
 ================================================== -->
     <!--<div class="span3 bs-docs-sidebar">
         <ul class="nav nav-list bs-docs-sidenav">
@@ -17,27 +22,110 @@
 <!-- <div style="height:202px"></div> -->
 <block name="body">
     <!-- <img src="__IMG__/yl/about.jpg"> -->
-    <body> 
-        <div class="aboutDiv aboutBody" >
-            <div class="aboutImg left1"><img src="__IMG__/YL_PNG/公司简介/about-left1.png"/></div>
-            <div class="aboutImg left2"><img src="__IMG__/YL_PNG/公司简介/about-left2.png"/></div>
-            <div class="aboutImg left3"><img src="__IMG__/YL_PNG/公司简介/about-left3.png"/></div>
-            <div class="aboutImg left4"><img src="__IMG__/YL_PNG/公司简介/about-left4.png"/></div>
-            <div class="aboutImg mid1"><img src="__IMG__/YL_PNG/公司简介/about-mid.png"/></div>
-            <div class="aboutImg mid2"><img src="__IMG__/YL_PNG/公司简介/about-mid2.png"/></div>
-            <div class="aboutImg right1"><img src="__IMG__/YL_PNG/公司简介/about-right1.png"/></div>
-            <div class="aboutImg right2"><img src="__IMG__/YL_PNG/公司简介/about-right2.png"/></div>
-            <div class="aboutImg right3"><img src="__IMG__/YL_PNG/公司简介/about-right3.png"/></div>
-            <div class="aboutImg right4"><img src="__IMG__/YL_PNG/公司简介/about-right4.png"/></div>
+
+    <body>
+        <div class="aboutDiv aboutBody">
+            <div class="aboutImg left1">
+                <img src="__IMG__/YL_PNG/公司简介/about-left1.png" />
+            </div>
+            <div class="aboutImg left2">
+                <img src="__IMG__/YL_PNG/公司简介/about-left2.png" />
+            </div>
+            <div class="aboutImg left3">
+                <img src="__IMG__/YL_PNG/公司简介/about-left3.png" />
+            </div>
+            <div class="aboutImg left4">
+                <img src="__IMG__/YL_PNG/公司简介/about-left4.png" />
+            </div>
+            <div class="aboutImg mid1">
+                <img src="__IMG__/YL_PNG/公司简介/about-mid.png" />
+            </div>
+            <div class="aboutImg mid2">
+                <img src="__IMG__/YL_PNG/公司简介/about-mid2.png" />
+            </div>
+            <div class="aboutImg right1">
+                <img src="__IMG__/YL_PNG/公司简介/about-right1.png" />
+            </div>
+            <div class="aboutImg right2">
+                <img src="__IMG__/YL_PNG/公司简介/about-right2.png" />
+            </div>
+            <div class="aboutImg right3">
+                <img src="__IMG__/YL_PNG/公司简介/about-right3.png" />
+            </div>
+            <div class="aboutImg right4">
+                <img src="__IMG__/YL_PNG/公司简介/about-right4.png" />
+            </div>
             <div class="aboutContent">
-                <p>永联织造是世界前三的童装生产商，成立于1972年在香港成立，由阮氏家族和（王）氏家族
-                    拥有公司100%的股权。1986年在大陆先后于东莞和广东韶关开设永联织造厂，拥有32间车间，
-                    总员工数超过10000人，主要生产婴儿及儿童服装，年产量约1.2亿件。公司拥有超过40年的生
-                    产和出口经营优势，产品出口到美国，英国，欧洲，加拿大，澳大利亚和亚洲各地，并获得了
-                    Carter’s 、Tesco、Nike、Target、Walmart等公司的指定生产商。公司以专注生产婴儿、
-                    儿童服装为核心，注重关爱儿童健康成长，成为儿童服装市场的前驱和专家。</p>
+                <p>永联织造是世界前三的童装生产商，成立于1972年在香港成立，由阮氏家族和（王）氏家族 拥有公司100%的股权。1986年在大陆先后于东莞和广东韶关开设永联织造厂，拥有32间车间， 总员工数超过10000人，主要生产婴儿及儿童服装，年产量约1.2亿件。公司拥有超过40年的生
+                    产和出口经营优势，产品出口到美国，英国，欧洲，加拿大，澳大利亚和亚洲各地，并获得了 Carter’s 、Tesco、Nike、Target、Walmart等公司的指定生产商。公司以专注生产婴儿、 儿童服装为核心，注重关爱儿童健康成长，成为儿童服装市场的前驱和专家。
+                </p>
             </div>
         </div>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
+            <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader-active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
     </body>
 </block>
