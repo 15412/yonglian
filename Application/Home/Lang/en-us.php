@@ -20,4 +20,17 @@ return array(
 	'CONTACT_PERSON_VALUE'=>'Yingying Zhu',
 	'CONTACT_EMAIL'=>'Email',
 	'CONTACT_SHOP'=>'Shop',
+
+	'ABOUT_CONTEXT'=>'Yonglian weaving is the world\'s top three children\'s clothing manufacturer, founded in Hongkong in 1972, and by the Ruan family (King) family owned a 100% stake in the company. In 1986, in mainland China, Dongguan evergreen weaving workshop was opened in Shaoguan and Guangdong. It has 32 workshops, with a total number of employees over 10000, mainly producing baby and children\'s clothing, with an annual output of about 120 million. The company has more than 40 years of students
+	Products and export business advantages, products exported to the United States, Britain, Europe, Canada, Australia and Asia, and get the Carter, s, Tesco, Nike, Target, Walmart and other designated manufacturers. The company focuses on the production of infants and children\'s clothing, and pays attention to the healthy growth of children. It has become a pioneer and expert in the children\'s clothing market.',
+	'ABOUT_LEFT1_IMG_DESC' => 'LEFT ONE',
+	'ABOUT_LEFT2_IMG_DESC' => 'LEFT TWO',
+	'ABOUT_LEFT3_IMG_DESC' => 'LEFT THREE',
+	'ABOUT_LEFT4_IMG_DESC' => 'LEFT FOUR',
+	'ABOUT_MID1_IMG_DESC' => 'MID ONE',
+	'ABOUT_MID2_IMG_DESC' => 'MID TWO',
+	'ABOUT_RIGHT1_IMG_DESC' => 'RIGHT ONE',	
+	'ABOUT_RIGHT2_IMG_DESC' => 'RIGHT TWO',	
+	'ABOUT_RIGHT3_IMG_DESC' => 'RIGHT THREE',	
+	'ABOUT_RIGHT4_IMG_DESC' => 'RIGHT FOUR',	
 );
