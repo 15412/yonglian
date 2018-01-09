@@ -39,16 +39,15 @@
     <div class="img animated fadeIn"
          style="background-image:url(__IMG__/startup_clean.jpg);background-size:cover;background-position:center; width:100%;height:100%;">
         <!--<div class="fromFarToClose">-->
-            <!--<img style="width: 100%;height: 100%" src="__IMG__/yl/cloud10.png" alt="">-->
+        <!--<img style="width: 100%;height: 100%" src="__IMG__/yl/cloud10.png" alt="">-->
         <!--</div>-->
         <div class="sky">
             <!--<img src="__IMG__/yl/cloud_four2.png" style="width: 100%;top:8rem">-->
             <div class="clouds_one"></div>
             <div class="clouds_two"></div>
             <div class="clouds_fixed"></div>
-            <div class="center_box">
-                <!--<div id="logo"></div>-->
-            </div>
+            <div id="logo"></div>
+            <div id="skip"></div>
             <div id="arrow_down"></div>
             <!--<div class="clouds_two2"></div>-->
             <!--<div class="clouds_three2"></div>-->
@@ -65,17 +64,11 @@
         obj.onclick = scrollMove;
 
         // 鼠标滚轮滚动
-        function scrollMove(evt) {
-            evt = evt || event;
-            if (evt.wheelDelta < 0) {
-                $(".hAdBox").addClass("animated fadeOutUp").siblings().removeClass('animated fadeIn');
-                setTimeId = setTimeout(function () {
-                    location.href = "{:U('Home/Index/index')}";
-                }, 500);
-
-            } else {
-                //$(".hAdBox").addClass("animated fadeInUp").siblings().removeClass('animated fadeOutUp');
-            }
+        function scrollMove() {
+            $(".hAdBox").addClass("animated fadeOutUp").siblings().removeClass('animated fadeIn');
+            setTimeId = setTimeout(function () {
+                location.href = "{:U('Home/Index/index')}";
+            }, 500);
         }
     })
 
