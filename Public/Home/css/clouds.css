@@ -8,30 +8,30 @@ html, body {
     height: 100%;
     position: relative;
     /*overflow: hidden;*/
-    top:0;
+    top: 0;
     left: 0;
-    -webkit-animation: sky_background 100s ease-out infinite;
-    -moz-animation: sky_background 100s ease-out infinite;
-    -o-animation: sky_background 100s ease-out infinite;
-    animation: sky_background 100s ease-out infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    /*-webkit-animation: sky_background 100s ease-out infinite;*/
+    /*-moz-animation: sky_background 100s ease-out infinite;*/
+    /*-o-animation: sky_background 100s ease-out infinite;*/
+    /*animation: sky_background 100s ease-out infinite;*/
+    /*-webkit-transform: translate3d(0, 0, 0);*/
+    /*-ms-transform: translate3d(0, 0, 0);*/
+    /*-o-transform: translate3d(0, 0, 0);*/
+    /*transform: translate3d(0, 0, 0);*/
 }
 
 .sky .clouds_one {
-    background: url("../images/yl/cloud_one.png") no-repeat scroll;
+    z-index: 2;
+    background: url("../images/yl/cloud_1.png") no-repeat scroll;
     position: absolute;
-    left: 0;
-    top: -10rem;
-    /*top: 30%;*/
+    top: 2rem;
+    left: -10rem;
     height: 100%;
-    width: 200%;
-    -webkit-animation: range_one 120s linear infinite;
-    -moz-animation: range_one 120s linear infinite;
-    -o-animation: range_one 120s linear infinite;
-    animation: range_one 120s linear infinite;
+    width: 150%;
+    -webkit-animation: range_one 100s linear infinite;
+    -moz-animation: range_one 100s linear infinite;
+    -o-animation: range_one 100s linear infinite;
+    animation: range_one 100s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
@@ -39,200 +39,39 @@ html, body {
 }
 
 .sky .clouds_two {
-    background: url("../images/yl/cloud_two.png") no-repeat scroll;
+    z-index: 2;
+    background: url("../images/yl/cloud_2.png") no-repeat scroll;
     position: absolute;
-    left: 0;
-    top: -8rem;
-    /*top: 40%;*/
+    top: 4rem;
+    left: 20rem;
     height: 100%;
-    width: 300%;
-    -webkit-animation: range_one 140s linear infinite;
-    -moz-animation: range_one 140s linear infinite;
-    -o-animation: range_one 140s linear infinite;
-    animation: range_one 140s linear infinite;
+    width: 150%;
+    -webkit-animation: range_two 120s linear infinite;
+    -moz-animation: range_two 120s linear infinite;
+    -o-animation: range_two 120s linear infinite;
+    animation: range_two 120s linear infinite;
     -webkit-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
 
-
-.sky .clouds_three {
-    background: url("../images/yl/cloud_three.png") no-repeat scroll;
+.sky .clouds_fixed {
+    z-index: 1;
+    background: url("../images/yl/cloud_fixed.png") no-repeat scroll;
     position: absolute;
-    left: 0;
-    top: -5rem;
+    left: 13rem;
     /*top: 20%;*/
     height: 100%;
-    width: 300%;
-    -webkit-animation: range_two 280s linear infinite;
-    -moz-animation: range_two 280s linear infinite;
-    -o-animation: range_two 280s linear infinite;
-    animation: range_two 280s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    width: 100%;
 }
-
-.fromFarToClose{
-    position: absolute;
-    left: 20%;
-    top: 60%;
-    /*top: 20%;*/
-    height: 20px;
-    width: 20px;
-    -webkit-animation: fromFarToClose 50s linear infinite;
-    -moz-animation: fromFarToClose 50s linear infinite;
-    -o-animation: fromFarToClose 50s linear infinite;
-    animation: fromFarToClose 50s linear infinite;
-    animation-fill-mode: forwards;
-    -webkit-transform: translate3d(0, 1, 0);
-    -ms-transform: translate3d(0, 1, 0);
-    -o-transform: translate3d(0, 1, 0);
-    transform: translate3d(0, 1, 0);
-}
-
-.sky .clouds_one2 {
-    background: url("../images/yl/cloud_one.png") no-repeat scroll;
-    position: absolute;
-    left: 0;
-    top: -30%;
-    /*top: 30%;*/
-    height: 100%;
-    width: 200%;
-    -webkit-animation: range_two 200s linear infinite;
-    -moz-animation: range_two 200s linear infinite;
-    -o-animation: range_two 200s linear infinite;
-    animation: range_two 200s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-.sky .clouds_two2 {
-    background: url("../images/yl/cloud_two.png") no-repeat scroll;
-    position: absolute;
-    left: 0;
-    top: -30%;
-    /*top: 40%;*/
-    height: 100%;
-    width: 300%;
-    -webkit-animation: range_two 250s linear infinite;
-    -moz-animation: range_two 250s linear infinite;
-    -o-animation: range_two 250s linear infinite;
-    animation: range_two 250s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-
-.sky .clouds_three2 {
-    background: url("../images/yl/cloud_three.png") no-repeat scroll;
-    position: absolute;
-    left: 0;
-    top: -20%;
-    /*top: 20%;*/
-    height: 100%;
-    width: 300%;
-    -webkit-animation: range_two 300s linear infinite;
-    -moz-animation: range_two 300s linear infinite;
-    -o-animation: range_two 300s linear infinite;
-    animation: range_two 300s linear infinite;
-    -webkit-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-/*
-@-webkit-keyframes sky_background {
-    0% {
-        background: #007fd5;
-        color: #007fd5
-    }
-    50% {
-        background: #007fd5;
-        color: #007fd5;
-    }
-    100% {
-        background: #007fd5;
-        color: #007fd5
-    }
-}
-
-@-moz-keyframes sky_background {
-    0% {
-        background: #007fd5;
-        color: #007fd5
-    }
-    50% {
-        background: #007fd5;
-        color: #007fd5;
-    }
-    100% {
-        background: #007fd5;
-        color: #007fd5
-    }
-}
-
-@keyframes sky_background {
-    0% {
-        background: #007fd5;
-        color: #007fd5
-    }
-    50% {
-        background: #007fd5;
-        color: #007fd5;
-    }
-    100% {
-        background: #007fd5;
-        color: #007fd5
-    }
-}
-*/
-@-webkit-keyframes fromFarToClose {
-    0% {
-        top: 60%;
-    }
-    100% {
-        top: -20%;
-        height:200px;
-        width: 500px;
-    }
-}
-
-@-moz-keyframes fromFarToClose {
-    0% {
-        top: 60%;
-    }
-    100% {
-        top: -20%;
-        height:200px;
-        width: 500px;
-    }
-}
-
-@keyframes fromFarToClose {
-    0% {
-        top: 60%;
-    }
-    100% {
-        top: -20%;
-        height:200px;
-        width: 500px;
-    }
-}
-
 
 @-webkit-keyframes range_one {
     0% {
         left: 80%
     }
     100% {
-        left: -200%
+        left: -150%
     }
 }
 
@@ -241,7 +80,7 @@ html, body {
         left: 80%
     }
     100% {
-        left: -200%
+        left: -150%
     }
 }
 
@@ -250,32 +89,93 @@ html, body {
         left: 80%
     }
     100% {
-        left: -200%
+        left: -150%
     }
 }
+
 @-webkit-keyframes range_two {
     0% {
-        left: 280%
+        left: 150%
     }
     100% {
-        left: -200%
+        left: -150%
     }
 }
 
 @-moz-keyframes range_two {
     0% {
-        left: 280%
+        left: 150%
     }
     100% {
-        left: -200%
+        left: -150%
     }
 }
 
 @keyframes range_two {
     0% {
-        left: 280%
+        left: 150%
     }
     100% {
-        left: -200%
+        left: -150%
     }
+}
+
+#arrow_down {
+    z-index: 12;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    width: 48px;
+    height: 23px;
+    /*margin-left: -24px;*/
+    background: url("../images/YL_PNG/开始页/jiantou_down.png") center center no-repeat;
+    animation: down 4s infinite linear;
+    -webkit-animation: down 1s infinite linear; /* Safari 和 Chrome */
+}
+
+@keyframes down {
+    0%, 30% {
+        opacity: 0;
+        -webkit-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 8px);
+    }
+}
+
+@-webkit-keyframes down {
+    0%, 30% {
+        opacity: 0;
+        -webkit-transform: translate(0, -10px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(0, 8px);
+    }
+}
+
+#logo {
+    z-index: 10;
+    /*background: url("../images/YL_PNG/开始页/ylLogoShadow_03.png") center center no-repeat;*/
+    background: url("../images/YL_PNG/开始页/fullLogo_03.png") center center no-repeat;
+    background-size: 100% 100%;
+    width: 32rem;
+    height: 24rem;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
