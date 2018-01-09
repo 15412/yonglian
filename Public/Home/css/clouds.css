@@ -126,10 +126,10 @@ html, body {
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 7rem;
-    width: 40px;
-    height: 40px;
-    margin: -20px 0 0 -20px;;
+    bottom: 6rem;
+    width: 3rem;
+    height: 3rem;
+    margin: -1.5rem 0 0 -1.5rem;;
     background: url("../images/YL_PNG/开始页/start_18.png") center center no-repeat;
     animation: down 1s infinite linear;
     -webkit-animation: down 1s infinite linear; /* Safari 和 Chrome */
@@ -165,28 +165,31 @@ html, body {
     }
 }
 
-.center_box{
-    position: absolute;
-    width: 32rem;
-    height: 24rem;
-    background-color: red;
-    margin: auto;
-    top: 40%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
 #logo {
     z-index: 10;
     /*background: url("../images/YL_PNG/开始页/ylLogoShadow_03.png") center center no-repeat;*/
-    background: url("../images/YL_PNG/开始页/fullLogo_03.png") center center no-repeat;
+    background: url("../images/YL_PNG/开始页/startPage_03.png") center center no-repeat;
     background-size: 100% 100%;
     width: 32rem;
     height: 24rem;
     margin: auto;
     position: absolute;
     top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#skip{
+
+    z-index: 10;
+    background: url("../images/YL_PNG/开始页/start_15.png") center center no-repeat;
+    background-size: 100% 100%;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    position: absolute;
+    top: 75%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
