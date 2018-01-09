@@ -7,6 +7,7 @@ window.onresize = function(){
 
 
 var firstInitImg = function(){
+    var midTop = parseInt($(".aboutDiv").height()) * 0.1717 + 'px';
     var img1Top = (parseInt($(".mid1").css("top")) + parseInt($(".mid1").children("img").css("height")) * 0.5) + 'px';
     $(".left1").css("top",img1Top);
     $(".right1").css("top",img1Top);

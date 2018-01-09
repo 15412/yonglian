@@ -68,8 +68,9 @@
 .mid1{
 	width: 31.7%;
 	height: 29.8%;
-	left:34.27%;
-	top:17.77%;
+    left:34.27%;
+    top:23rem;
+	/* top:17.77%; */
 }
 
 .about-bg-01{
