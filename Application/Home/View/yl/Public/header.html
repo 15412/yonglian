@@ -4,14 +4,14 @@
     <div class="navbar-inner">
         <div class="container">
         	<div class="nav-collapse collapse pull-left">
-	        	<a class="brand" href="{:U('index/index')}">
+	        	<!--<a class="brand" href="{:U('index/index')}">-->
 		        	<img src="__IMG__/yl/logo_min.png">
-		        	<span>since 1972</span>
-		        	<div>{:L('CONTACT_NAME_VALUE')}</div>
-	        	</a>
-            	<span style="margin-left:50px">
-            		<img src="__IMG__/yl/cotton_merge.png">
-            	</span>
+		        	<span class="since">since 1972</span>
+	            	<span style="margin-left:50px">
+	            		<img src="__IMG__/yl/cotton_merge.png">
+	            	</span>
+		        	<div class="company">{:L('CONTACT_NAME_VALUE')}</div>
+	        	<!--</a>-->
         	</div>
             <!--<a class="brand" href="{:U('index/index')}">{:L('CONTACT_NAME')}</a>-->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -24,7 +24,7 @@
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
                         <li>
-                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{:L($nav['title'])}</a>
+                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L($nav['title'])}</span></a>
                             <!--<span>|</span>-->
                         </li>
                         </eq>
@@ -35,6 +35,9 @@
                 </ul>
             </div>
             <div class="nav-collapse collapse pull-right">
+            	<a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></span>
+            	<a href="{:U('',array('l'=>'zh-tw'))}"><span class="language">繁体</span></a>
+            	<a href="{:U('',array('l'=>'en-us'))}"><span class="language">English</span></a>
                 <!--<if condition="is_login()">
                     <ul class="nav" style="margin-right:0">
                         <li class="dropdown">

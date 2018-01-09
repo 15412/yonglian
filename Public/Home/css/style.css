@@ -77,3 +77,51 @@
 #loginBox form .error{
     color:#fff;
 }
+
+.company {
+	width: 12rem;
+	height: 1.75rem;
+	font-family: JQXiYuanFT;
+	font-size: 1.776rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.75rem;
+	letter-spacing: 0.569rem;
+	color: #696969;
+}
+
+.since {
+	width: 5.063rem;
+	height: 0.625rem;
+	/*font-family: ComicSansMS;*/
+	font-size: 0.796rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.75rem;
+	letter-spacing: 0.188rem;
+	color: #696969;
+}
+
+.menu {
+	width: 2.75rem;
+	height: 1.25rem;
+	font-family: -HYLiangPinXianJ;
+	font-size: 1.378rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.75rem;
+	letter-spacing: 0.138rem;
+	color: #747474;
+}
+
+.language {
+	width: 7.75rem;
+	height: 1.188rem;
+	font-family: SimHei;
+	font-size: 1.12rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 10.417rem;
+	letter-spacing: 0rem;
+	color: #616161;
+}
