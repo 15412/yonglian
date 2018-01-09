@@ -120,17 +120,18 @@ html, body {
     }
 }
 
+
 #arrow_down {
     z-index: 12;
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 100px;
-    width: 48px;
-    height: 23px;
-    /*margin-left: -24px;*/
-    background: url("../images/YL_PNG/开始页/jiantou_down.png") center center no-repeat;
-    animation: down 4s infinite linear;
+    bottom: 7rem;
+    width: 40px;
+    height: 40px;
+    margin: -20px 0 0 -20px;;
+    background: url("../images/YL_PNG/开始页/start_18.png") center center no-repeat;
+    animation: down 1s infinite linear;
     -webkit-animation: down 1s infinite linear; /* Safari 和 Chrome */
 }
 
@@ -164,6 +165,18 @@ html, body {
     }
 }
 
+.center_box{
+    position: absolute;
+    width: 32rem;
+    height: 24rem;
+    background-color: red;
+    margin: auto;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 #logo {
     z-index: 10;
     /*background: url("../images/YL_PNG/开始页/ylLogoShadow_03.png") center center no-repeat;*/
