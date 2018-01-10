@@ -78,6 +78,11 @@
     color:#fff;
 }
 
+html {
+    /*font-size: calc(100vw/10);*/
+    font-size:16px;
+}
+
 .company {
 	width: 12rem;
 	height: 1.75rem;
@@ -105,7 +110,7 @@
 .menu {
 	width: 2.75rem;
 	height: 1.25rem;
-	font-family: -HYLiangPinXianJ;
+	font-family: HYLiangPinXianJ;
 	font-size: 1.378rem;
 	font-weight: normal;
 	font-stretch: normal;

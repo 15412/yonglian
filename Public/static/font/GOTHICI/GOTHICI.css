@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GOTHICI';
+    src: url('fonts/GOTHICI.eot');
+    src: url('fonts/GOTHICI.eot') format('embedded-opentype'),
+         url('fonts/GOTHICI.woff2') format('woff2'),
+         url('fonts/GOTHICI.woff') format('woff'),
+         url('fonts/GOTHICI.ttf') format('truetype'),
+         url('fonts/GOTHICI.svg#GOTHICI') format('svg');
+}
