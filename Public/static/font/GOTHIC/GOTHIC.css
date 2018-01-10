@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('fonts/GOTHIC.eot');
+    src: url('fonts/GOTHIC.eot') format('embedded-opentype'),
+         url('fonts/GOTHIC.woff2') format('woff2'),
+         url('fonts/GOTHIC.woff') format('woff'),
+         url('fonts/GOTHIC.ttf') format('truetype'),
+         url('fonts/GOTHIC.svg#GOTHIC') format('svg');
+}

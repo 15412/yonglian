@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'GOTHICBI';
+    src: url('fonts/GOTHICBI.eot');
+    src: url('fonts/GOTHICBI.eot') format('embedded-opentype'),
+         url('fonts/GOTHICBI.woff2') format('woff2'),
+         url('fonts/GOTHICBI.woff') format('woff'),
+         url('fonts/GOTHICBI.ttf') format('truetype'),
+         url('fonts/GOTHICBI.svg#GOTHICBI') format('svg');
+}
