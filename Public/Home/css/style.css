@@ -98,7 +98,7 @@ html {
 .since {
 	width: 5.063rem;
 	height: 0.625rem;
-	/*font-family: ComicSansMS;*/
+	font-family: ComicSansMS;
 	font-size: 0.796rem;
 	font-weight: normal;
 	font-stretch: normal;
