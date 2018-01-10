@@ -7,7 +7,12 @@ window.onresize = function(){
 
 
 var firstInitImg = function(){
-    var midTop = parseInt($(".aboutDiv").height()) * 0.1717 + 'px';
+    var divHeight = parseInt($(".aboutDiv").width()) * 0.7078125 + 'px';
+    $(".aboutDiv").css("height",divHeight);
+
+    // var midTop = parseInt($(".aboutDiv").height()) * 0.1717 + parseInt($(".navbar").height()) + 'px';
+    // $(".mid1").css("top",midTop);
+
     var img1Top = (parseInt($(".mid1").css("top")) + parseInt($(".mid1").children("img").css("height")) * 0.5) + 'px';
     $(".left1").css("top",img1Top);
     $(".right1").css("top",img1Top);
@@ -42,6 +47,8 @@ var firstInitImg = function(){
     $(".about-bg-08").css("top",about8Top);
     // var allHeight = (parseInt($(".about-bg-08").css("top")) + parseInt($(".about-bg-08").children("img").css("height"))) + 'px';
     // $(".about-empty").css("height",allHeight);
+
+    
 }
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
