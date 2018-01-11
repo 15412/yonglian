@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "汉真广标";
+  src: url("汉真广标.woff2") format("woff2"),
+       url("汉真广标.woff") format("woff"),
+       url("汉真广标.ttf") format("truetype"),
+       url("汉真广标.eot") format("embedded-opentype"),
+       url("汉真广标.svg") format("svg"),
+       url("汉真广标.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
