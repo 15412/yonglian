@@ -1,15 +1,14 @@
 <extend name="Base/common" />
-
 <block name="header">
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
-        <link rel="stylesheet" href="__CSS__/photoswipe.css">
-        <link rel="stylesheet" href="__CSS__/default-skin.css">
-        <link rel="stylesheet" href="__CSS__/about-core.css">
-        <script src="__JS__/jquery-1.9.1.min.js"></script>
-        <script src="__JS__/photoswipe.min.js"></script>
-        <script src="__JS__/photoswipe-ui-default.min.js"></script>
-        <script src="__JS__/aboutStyle.js"></script>
-    </header>
+            <link rel="stylesheet" href="__CSS__/photoswipe.css">
+            <link rel="stylesheet" href="__CSS__/default-skin.css">
+            <link rel="stylesheet" href="__CSS__/about-core.css">
+            <script src="__JS__/jquery-1.9.1.min.js"></script>
+            <script src="__JS__/photoswipe.min.js"></script>
+            <script src="__JS__/photoswipe-ui-default.min.js"></script>
+            <script src="__JS__/aboutStyle.js"></script>
+        </header>
 </block>
 
 <block name="side">
@@ -26,7 +25,8 @@
     <!-- <img src="__IMG__/yl/about.jpg"> -->
 
     <body>
-        <div class="aboutDiv aboutBody img-responsive">
+        <!-- <div style="clear:both"></div> -->
+        <div class="aboutDiv aboutBody">
             <div class="aboutImg about-bg-01">
                 <img src="__IMG__/YL_PNG/公司简介/about_bg_01.png" />
             </div>
@@ -113,12 +113,12 @@
                     <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_RIGHT4_IMG_DESC')}</figcaption>
                 </figure>
             </div>
-            <div class="aboutContent">
-                <p>{:L('ABOUT_CONTEXT')}
-                </p>
-            </div>
-        </div>
 
+        </div>
+        <div class="aboutContent">
+            <p>{:L('ABOUT_CONTEXT')}
+            </p>
+        </div>
 
         <!-- Root element of PhotoSwipe. Must have class pswp. -->
         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">

@@ -131,7 +131,8 @@
 }
 
 .aboutContent{
-	position: absolute;
+	/* position: absolute; */
+	margin-left:26.77%;
 	width:47.76%;
 	height:15.31%;
 	left:26.77%;
@@ -144,7 +145,7 @@
 	color: #565656;
 	overflow: hidden;
 }
-html{
+/* html{
 	font-size: 62.5%;
 }
 body {
@@ -152,4 +153,4 @@ body {
 }
 h1 {
     font-size: 2.4rem;
-}
+} */
