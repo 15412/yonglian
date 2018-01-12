@@ -456,6 +456,10 @@
   .row-fluid .thumbnails {
     margin-left: 0;
   }
+  
+  .nav-collapse.collapse .nav{
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -958,7 +962,7 @@
     position: static;
   }
   .navbar-fixed-top {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   .navbar-fixed-bottom {
     margin-top: 20px;
@@ -1101,9 +1105,16 @@
   }
 }
 
+@media (min-width: 980px) and (max-width: 1199px) {
+  body {
+    padding-top: 240px !important;
+  }
+}
+
 @media (min-width: 980px) {
   .nav-collapse.collapse {
     height: auto !important;
     overflow: visible !important;
   }
 }
+
