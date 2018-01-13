@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "金桥繁细圆";
+  src: url("金桥繁细圆.woff2") format("woff2"),
+       url("金桥繁细圆.woff") format("woff"),
+       url("金桥繁细圆.ttf") format("truetype"),
+       url("金桥繁细圆.eot") format("embedded-opentype"),
+       url("金桥繁细圆.svg") format("svg"),
+       url("金桥繁细圆.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}

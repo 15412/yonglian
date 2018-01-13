@@ -98,7 +98,7 @@ html {
 .since {
 	width: 5.063rem;
 	height: 0.625rem;
-	/*font-family: ComicSansMS;*/
+	font-family: ComicSansMS;
 	font-size: 0.796rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -109,16 +109,19 @@ html {
 
 .menu {
 	width: 2.75rem;
-	height: 1.25rem;
+	height: 1.00rem;
 	font-family: HYLiangPinXianJ;
 	font-size: 1.378rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1.75rem;
+	line-height: 1.378rem;
 	letter-spacing: 0.138rem;
 	color: #747474;
 }
-
+.language-menu {
+	margin-top: -80px;
+	margin-right: 40px;
+}
 .language {
 	width: 7.75rem;
 	height: 1.188rem;
@@ -126,7 +129,7 @@ html {
 	font-size: 1.12rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 10.417rem;
+	line-height: 1rem;
 	letter-spacing: 0rem;
 	color: #616161;
 }
