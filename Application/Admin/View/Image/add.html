@@ -25,7 +25,23 @@
                     <div class="controls">
                         <switch name="field.type">
                             <case value="num">
-                                <input type="text" class="text input-mid" name="{$field.name}" value="">
+                                <if condition="substr($field['name'],-3) eq '_id'">
+                                	<if condition ="substr($field['name'],0,-3) eq 'image_category'">
+    	                            	<select name="{$field.name}">
+    	                                    <if condition = "is_array($parse_field = parse_field($field['name'],0,'image_category',0,true))">
+    	                                    	<volist name="parse_field" id="vo">
+    	                                        <option value="{$vo.id}">{$vo.name}</option>
+    	                                    	</volist>
+    	                                    <else/>
+    	                                    	{$parse_field}
+    	                                    </if>
+    	                                </select>
+    		                        <else/>
+                                        <input type="text" class="text input-mid" name="{$field.name}" value="">
+                                    </if>
+		                        <else/>
+                                    <input type="text" class="text input-mid" name="{$field.name}" value="">
+                                </if>
                             </case>
                             <case value="string">
                                 <input type="text" class="text input-large" name="{$field.name}" value="">
@@ -213,5 +229,7 @@ $(function(){
     showTab();
 
 });
+//导航高亮
+highlight_subnav('{:U('index')}');
 </script>
 </block>

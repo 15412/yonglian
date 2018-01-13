@@ -1036,7 +1036,7 @@ function is_mobile() {
     //判断手机发送的客户端标志,兼容性有待提高
     if (isset ($_SERVER['HTTP_USER_AGENT'])) {
         $clientkeywords = array(
-            'nokia','sony','ericsson','mot','samsung','htc','sgh','lg','sharp','sie-','philips','panasonic','alcatel','lenovo','iphone','ipod','blackberry','meizu','android','netfront','symbian','ucweb','windowsce','palm','operamini','operamobi','openwave','nexusone','cldc','midp','wap','mobile'
+            'nokia','sony','ericsson','mot','samsung','htc','sgh','lg','sharp','sie-','philips','panasonic','alcatel','lenovo','iphone','ipod','blackberry','meizu','android','netfront','symbian','ucweb','windowsce','palm','operamini','operamobi','openwave','nexusone','cldc','midp','wap','mobile','ios'
         );
         //从HTTP_USER_AGENT中查找手机浏览器的关键字
         if (preg_match("/(" . implode('|', $clientkeywords) . ")/i", strtolower($_SERVER['HTTP_USER_AGENT']))) {
@@ -1052,4 +1052,113 @@ function is_mobile() {
         }
     }
     return false;
+}
+
+/**
+ * 获取分类信息并缓存分类
+ * @param  integer $id    分类ID
+ * @param  string  $field 要获取的字段名
+ * @return string         分类信息
+ */
+function get_general_category($id, $field = null){
+    static $list;
+    
+    /* 非法分类ID */
+    if(empty($id) || !is_numeric($id)){
+        return '';
+    }
+    
+    /* 读取缓存数据 */
+    if(empty($list)){
+        $list = S('sys_general_category_list');
+    }
+    
+    /* 获取分类名称 */
+    if(!isset($list[$id])){
+        $cate = M('GeneralCategory')->find($id);
+        if(!$cate || 1 != $cate['status']){ //不存在分类，或分类被禁用
+            return '';
+        }
+        $list[$id] = $cate;
+        S('sys_general_category_list', $list); //更新缓存
+    }
+    return is_null($field) ? $list[$id] : $list[$id][$field];
+}
+
+/* 根据ID获取分类名称 */
+function get_general_category_name($id){
+    return get_general_category($id, 'name');
+}
+
+/**
+ * tree_to_html function
+ * 树形数组转换为html
+ * @param array $tree
+ * @param int $id
+ * @param int $level
+ * @param string $child
+ * @param boolean $isDisableParent 是否禁用父节点
+ * @return string
+ * @author rohochan<rohochan@gmail.com>
+ **/
+function tree_to_html ($tree,$id=0,$level=0,$child = '_child',$isDisableParent=false){
+	$html = '';
+	$ids = explode(",",$id);
+	$length = count($tree);
+	foreach ($tree as $key => $value) {
+		$separator = $length == $key+1 ?str_pad('', $level*$level*2*6,'&#160;').'└&#160;&#160;':str_pad('', $level*$level*2*6,'&#160;').'├&#160;&#160;';//│
+		//$select = ($id == $value['id']) ? 'selected':'';
+		if (is_array($ids)) {
+			$select = (in_array($value['id'],$ids)) ? 'selected':'';
+		}else {
+			$select = ($id == $value['id']) ? 'selected':'';
+		}
+		$disable = (isset($value[$child]) && $isDisableParent)?'disabled="disabled"':'';
+		$html .= $level != 0?"<option value='{$value['id']}' {$select} {$disable}>{$separator}{$value['name']}</option>":"<option value='{$value['id']}' {$select} {$disable}>{$value['name']}</option>";
+		//$html .= "<option value='{$value['id']}' {$select}>{$separator}{$value['name']}</option>";
+		if (isset($value[$child])) {
+			$html .= tree_to_html($value[$child],$id,$level+1,$child,$isDisableParent);
+		}
+	}
+	return $html;
+}
+
+/**
+ * parse_field function
+ * 树形数组中的名字转换为层次级的名字
+ * @param string $name 类型名字
+ * @param int $id 选中id
+ * @param string $disableFlag 不显示默认选项的禁用标记
+ * @param int $level 初始显示等级
+ * @param boolean $isDisableParent 是否禁用父节点
+ * @return string/array
+ * @author rohochan<rohochan@gmail.com>
+ **/
+function parse_field($name, $id = 0, $disableFlag='', $level = 0, $isDisableParent = false) {
+	$name = substr($name,0,-3);
+    dump($isDisableParent);
+	switch ($name) {
+		case 'user':
+			$user = M('user');
+			$result = $user->field(true)->where(array('status'=>1,'name'=>array('neq','')))->select();
+			break;
+		case 'image_category':
+			/*分类类型:1:图片分类*/
+			$type = array('image_category'=>1);
+			$generalCategory = M('GeneralCategory');
+			$result = $generalCategory->field('id,pid,name,sort')->order('sort asc,create_time')->where(array('status'=>1,'type'=>$type[$name]))->select();
+			//$result = list_to_tree(list_sort_by($result,'sort','asc'));
+			//$result = tree_to_level_tree($result);
+			$result = list_to_tree($result);
+			if ($name != $disableFlag) {
+				array_unshift($result, array('id'=>0,'name'=>'不关联'));
+			}
+			$result = tree_to_html($result,$id,$level,'_child',$isDisableParent);
+            dump($result);
+			break;
+		default:
+			$result = array();
+			break;
+	}
+	return $result;
 }

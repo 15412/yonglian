@@ -45,19 +45,45 @@ function get_list_field($data, $grid){
             if(preg_match('/^\[([a-z_]+)\]$/',$href,$matches)){
                 $val[]  =   $data2[$matches[1]];
             }else{
-                $show   =   isset($array[1])?$array[1]:$value;
+                //动态获取状态操作名
+                if ('[STATUS]' == $array[0]) {
+                	//$model_id = $data['model_id'] ?  : 1;
+            		//$attrList = get_model_attribute($model_id,false,'id,name,type,extra');
+            		//$options    =   parse_field_attr($attrList['status']['extra']);
+            		$statusArray = array(0=>'启用',1=>'禁用');
+            		$show   =  $statusArray[$data['statusValue']];
+                }else {
+                   $show   =   isset($array[1])?$array[1]:$value;
+                }
                 // 替换系统特殊字符串
                 $href   =   str_replace(
-                    array('[DELETE]','[EDIT]','[LIST]'),
+                    /*array('[DELETE]','[EDIT]','[LIST]'),
                     array('setstatus?status=-1&ids=[id]',
                     'edit?id=[id]&model=[model_id]&cate_id=[category_id]',
                     'index?pid=[id]&model=[model_id]&cate_id=[category_id]'),
+                    $href); */
+                    array('[REMOVE]','[STATUS]','[FORBID]','[RESUME]','[DELETE]','[EDIT]','[LIST]'),
+                    array('del?ids=[id]',
+                    'setStatus?ids=[id]&status='.abs(1-$data['statusValue']),
+                    'setstatus?status=0&ids=[id]',
+                    'setstatus?status=1&ids=[id]',
+                    'setstatus?status=-1&ids=[id]',
+                    //'edit?id=[id]&model=[model_id]&cate_id=[category_id]',
+                    //'index?pid=[id]&model=[model_id]&cate_id=[category_id]'),
+                    'edit?id=[id]&model=[model_id]',
+                    'index?pid=[id]&model=[model_id]'),
                     $href);
 
                 // 替换数据变量
                 $href   =   preg_replace_callback('/\[([a-z_]+)\]/', function($match) use($data){return $data[$match[1]];}, $href);
 
-                $val[]  =   '<a href="'.U($href).'">'.$show.'</a>';
+                if ( '[REMOVE]' == $array[0] || '[DELETE]' == $array[0] || '[FORBID]' == $array[0]  ) {
+                    $val[]  =   '<a class="confirm ajax-get" href="'.U($href).'">'.$show.'</a>';
+                }else if ( '[RESUME]' == $array[0] || '[STATUS]' == $array[0] ) {
+                    $val[]  =   '<a class="ajax-get" href="'.U($href).'">'.$show.'</a>';
+                }else {
+                    $val[]  =   '<a href="'.U($href).'">'.$show.'</a>';
+                }
             }
         }
         $value  =   implode(' ',$val);
