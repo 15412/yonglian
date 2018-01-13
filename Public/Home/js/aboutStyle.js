@@ -11,7 +11,8 @@ var firstInitImg = function(){
     $(".aboutDiv").css("height",divHeight);
 
     // var midTop = parseInt($(".aboutDiv").height()) * 0.1416 + parseInt($(".navbar").height()) + 'px';
-    var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + parseInt($(".aboutDiv").offset().top) + 'px';
+    //var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + parseInt($(".aboutDiv").offset().top) + 'px';
+    var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + 'px';
     $(".mid1").css("top",midTop);
 
     var img1Top = (parseInt($(".mid1").css("top")) + parseInt($(".mid1").children("img").css("height")) * 0.5) + 'px';
@@ -258,7 +259,4 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 window.onload = function () {
     initPhotoSwipeFromDOM('.my-gallery');
     firstInitImg();
-    $(".btn-navbar").delay(1000).click(function(){
-        firstInitImg();
-      });
 };
