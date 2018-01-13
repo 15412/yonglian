@@ -97,7 +97,8 @@ class ThinkController extends AdminController {
                 // 查询条件
                 ->where($map)
                 /* 默认通过id逆序排列 */
-                ->order("{$fix}{$parent}.id DESC")
+                //->order("{$fix}{$parent}.id DESC")
+                ->order("{$fix}{$parent}.id ASC")
                 /* 数据分页 */
                 ->page($page, $row)
                 /* 执行查询 */
@@ -114,7 +115,8 @@ class ThinkController extends AdminController {
                 // 查询条件
                 ->where($map)
                 /* 默认通过id逆序排列 */
-                ->order($model['need_pk']?'id DESC':'')
+                //->order($model['need_pk']?'id DESC':'')
+                ->order($model['need_pk']?'id ASC':'')
                 /* 数据分页 */
                 ->page($page, $row)
                 /* 执行查询 */

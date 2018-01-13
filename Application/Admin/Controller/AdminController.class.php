@@ -24,7 +24,11 @@ class AdminController extends Controller {
         if(defined('UID')) return ;
         define('UID',is_login());
         if( !UID ){// 还没登录 跳转到登录页面
-            $this->redirect('Public/login');
+            if (IS_AJAX) {
+            	$this->error('登录超时,请重新登录!',U('Public/login'));
+            }else {
+       	      $this->redirect('Public/login');
+            }
         }
         /* 读取数据库中的配置 */
         $config =   S('DB_CONFIG_DATA');
@@ -63,6 +67,11 @@ class AdminController extends Controller {
         }        
 
         $this->assign('__MENU__', $this->getMenus());
+    }
+    
+    /* 空操作，用于输出404页面 */
+    public function _empty(){
+    	//$this->redirect('Index/index');
     }
 
     /**
@@ -448,12 +457,18 @@ class AdminController extends Controller {
                             // 枚举/多选/单选/布尔型
                             $options    =   parse_field_attr($extra);
                             if($options && array_key_exists($val,$options)) {
+                            	//存储status原始数据
+                                if ('status' == $key) {
+                                	$data[$key.'Value'] = $data[$key];
+                                }
                                 $data[$key]    =   $options[$val];
                             }
                         }elseif('date'==$type){ // 日期型
-                            $data[$key]    =   date('Y-m-d',$val);
+                            //$data[$key]    =   date('Y-m-d',$val);
+                            $data[$key]    =   NULL === $data[$key] ? '' : date('Y-m-d',$val);
                         }elseif('datetime' == $type){ // 时间型
-                            $data[$key]    =   date('Y-m-d H:i',$val);
+                            //$data[$key]    =   date('Y-m-d H:i',$val);
+                            $data[$key]    =   NULL === $data[$key] ? '' : date('Y-m-d H:i',$val);
                         }
                     }
                 }
