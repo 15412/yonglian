@@ -258,4 +258,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 window.onload = function () {
     initPhotoSwipeFromDOM('.my-gallery');
     firstInitImg();
+    $(".btn-navbar").delay(1000).click(function(){
+        firstInitImg();
+      });
 };
