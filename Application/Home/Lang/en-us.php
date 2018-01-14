@@ -4,6 +4,7 @@ return array(
 	'MENU_INDEX'=>'Home',
 	'MENU_ABOUT'=>'About',
 	'MENU_HONOR'=>'Honor',
+	'MENU_HISTORY'=>'History',
 	'MENU_PARTNERS'=>'Partners',
 	'MENU_CONTACT'=>'Contact',
 	
@@ -11,7 +12,7 @@ return array(
 	'CONTACT_NAME'=>'Name',
 	'CONTACT_NAME_VALUE'=>'WingLuen Weaving Mill',
 	'CONTACT_ADDRESS'=>'Address',
-	'CONTACT_ADDRESS_VALUE'=>'Liben industrial park, Nanshe industrial zone, Chashan town, Dongguan City, Guangdong Province, China',
+	'CONTACT_ADDRESS_VALUE'=>'Liben industrial park, <br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Nanshe industrial zone, <br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Chashan town, <br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Dongguan City, <br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Guangdong Province, <br/>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;China',
 	'CONTACT_ZIP_CODE'=>'Zip Code',
 	'CONTACT_TEL'=>'Tel',
 	'CONTACT_FAX'=>'Fax',
