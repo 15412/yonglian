@@ -55,22 +55,22 @@ ul, li {
 }
 
 #introductionTab {
-    background: url("../images/YL_PNG/首页/tabRed.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabRed.png") center center no-repeat;
     background-size: 100%;
 }
 
 #cultureTab {
-    background: url("../images/YL_PNG/首页/tabBlue.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabBlue.png") center center no-repeat;
     background-size: 100%;
 }
 
 #produceTab {
-    background: url("../images/YL_PNG/首页/tabGreen.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabGreen.png") center center no-repeat;
     background-size: 100%;
 }
 
 #productTab {
-    background: url("../images/YL_PNG/首页/tabYellow.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabYellow.png") center center no-repeat;
     background-size: 100%;
 }
 
@@ -116,7 +116,7 @@ ul, li {
 }
 #culture .content{
     /*background-color: red;*/
-    background: url("../images/YL_PNG/首页/culture.png") right  bottom 50% no-repeat;
+    background: url("../images/YL_PNG/index/culture.png") right  bottom 50% no-repeat;
     background-size: 50%;
 
 }
@@ -163,7 +163,7 @@ ul, li {
 #produce .content {
     position: relative;
     margin: 0 auto;
-    background: url("../images/YL_PNG/首页/flow.png") left top 2% no-repeat;
+    background: url("../images/YL_PNG/index/flow.png") left top 2% no-repeat;
     background-size: 4.3%;
     /*float: left;*/
 }
