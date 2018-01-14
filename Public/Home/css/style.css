@@ -154,6 +154,14 @@ html {
 	height: 2.25rem;
 }
 
+.car{
+	height:3.125rem;
+	cursor:default;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
 .contact_image{
 	width: 2.688rem;
 	height: 2.5rem;

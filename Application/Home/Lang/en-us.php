@@ -4,6 +4,7 @@ return array(
 	'MENU_INDEX'=>'Home',
 	'MENU_ABOUT'=>'About',
 	'MENU_HONOR'=>'Honor',
+	'MENU_HISTORY'=>'History',
 	'MENU_PARTNERS'=>'Partners',
 	'MENU_CONTACT'=>'Contact',
 	
