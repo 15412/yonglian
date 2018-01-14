@@ -7,9 +7,9 @@
 	        	<!--<a class="brand" href="{:U('index/index')}">-->
 		        	<!--<img src="__IMG__/yl/logo_min.png">
 		        	<span class="since">since 1972</span>-->
-		        	<img src="__IMG__/yl/logo_min.png">
+		        	<img src="__IMG__/yl/logo_text.png" class="logo_image">
 	            	<span>
-	            		<img src="__IMG__/yl/cotton_merge_text.png">
+	            		<img src="__IMG__/yl/cotton_merge_text.png" class="cotton_image">
 	            	</span>
 		        	<!--<div class="company">{:L('CONTACT_NAME_VALUE')}</div>-->
 	        	<!--</a>-->
@@ -31,16 +31,28 @@
                         </eq>
                     </think:nav>
                     <li>
-                        <a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank" style="padding:0px 15px 0px;"><img src="__IMG__/yl/tmall.png"></a>
+                        <a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank" style="padding:0px 15px 0px;"><img src="__IMG__/yl/tmall.png" class="tmall_image"></a>
                     </li>
                 </ul>
             </div>
             <div class="nav-collapse collapse pull-right">
-            	<div class="language-menu">
+            	<!--<div class="language-menu">
 	            	<a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></span>
 	            	<a href="{:U('',array('l'=>'zh-tw'))}"><span class="language">繁体</span></a>
 	            	<a href="{:U('',array('l'=>'en-us'))}"><span class="language">English</span></a>
-            	</div>
+            	</div>-->
+            	
+                <ul class="nav language-menu">
+                    <li>
+                        <a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></a>
+                    </li>
+                    <li>
+                        <a href="{:U('',array('l'=>'zh-tw'))}"><span class="language">繁体</a></a>
+                    </li>
+                    <li>
+                        <a href="{:U('',array('l'=>'en-us'))}"><span class="language">English</a></a>
+                    </li>
+                </ul>
                 <!--<if condition="is_login()">
                     <ul class="nav" style="margin-right:0">
                         <li class="dropdown">
@@ -63,9 +75,9 @@
                 </if>-->
             </div>
         </div>
-    	<div class="" style="height:50px;">
+    	<div class="" style="height:3.125rem;">
             <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
-                <img src="__IMG__/yl/car.jpg" width="275px" style="">
+                <img src="__IMG__/yl/car.jpg"  style="width:17.1825rem">
             </marquee>
         </div>
     </div>

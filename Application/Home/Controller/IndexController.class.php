@@ -38,6 +38,12 @@ class IndexController extends HomeController{
      * 公司简介
      */
     public function about(){
+    	$imageMap = array(['position'=>'left1','sort'=>10],['position'=>'left2','sort'=>9],['position'=>'left3','sort'=>8],['position'=>'left4','sort'=>7],['position'=>'mid1','sort'=>1],['position'=>'mid2','sort'=>2],['position'=>'right1','sort'=>3],['position'=>'right2','sort'=>4],['position'=>'right3','sort'=>5],['position'=>'right4','sort'=>6]);
+    	$image = M('Image');
+    	$result = $image->where(array('image_category_id'=>2,'status'=>1))->select();
+    	$this->assign('imageMap',$imageMap);
+    	$this->assign('result',$result);
+    	//dump($result);
         $this->display();
     }
     
