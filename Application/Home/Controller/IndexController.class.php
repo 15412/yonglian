@@ -55,6 +55,13 @@ class IndexController extends HomeController{
     }
     
     /**
+     * 	公司历史
+     */
+    public function history(){
+        $this->display();
+    }
+    
+    /**
      * 合作伙伴
      */
     public function partners(){
