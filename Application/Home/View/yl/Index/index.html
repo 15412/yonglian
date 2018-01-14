@@ -79,16 +79,16 @@
                 <div class="content">
                     <div class="line">
                         <div id="profileImg">
-                            <img  src="__IMG__/YL_PNG/公司简介/about-mid.png" alt="">
+                            <img src="__IMG__/YL_PNG/公司简介/about-mid.png" alt="">
                         </div>
                     </div>
                     <div class="line">
                         <p>
-                        永联织造是世界前三的童装生产商，成立于1972年在香港成立，由阮氏家族和（王）氏家族拥有公司100%
-                        的股权。1986年在大陆先后于东莞和广东韶关开设永联织造厂，拥有32间车间，总员工数超过10000人，主要
-                        生产婴儿及儿童服装，年产量约1.2亿件。公司拥有超过40年的生产和出口经营优势，产品出口到美国，英国，
-                        欧洲，加拿大，澳大利亚和亚洲各地，并获得了Carter’s 、Tesco、Nike、Target、Walmart等公司的指定
-                        生产商。公司以专注生产婴儿、儿童服装为核心，注重关爱儿童健康成长，成为儿童服装市场的前驱和专家。
+                            永联织造是世界前三的童装生产商，成立于1972年在香港成立，由阮氏家族和（王）氏家族拥有公司100%
+                            的股权。1986年在大陆先后于东莞和广东韶关开设永联织造厂，拥有32间车间，总员工数超过10000人，主要
+                            生产婴儿及儿童服装，年产量约1.2亿件。公司拥有超过40年的生产和出口经营优势，产品出口到美国，英国，
+                            欧洲，加拿大，澳大利亚和亚洲各地，并获得了Carter’s 、Tesco、Nike、Target、Walmart等公司的指定
+                            生产商。公司以专注生产婴儿、儿童服装为核心，注重关爱儿童健康成长，成为儿童服装市场的前驱和专家。
                         </p>
                     </div>
                 </div>
@@ -114,18 +114,58 @@
                         <img src="__IMG__/YL_PNG/首页/culture.png" alt="">
                     </div>
                 </div>
-                
+
             </div>
             <div class="tab-pane fade" id="produce">
                 <div class="title">
                     Production ability / 生产实力
+                </div>
+                <div class="content">
+                    <div class="row firstRow">
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">板房</div></div>
+                            <img src="__IMG__/YL_PNG/首页/banfang.jpg" alt="">
+                            <div class="imgList">
+                                <img src="__IMG__/YL_PNG/首页/banfang.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">布仓区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/bucangqu.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row secondRow">
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">裁床区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/caichuangqu.jpg" alt="">
+                        </div>
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">车缝区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/chefengqu.jpg" alt="">
+                        </div>
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">烫衣区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/tangyiqu.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="row thirdRow">
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">成品区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/chengpingqu.jpg" alt="">
+                        </div>
+                        <div class="imgGroup">
+                            <div class="mask"><div class="text">物流区</div></div>
+                            <img src="__IMG__/YL_PNG/首页/wuliuqu.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="tab-pane fade" id="product">
                 <div class="title">
                     Product center / 产品中心
                 </div>
-                <div>
+                <div class="content">
+                    <img src="__IMG__/YL_PNG/首页/product.jpg" alt="">
 
                 </div>
             </div>
@@ -141,11 +181,15 @@
     <!--<img src="__IMG__/yl/index.jpg">-->
     <script>
         $(function () {
-            $("#myTab li").click(function(){
+            $("#myTab li").click(function () {
                 $("#myTab li").removeClass("active");
                 $(this).addClass("active");
             });
-//            $(".active").
+            $('.imgGroup').hover(function () {
+                $(this).find('.mask').css('display', 'none');
+            }, function () {
+                $(this).find('.mask').css('display', 'block');
+            });
         })
     </script>
 </block>
