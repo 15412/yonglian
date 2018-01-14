@@ -1,0 +1,67 @@
+.honor-title{
+    width: 100%;
+    height: 20.31%;
+    /* position: relative; */
+}
+
+.honor-title-word{
+    /* margin-left: 27.135%; */
+    text-align:center;
+	font-family: HYi4gf;
+	font-size: 3rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 10rem;
+	letter-spacing: 1rem;
+	color: #313131;
+}
+
+.honor-content{
+    position: relative;
+}
+
+.honor-tree{
+    position: absolute;
+    left:16.67%;
+    width: 72.6%;
+}
+
+
+.honor-img-1{
+    position: absolute;
+    left:20.67%;
+    width: 10.73%;
+    top: 3.91%;
+}
+.honor-title-1{
+    position: absolute;
+    left:32.49%;
+    top:3.91%;
+    width: 16.3%;
+	height: 21px;
+	font-family: SimHei;
+	font-size: 0.8rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 2rem;
+	letter-spacing: 1px;
+    color: #000000;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.honor-desc-1{
+    position: absolute;
+    left:32.49%;
+    top:6.91%;
+    width: 16.3%;
+	height: 65px;
+	font-family: SimHei;
+	font-size: 0.4rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1rem;
+	letter-spacing: 0px;
+    color: #919191;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
