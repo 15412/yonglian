@@ -817,6 +817,9 @@
 	margin-top: -364px;
 	margin-right: 60px;
   }
+  .contact_content {
+	font-size: 0.9rem !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -926,6 +929,19 @@
 	/*margin-top: -380px;*/
 	margin-top: -344px;
 	margin-right: 60px;
+  }
+  .contact_content {
+	font-size: 0.9rem !important;
+  }
+  .contact_content #normal {
+	display: none !important;;
+  }
+  .contact_content #mini {
+	display: initial !important;;
+  }
+  .table.table-noborder th, .table.table-noborder td {
+    padding: 0px;
+    line-height: 16px;
   }
 }
 
@@ -1140,6 +1156,9 @@
   .nav-collapse.collapse .nav.language-menu{
 	margin-top: -80px;
 	margin-right: 198px;
+  }
+  .contact_content {
+	font-size: 1rem !important;
   }
 }
 

@@ -158,6 +158,7 @@ html {
 	width: 2.688rem;
 	height: 2.5rem;
 }
+
 .contact_text {
 	width: 6.125rem;
 	height: 1.25rem;
@@ -170,4 +171,31 @@ html {
 	color: #2b261e;
 	margin-left:1rem;
 	margin-top:0.2rem;
+}
+
+.contact_content {
+	/*width: 26.625rem;*/
+	height: 9.313rem;
+	font-family: SimHei;
+	font-size: 1.302rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 3.125rem;
+	letter-spacing: 0rem;
+	color: #2b261e;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.contact_content #mini {
+	display:none;
+}
+
+.table.table-noborder th, .table.table-noborder td {
+    border-top: 0px;
+}
+
+.contact-address-map{
+	margin-top:1rem;
 }
