@@ -202,12 +202,12 @@ ul, li {
     position: absolute;
     display:table-cell;vertical-align:middle;
     color: #fff;
-    width: 100%;
-    height: 100%;
+    width: 96%;
+    height: 96%;
     line-height: 100%;
     background-color: #000;
-    top: 0;
-    left: 0;
+    top: 2%;
+    left: 2%;
     z-index: 100;
     opacity: 0.6;
     /*兼容IE8及以下版本浏览器*/
