@@ -169,6 +169,7 @@ html, body {
     z-index: 10;
     /*background: url("../images/YL_PNG/开始页/ylLogoShadow_03.png") center center no-repeat;*/
     background: url("../images/YL_PNG/开始页/startPage_03.png") center center no-repeat;
+    /*background: url("../images/YL_PNG/开始页/startPage_last_03.png") center center no-repeat;*/
     background-size: 100% 100%;
     width: 32rem;
     height: 24rem;
@@ -185,8 +186,8 @@ html, body {
     z-index: 10;
     background: url("../images/YL_PNG/开始页/start_15.png") center center no-repeat;
     background-size: 100% 100%;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1rem;
     margin: auto;
     position: absolute;
     top: 75%;
