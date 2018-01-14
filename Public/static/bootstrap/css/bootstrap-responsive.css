@@ -820,6 +820,10 @@
   .contact_content {
 	font-size: 0.9rem !important;
   }
+  .table.table-noborder th, .table.table-noborder td {
+    /*padding: 0px;*/
+    line-height: 16px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -932,16 +936,17 @@
   }
   .contact_content {
 	font-size: 0.9rem !important;
+    /*line-height: 1em !important;*/
   }
   .contact_content #normal {
-	display: none !important;;
+	display: none !important;
   }
   .contact_content #mini {
-	display: initial !important;;
+	display: initial !important;
   }
   .table.table-noborder th, .table.table-noborder td {
-    padding: 0px;
-    line-height: 16px;
+    padding: 2px;
+    /*line-height: 16px;*/
   }
 }
 

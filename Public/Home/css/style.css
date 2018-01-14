@@ -183,6 +183,7 @@ html {
 	line-height: 3.125rem;
 	letter-spacing: 0rem;
 	color: #2b261e;
+	height: 100%;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
