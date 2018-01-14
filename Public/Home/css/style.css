@@ -138,10 +138,16 @@ html {
 	width: 15rem;
 	height: 7.875rem;
 	padding-bottom:0.5rem;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 .cotton_image {
 	width: 8.75rem;
 	height: 7.125rem;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
 }
 
 .tmall_image {
