@@ -17,8 +17,8 @@ return array(
     'DEFAULT_MODULE'     => 'Home',
     'DEFAULT_CONTROLLER'    =>  'Index', // 默认控制器名称
     'DEFAULT_ACTION'        =>  'index', // 默认操作名称
-    'MODULE_DENY_LIST'   => array('Common','User','Admin','Install'),
-    //'MODULE_ALLOW_LIST'  => array('Home','Admin'),
+    //'MODULE_DENY_LIST'   => array('Common','User','Admin','Install'),
+    'MODULE_ALLOW_LIST'  => array('Home','Admin'),
 
     /* 系统数据加密设置 */
     'DATA_AUTH_KEY' => 'RTVn7r2yAzpN"l?%g-qi}9Yw1E0+>o3dxG|#j^h~', //默认数据加密KEY
