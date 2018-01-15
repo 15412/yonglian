@@ -30,15 +30,39 @@
 .honor-img-1{
     position: absolute;
     left:20.67%;
-    width: 10.73%;
+    width: 28.49%;
     top: 3.91%;
+}
+.honor-img-2{
+    position: absolute;
+    left:55.67%;
+    width: 28.49%;
+    top: 15.91%;
+}
+.honor-img-3{
+    position: absolute;
+    left:20.67%;
+    width: 28.49%;
+    top: 63.13%;
+}
+.honor-img-4{
+    position: absolute;
+    left:55.67%;
+    width: 28.49%;
+    top: 45.13%;
+}
+.honor-img-5{
+    position: absolute;
+    left:20.67%;
+    width: 28.49%;
+    top: 33.41%;
 }
 .honor-title-1{
     position: absolute;
     left:32.49%;
-    top:3.91%;
+    top:2.91%;
     width: 16.3%;
-	height: 21px;
+	height: 24px;
 	font-family: SimHei;
 	font-size: 0.8rem;
 	font-weight: normal;
@@ -46,7 +70,9 @@
 	line-height: 2rem;
 	letter-spacing: 1px;
     color: #000000;
-    overflow:hidden;
+    overflow: hidden;   
+    white-space: nowrap;     
+    -o-text-overflow: ellipsis;     
     text-overflow: ellipsis;
 }
 .honor-desc-1{
@@ -62,6 +88,22 @@
 	line-height: 1rem;
 	letter-spacing: 0px;
     color: #919191;
-    overflow:hidden;
+    overflow: hidden;   
+    white-space: nowrap;     
+    -o-text-overflow: ellipsis;     
     text-overflow: ellipsis;
+}
+.honor-leaf-1{
+    position: absolute;
+    left:21.67%;
+    top:20%;
+    z-index: 999;
+    width: 16.77%;
+    height: 5.72%;
+	font-family: SimHei;
+    color: #313131;
+    text-align: center;
+}
+.honor-left-word{
+    display: block;
 }
