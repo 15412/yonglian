@@ -130,7 +130,7 @@ html, body {
     width: 3rem;
     height: 3rem;
     margin: -1.5rem 0 0 -1.5rem;;
-    background: url("../images/YL_PNG/开始页/start_18.png") center center no-repeat;
+    background: url("../images/YL_PNG/start/start_18.png") center center no-repeat;
     animation: down 1s infinite linear;
     -webkit-animation: down 1s infinite linear; /* Safari 和 Chrome */
 }
@@ -167,9 +167,9 @@ html, body {
 
 #logo {
     z-index: 10;
-    /*background: url("../images/YL_PNG/开始页/ylLogoShadow_03.png") center center no-repeat;*/
-    background: url("../images/YL_PNG/开始页/startPage_03.png") center center no-repeat;
-    /*background: url("../images/YL_PNG/开始页/startPage_last_03.png") center center no-repeat;*/
+    /*background: url("../images/YL_PNG/start/ylLogoShadow_03.png") center center no-repeat;*/
+    background: url("../images/YL_PNG/start/startPage_03.png") center center no-repeat;
+    /*background: url("../images/YL_PNG/start/startPage_last_03.png") center center no-repeat;*/
     background-size: 100% 100%;
     width: 32rem;
     height: 24rem;
@@ -184,7 +184,7 @@ html, body {
 #skip{
 
     z-index: 10;
-    background: url("../images/YL_PNG/开始页/start_15.png") center center no-repeat;
+    background: url("../images/YL_PNG/start/start_15.png") center center no-repeat;
     background-size: 100% 100%;
     width: 1.5rem;
     height: 1rem;
