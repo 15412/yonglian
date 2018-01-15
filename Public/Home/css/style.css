@@ -79,8 +79,8 @@
 }
 
 html {
-    /*font-size: calc(100vw/10);*/
-    font-size:16px;
+    /*font-size: calc(100vw/100);*/
+    /*font-size:16px;*/
 }
 
 .company {
@@ -132,4 +132,85 @@ html {
 	line-height: 1rem;
 	letter-spacing: 0rem;
 	color: #616161;
+}
+
+.logo_image {
+	width: 15rem;
+	height: 7.875rem;
+	padding-bottom:0.5rem;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+.cotton_image {
+	width: 8.75rem;
+	height: 7.125rem;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.tmall_image {
+	width: 9.5rem;
+	height: 2.3125rem;
+}
+
+.link_image{
+	width: 2.25rem;
+	height: 2.25rem;
+}
+
+.car{
+	height:3.125rem;
+	cursor:default;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
+.contact_image{
+	width: 2.688rem;
+	height: 2.5rem;
+}
+
+.contact_text {
+	width: 6.125rem;
+	height: 1.25rem;
+	font-family: SimHei;
+	font-size: 1.229rem;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 1.229rem;
+	letter-spacing: 0.125rem;
+	color: #2b261e;
+	margin-left:1rem;
+	margin-top:0.2rem;
+}
+
+.contact_content {
+	/*width: 26.625rem;*/
+	height: 9.313rem;
+	font-family: SimHei;
+	font-size: 1.302rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 3.125rem;
+	letter-spacing: 0rem;
+	color: #2b261e;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.contact_content #mini {
+	display:none;
+}
+
+.table.table-noborder th, .table.table-noborder td {
+    border-top: 0px;
+}
+
+.contact-address-map{
+	margin-top:1rem;
 }

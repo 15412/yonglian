@@ -1,6 +1,9 @@
 ﻿a {
     color: #000;
 }
+p {
+    margin: 0 auto;
+}
 
 a:hover {
     text-decoration: none;
@@ -17,7 +20,13 @@ ul, li {
 }
 
 .box {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.banner {
     width: 100%;
+    padding: 0;
 }
 
 #myTab {
@@ -39,28 +48,29 @@ ul, li {
     /*border:1px solid;*/
     /*border-radius:8rem;*/
 }
-#myTab .active{
+
+#myTab .active {
     color: #fff;
     /*border: none;*/
 }
 
 #introductionTab {
-    background: url("../images/YL_PNG/首页/tabRed.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabRed.png") center center no-repeat;
     background-size: 100%;
 }
 
 #cultureTab {
-    background: url("../images/YL_PNG/首页/tabBlue.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabBlue.png") center center no-repeat;
     background-size: 100%;
 }
 
 #produceTab {
-    background: url("../images/YL_PNG/首页/tabGreen.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabGreen.png") center center no-repeat;
     background-size: 100%;
 }
 
 #productTab {
-    background: url("../images/YL_PNG/首页/tabYellow.png") center center no-repeat;
+    background: url("../images/YL_PNG/index/tabYellow.png") center center no-repeat;
     background-size: 100%;
 }
 
@@ -68,39 +78,49 @@ ul, li {
     margin: 3rem 0;
 }
 
-#myTabContent{
-    margin: 5rem 10%;
+#myTabContent {
+    margin: 5rem 10% 0 10%;
 }
-.title{
+
+.title {
     font-family: ¹ã½Ý¾ÓÃÔÄã×Ö¿â;
-    height:2rem;
+    height: 2rem;
     line-height: 2rem;
     width: 27rem;
     border-bottom: solid;
     font-size: 1rem;
-    font-weight: bold ;
+    font-weight: bold;
 }
 
-.content{
+.content {
     position: relative;
     width: 100%;
     margin-top: 5rem;
 }
-.content .left{
-    z-index:2;
+
+.content .left {
+    z-index: 2;
     /*float: left;*/
     width: 100%;
 }
-.left p{
+
+.left p {
     font-family: JQXiYuanFT;
     font-size: 1rem;
     line-height: 2rem;
     margin-left: 2rem;
 }
-.left p::first-letter{
+
+.left p::first-letter {
     margin-right: 1rem;
 }
-.content .right{
+#culture .content{
+    /*background-color: red;*/
+    background: url("../images/YL_PNG/index/culture.png") right  bottom 50% no-repeat;
+    background-size: 50%;
+
+}
+.content .right {
     z-index: 1;
     position: absolute;
     bottom: 20%;
@@ -108,18 +128,18 @@ ul, li {
     width: 50%;
 }
 
-
-.line{
+.line {
     margin: 3rem 0;
     width: 100%;
     font-family: HYLiangPinXianJ;
     font-size: 1rem;
 }
 
-.line p{
+.line p {
     line-height: 2.5rem;
 }
-#profileImg{
+
+#profileImg {
     text-align: center;
     margin: 0 auto;
     padding: 0.8rem;
@@ -127,8 +147,7 @@ ul, li {
     border: 1px solid #D0CFCC;
     -webkit-box-shadow: 3px 3px 3px;
     -moz-box-shadow: 3px 3px 3px;
-    box-shadow: 0rem 0rem 1rem 0rem
-    rgba(6, 0, 1, 0.45);
+    box-shadow: 0rem 0rem 1rem 0rem rgba(6, 0, 1, 0.45);
     /*box-shadow:0 0 10px rgba(0, 204, 204, .5);*/
     /*box-shadow:0px 0px 5px 3px #D0CFCC;*/
     /*box-shadow:-10px 0 10px #D0CFCC, !*左边阴影*!*/
@@ -136,7 +155,74 @@ ul, li {
     /*0 -10px 10px #D0CFCC, !*顶部阴影*!*/
     /*0 10px 10px #D0CFCC; !*底边阴影*!*/
 }
-#profileImg img{
+
+#profileImg img {
     width: 100%;
 }
 
+#produce .content {
+    position: relative;
+    margin: 0 auto;
+    background: url("../images/YL_PNG/index/flow.png") left top 2% no-repeat;
+    background-size: 4.3%;
+    /*float: left;*/
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    margin: 3rem 0;
+}
+
+.imgGroup {
+    z-index: 1;
+    position: relative;
+    float: left;
+    width: 35%;
+    margin-left: 10%;
+    padding: 4px;
+    border: 1px solid #D0CFCC;
+    -webkit-box-shadow: 3px 3px 3px;
+    -moz-box-shadow: 3px 3px 3px;
+    box-shadow: 0rem 0rem 1rem 0rem rgba(6, 0, 1, 0.45);
+    cursor: pointer;
+}
+
+.secondRow .imgGroup {
+    width: 25%;
+    margin-left: 5%;
+}
+
+.imgList img {
+    display: none;
+}
+
+
+.mask {
+    position: absolute;
+    display:table-cell;vertical-align:middle;
+    color: #fff;
+    width: 96%;
+    height: 96%;
+    line-height: 100%;
+    background-color: #000;
+    top: 2%;
+    left: 2%;
+    z-index: 100;
+    opacity: 0.6;
+    /*兼容IE8及以下版本浏览器*/
+    filter: alpha(opacity=70);
+}
+
+.text{
+    width: 100%;
+    position: absolute;
+    font-family: SimHei;
+    font-size: 1.3rem;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    display: table-cell; vertical-align: middle;
+    transform:translate(-50%,-50%);
+    z-index: 999;
+}
