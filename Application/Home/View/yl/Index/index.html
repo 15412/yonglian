@@ -7,6 +7,12 @@
         </div>
     </header>-->
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
+
+        <link rel="stylesheet" href="__CSS__/photoswipe.css">
+        <link rel="stylesheet" href="__CSS__/default-skin.css">
+        <script src="__JS__/photoswipe.min.js"></script>
+        <script src="__JS__/photoswipe-ui-default.min.js"></script>
+        <script src="__JS__/indexStyle.js"></script>
         <!--<div class="container" style="height:25px;">
             <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
                 <img src="__IMG__/yl/car.jpg" width="140px" style="">
@@ -33,10 +39,10 @@
 <block name="body">
     <link href="__CSS__/index.css" rel="stylesheet" type="text/css">
     <div class="box banner">
-        <img src="__IMG__/YL_PNG/首页/banner_03.png" alt="">
+        <img src="__IMG__/YL_PNG/index/banner_03.png" alt="">
     </div>
     <div class="box">
-        <img src="__IMG__/YL_PNG/首页/topImg_03.png" alt="">
+        <img src="__IMG__/YL_PNG/index/topImg_03.png" alt="">
     </div>
     <div class="box tab-content">
         <ul id="myTab" class="nav nav-tabs">
@@ -60,16 +66,6 @@
                     产品中心
                 </li>
             </a>
-            <!--<li class="produce">-->
-            <!--<a href="#" id="myTabDrop1" class="produce-toggle"-->
-            <!--data-toggle="produce">Java-->
-            <!--<b class="caret"></b>-->
-            <!--</a>-->
-            <!--<ul class="produce-menu" role="menu" aria-labelledby="myTabDrop1">-->
-            <!--<li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a></li>-->
-            <!--<li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a></li>-->
-            <!--</ul>-->
-            <!--</li>-->
         </ul>
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade in active" id="introduction">
@@ -79,7 +75,7 @@
                 <div class="content">
                     <div class="line">
                         <div id="profileImg">
-                            <img src="__IMG__/YL_PNG/公司简介/about-mid.png" alt="">
+                            <img src="__IMG__/YL_PNG/intro/about-mid.png" alt="">
                         </div>
                     </div>
                     <div class="line">
@@ -110,9 +106,9 @@
                         <p>❤ “多想”“多听”“多问”“多做”</p>
                         <p>❤ 多一点虚心沟通，少一点不必要错 </p>
                     </div>
-                    <div class="right">
-                        <img src="__IMG__/YL_PNG/首页/culture.png" alt="">
-                    </div>
+                    <!--<div class="right">-->
+                        <!--<img src="__IMG__/YL_PNG/index/culture.png" alt="">-->
+                    <!--</div>-->
                 </div>
 
             </div>
@@ -122,41 +118,138 @@
                 </div>
                 <div class="content">
                     <div class="row firstRow">
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">板房</div></div>
-                            <img src="__IMG__/YL_PNG/首页/banfang.jpg" alt="">
-                            <div class="imgList">
-                                <img src="__IMG__/YL_PNG/首页/banfang.jpg" alt="">
-                            </div>
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">板房</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">板房</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">布仓区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/bucangqu.jpg" alt="">
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/bucangqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">布仓区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
+
                     </div>
                     <div class="row secondRow">
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">裁床区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/caichuangqu.jpg" alt="">
+
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/caichuangqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">裁床区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">车缝区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/chefengqu.jpg" alt="">
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/chefengqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">车缝区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">烫衣区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/tangyiqu.jpg" alt="">
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/tangyiqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">烫衣区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
+
                     </div>
                     <div class="row thirdRow">
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">成品区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/chengpingqu.jpg" alt="">
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/chengpingqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">成品区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
-                        <div class="imgGroup">
-                            <div class="mask"><div class="text">物流区</div></div>
-                            <img src="__IMG__/YL_PNG/首页/wuliuqu.jpg" alt="">
+
+                        <div class="my-gallery" >
+                            <figure>
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/wuliuqu.jpg" data-size="600x400"/>
+                                    <div class="mask">
+                                        <div class="text">物流区</div>
+                                    </div>
+                                </div>
+                                <!--<figcaption style="display:none">布仓区</figcaption>-->
+                            </figure>
+                            <figure style="display:none">
+                                <div class="imgGroup">
+                                    <img src="__IMG__/YL_PNG/index/banfang.jpg" data-size="600x400"/>
+                                </div>
+                            </figure>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -165,8 +258,7 @@
                     Product center / 产品中心
                 </div>
                 <div class="content">
-                    <img src="__IMG__/YL_PNG/首页/product.jpg" alt="">
-
+                    <img src="__IMG__/YL_PNG/index/product.jpg" alt="">
                 </div>
             </div>
             <!--<div class="tab-pane fade" id="jmeter">-->
@@ -177,6 +269,73 @@
             <!--</p>-->
             <!--</div>-->
         </div>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+
+            <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <!--<button class="pswp__button pswp__button&#45;&#45;share" title="Share"></button>-->
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader-active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
     <!--<img src="__IMG__/yl/index.jpg">-->
     <script>
@@ -190,6 +349,15 @@
             }, function () {
                 $(this).find('.mask').css('display', 'block');
             });
-        })
+//            $('.img').find('img:first').show();
+//            $('.imgGroup').click(function () {
+//                console.log($(this).find('img:first').attr('src'));
+//                $(this).find('.imgList').show();
+//                initPhotoSwipeFromDOM('.imgList');
+//            });
+//            $('.pswp__button pswp__button--close').click(function(){
+//
+//            });
+        });
     </script>
 </block>
