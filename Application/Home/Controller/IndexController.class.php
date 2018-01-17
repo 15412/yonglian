@@ -62,6 +62,32 @@ class IndexController extends HomeController
         $this->display();
     }
 
+
+    /**
+     *    公司简介
+     */
+    public function profile()
+    {
+        $imageMap = array(
+            array('position' => 'left1', 'sort' => 10),
+            array('position' => 'left2', 'sort' => 9),
+            array('position' => 'left3', 'sort' => 8),
+            array('position' => 'left4', 'sort' => 7),
+            array('position' => 'mid1', 'sort' => 1),
+            array('position' => 'mid2', 'sort' => 2),
+            array('position' => 'right1', 'sort' => 3),
+            array('position' => 'right2', 'sort' => 4),
+            array('position' => 'right3', 'sort' => 5),
+            array('position' => 'right4', 'sort' => 6)
+        );
+        $image = M('Image');
+        $result = $image->where(array('image_category_id' => 2, 'status' => 1))->select();
+        $this->assign('imageMap', $imageMap);
+        $this->assign('result', $result);
+        //dump($result);
+        $this->display();
+    }
+    
     /**
      *    公司荣誉
      */
