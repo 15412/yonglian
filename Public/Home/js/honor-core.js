@@ -3,11 +3,14 @@ window.onresize = function(){
 }
 
 
+
 var firstInitImg = function(){
     var divHeight = parseInt($(".honor-content").width()) * 0.6922 + 'px';
     $(".honor-content").css("height",divHeight);
 
-    
+    // var leafHeight = parseInt(divHeight) * 0.0572 + 'px';
+    // $(".honor-leaf-1").css("height",leafHeight);
+
     // var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + 'px';
     // $(".mid1").css("top",midTop);
 
@@ -250,4 +253,9 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 window.onload = function () {
     // initPhotoSwipeFromDOM('.my-gallery');
     firstInitImg();
+    // $('#leaf1').bigtext();
+    $('.myText').fancyTextFill({
+        minFontSize: 6,
+        maxFontSize: 80
+      });
 };

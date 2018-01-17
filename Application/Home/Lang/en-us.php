@@ -3,8 +3,10 @@ return array(
 	'COMPANY_NAME'=>'WingLuen',
 	'MENU_INDEX'=>'Home',
 	'MENU_ABOUT'=>'About',
+	'MENU_PROFILE'=>'Profile',
 	'MENU_HONOR'=>'Honor',
 	'MENU_HISTORY'=>'History',
+	'MENU_VIDEO'=>'Video',
 	'MENU_PARTNERS'=>'Partners',
 	'MENU_CONTACT'=>'Contact',
 	
