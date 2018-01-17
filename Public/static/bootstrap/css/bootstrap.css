@@ -2970,6 +2970,22 @@ table th[class*="span"],
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
 }
 
+.dropdown-menu.yl > li > a:hover,
+.dropdown-menu.yl > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #eeeeee;
+  background-image: -moz-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#eeeeee));
+  background-image: -webkit-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: -o-linear-gradient(top, #eeeeee, #eeeeee);
+  background-image: linear-gradient(to bottom, #eeeeee, #eeeeee);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffeeeeee', GradientType=0);
+}
+
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
@@ -4749,6 +4765,13 @@ input[type="submit"].btn.btn-mini {
   background-color: #e5e5e5;
 }
 
+.navbar .nav li.dropdown.yl.open > .dropdown-toggle,
+.navbar .nav li.dropdown.yl.active > .dropdown-toggle,
+.navbar .nav li.dropdown.yl.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #777777;
   border-bottom-color: #777777;
@@ -4869,6 +4892,13 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   color: #ffffff;
   background-color: #111111;
+}
+
+.navbar-inverse .nav li.dropdown.yl.open > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.yl.active > .dropdown-toggle,
+.navbar-inverse .nav li.dropdown.yl.open.active > .dropdown-toggle {
+  color: #ffffff;
+  background-color: #ffffff;
 }
 
 .navbar-inverse .nav li.dropdown > a:hover .caret,
