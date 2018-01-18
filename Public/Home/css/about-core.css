@@ -12,10 +12,22 @@
 	left:16.2%;
 	/* top:27.59%; */
 }
+.left1-mobile{
+	width: 10.42%;
+	/* height: 9.79%; */
+	left:2.5%;
+	/* top:27.59%; */
+}
 .right1{
 	width: 10.42%;
 	/* height: 9.79%; */
 	left:71.93%;
+	/* top:27.59%; */
+}
+.right1-mobile{
+	width: 10.42%;
+	/* height: 9.79%; */
+	left:85.93%;
 	/* top:27.59%; */
 }
 .left2{
@@ -30,6 +42,18 @@
 	left:68.59%;
 	/* top:36.79%; */
 }
+.left2-mobile{
+	width: 12.24%;
+	/* height: 11.55%; */
+	left:8.8%;
+	/* top:36.79%; */
+}
+.right2-mobile{
+	width: 12.24%;
+	/* height: 11.55%; */
+	left:78.59%;
+	/* top:36.79%; */
+}
 .left3{
 	width: 13.7%;
 	/* height: 12.88%; */
@@ -40,6 +64,18 @@
 	width: 13.7%;
 	/* height: 12.88%; */
 	left:61.77%;
+	/* top:47.39%; */
+}
+.left3-mobile{
+	width: 13.7%;
+	/* height: 12.88%; */
+	left:16.68%;
+	/* top:47.39%; */
+}
+.right3-mobile{
+	width: 13.7%;
+	/* height: 12.88%; */
+	left:67.77%;
 	/* top:47.39%; */
 }
 .left4{
@@ -139,6 +175,20 @@
 	left:26.77%;
 	/*font-family: JQXiYuanFT;*/
 	font-family: HYLiangPinXianJ;
+	font-size: 1rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 2rem;
+	letter-spacing: 0rem;
+	color: #565656;
+	overflow: hidden;
+}
+.aboutContent-mobile{
+	/* position: absolute; */
+	margin-left:2.5%;
+	width:95%;
+	height:15.31%;
+	font-family: JQXiYuanFT;
 	font-size: 1rem;
 	font-weight: normal;
 	font-stretch: normal;
