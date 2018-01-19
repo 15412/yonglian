@@ -11,13 +11,12 @@
     <link href="__CSS__/style.css" rel="stylesheet" type="text/css">
     <link href="__CSS__/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="__CSS__/animate.css">
-    <link rel="stylesheet" type="text/css" href="__CSS__/clouds.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/clouds_mobile.css">
     <script src="__JS__/jquery-1.9.1.min.js"></script>
 
     <!--swf-->
     <script type="text/javascript" src="__JS__/swfobject.js"></script>
     <script type="text/javascript" src="__JS__/swffit.js"></script>
-
 </head>
 
 <body onclick="javascript:window.location.href='{:U('Home/Index/index')}'">
@@ -38,16 +37,19 @@
     <!-- <img src="__IMG__/icon_11.png" class="icon11 animated fadeInUp" style="-webkit-animation-delay: 0.8s; -moz-animation-delay: 0.8s; animation-delay:0.8s;"> -->
 
     <div class="img animated fadeIn"
-         style="background-image:url(__IMG__/startup_clean.jpg);background-size:cover;background-position:center; width:100%;height:100%;">
+         style="background: url(__IMG__/start_mobile.png);background-size: cover; width:100%;height:100%;">
         <!--<div class="fromFarToClose">-->
-            <!--<img style="width: 100%;height: 100%" src="__IMG__/yl/cloud10.png" alt="">-->
+        <!--<img style="width: 100%;height: 100%" src="__IMG__/yl/cloud10.png" alt="">-->
         <!--</div>-->
         <div class="sky">
             <!--<img src="__IMG__/yl/cloud_four2.png" style="width: 100%;top:8rem">-->
             <div class="clouds_one"></div>
             <div class="clouds_two"></div>
-            <div class="clouds_three"></div>
-            <!--<div class="clouds_one2"></div>-->
+            <div id="logo"></div>
+            <!--<div id="text1" class="text">永联织造厂</div>-->
+            <!--<div id="text2" class="text">Wing Luen Knitting Factory</div>-->
+            <!--<div id="skip"></div>-->
+            <div id="arrow_down"></div>
             <!--<div class="clouds_two2"></div>-->
             <!--<div class="clouds_three2"></div>-->
         </div>
@@ -60,19 +62,14 @@
     $(function () {
         var obj = document.getElementById("f_litimg");
         obj.onmousewheel = scrollMove;
+        obj.onclick = scrollMove;
 
         // 鼠标滚轮滚动
-        function scrollMove(evt) {
-            evt = evt || event;
-            if (evt.wheelDelta < 0) {
-                $(".hAdBox").addClass("animated fadeOutUp").siblings().removeClass('animated fadeIn');
-                setTimeId = setTimeout(function () {
-                    location.href = "{:U('Home/Index/index')}";
-                }, 500);
-
-            } else {
-                //$(".hAdBox").addClass("animated fadeInUp").siblings().removeClass('animated fadeOutUp');
-            }
+        function scrollMove() {
+            $(".hAdBox").addClass("animated fadeOutUp").siblings().removeClass('animated fadeIn');
+            setTimeId = setTimeout(function () {
+                location.href = "{:U('Home/Index/index')}";
+            }, 500);
         }
     })
 
