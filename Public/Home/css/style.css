@@ -108,14 +108,14 @@ html {
 }
 
 .menu {
-	width: 2.75rem;
-	height: 1.00rem;
+	/*width: 2.75rem;
+	height: 1.00rem;*/
 	font-family: HYLiangPinXianJ;
-	font-size: 1.378rem;
+	font-size: 1.1024rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1.378rem;
-	letter-spacing: 0.138rem;
+	line-height: 1.1024rem;
+	letter-spacing: 0.1104rem;
 	color: #747474;
 }
 .language-menu {
@@ -123,36 +123,41 @@ html {
 	margin-right: 40px;
 }
 .language {
-	width: 7.75rem;
-	height: 1.188rem;
+	/*width: 7.75rem;
+	height: 1.188rem;*/
 	font-family: SimHei;
-	font-size: 1.12rem;
+	font-size: 0.896rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 1rem;
+	line-height: 0.896rem;
 	letter-spacing: 0rem;
 	color: #616161;
 }
 
 .logo_image {
-	width: 15rem;
-	height: 7.875rem;
+	width: 10.8rem;
+	height: 5.67rem;
 	padding-bottom:0.5rem;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
 }
+
+.cotton_image_div{
+	display:inline;
+}
+
 .cotton_image {
-	width: 8.75rem;
-	height: 7.125rem;
+	width: 7rem;
+	height: 5.7rem;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
 }
 
 .tmall_image {
-	width: 9.5rem;
-	height: 2.3125rem;
+	width: 7.6rem;
+	height: 1.85rem;
 }
 
 .link_image{
@@ -160,12 +165,16 @@ html {
 	height: 2.25rem;
 }
 
-.car{
-	height:3.125rem;
+.car_div{
+	height:2.5rem;
 	cursor:default;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
+}
+
+.car_image{
+	width:13.746rem;
 }
 
 .contact_image{
