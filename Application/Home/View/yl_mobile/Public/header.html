@@ -3,7 +3,16 @@
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <a class="brand" href="{:U('index/index')}">{:L('COMPANY_NAME')}</a>
+        	<div class="nav-collapse collapse pull-left">
+	        	<!--<a class="brand" href="{:U('index/index')}">-->
+		        	<!--<img src="__IMG__/yl/logo_min.png">
+		        	<span class="since">since 1972</span>-->
+		        	<img src="__IMG__/yl/logo_text.png" class="logo_image">
+	            	<div class="cotton_image_div"><img src="__IMG__/yl/cotton_merge_text.png" class="cotton_image">	</div>
+		        	<!--<div class="company">{:L('CONTACT_NAME_VALUE')}</div>-->
+	        	<!--</a>-->
+        	</div>
+            <!--<a class="brand" href="{:U('index/index')}">{:L('CONTACT_NAME')}</a>-->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -13,14 +22,45 @@
                 <ul class="nav">
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
-                        <li>
-                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>">{:L($nav['title'])}</a>
+                    	<if condition="'MENU_ABOUT' == $nav['title']">
+                    	<li class="dropdown yl">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" ><span class="menu">{:L($nav['title'])}</span><!--<b class="caret"></b>--></a>
+                            <ul class="dropdown-menu yl">
+                                <li><a href="{:get_nav_url('Index/profile')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_PROFILE')}</span></a></li>
+                                <li><a href="{:get_nav_url('Index/honor')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_HONOR')}</span></a></li>
+                                <li><a href="{:get_nav_url('Index/history')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_HISTORY')}</span></a></li>
+                            </ul>
                         </li>
+                    	<else/>
+                        <li>
+                            <a href="{$nav.url|get_nav_url}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L($nav['title'])}</span></a>
+                        </li>
+                        </if>
                         </eq>
                     </think:nav>
+                    <li>
+                        <a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank" style="padding:0px 10px 0px;"><img src="__IMG__/yl/tmall.png" class="tmall_image"></a>
+                    </li>
                 </ul>
             </div>
             <div class="nav-collapse collapse pull-right">
+            	<!--<div class="language-menu">
+	            	<a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></span>
+	            	<a href="{:U('',array('l'=>'zh-tw'))}"><span class="language">繁体</span></a>
+	            	<a href="{:U('',array('l'=>'en-us'))}"><span class="language">English</span></a>
+            	</div>-->
+            	
+                <ul class="nav language-menu">
+                    <li>
+                        <a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></a>
+                    </li>
+                    <li>
+                        <a href="{:U('',array('l'=>'zh-hk'))}"><span class="language">繁体</a></a>
+                    </li>
+                    <li>
+                        <a href="{:U('',array('l'=>'en-us'))}"><span class="language">English</a></a>
+                    </li>
+                </ul>
                 <!--<if condition="is_login()">
                     <ul class="nav" style="margin-right:0">
                         <li class="dropdown">
@@ -42,6 +82,12 @@
                     </ul>
                 </if>-->
             </div>
+        </div>
+    	<div class="car_div">
+            <!--<marquee behavior="scroll" contenteditable="false" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >-->
+            <marquee behavior="scroll" contenteditable="false" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" vspace="0px" >
+                <img src="__IMG__/yl/car.jpg" class="car_image">
+            </marquee>
         </div>
     </div>
 </div>
