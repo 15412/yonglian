@@ -55,10 +55,15 @@ class IndexController extends HomeController
             array('position' => 'right4', 'sort' => 6)
         );
         $image = M('Image');
-        $result = $image->where(array('image_category_id' => 2, 'status' => 1))->select();
+        $result = $image->field('i.*')->alias('i')->join('left join __GENERAL_CATEGORY__ as c on i.image_category_id=c.id')->where(array('c.tag' => 'about_profile', 'i.status' => 1))->select();
+        if (!empty($result)) {
+            $langMap = C('LANG_MAP');
+            foreach ($result as $key => $value) {
+                $result[$key]['picture_id'] = $value[$langMap[LANG_SET].'_picture_id'];
+            }
+        }
         $this->assign('imageMap', $imageMap);
         $this->assign('result', $result);
-        //dump($result);
         $this->display();
     }
 
@@ -81,10 +86,15 @@ class IndexController extends HomeController
             array('position' => 'right4', 'sort' => 6)
         );
         $image = M('Image');
-        $result = $image->where(array('image_category_id' => 2, 'status' => 1))->select();
+        $result = $image->field('i.*')->alias('i')->join('left join __GENERAL_CATEGORY__ as c on i.image_category_id=c.id')->where(array('c.tag' => 'about_profile', 'i.status' => 1))->select();
+        if (!empty($result)) {
+            $langMap = C('LANG_MAP');
+            foreach ($result as $key => $value) {
+                $result[$key]['picture_id'] = $value[$langMap[LANG_SET].'_picture_id'];
+            }
+        }
         $this->assign('imageMap', $imageMap);
         $this->assign('result', $result);
-        //dump($result);
         $this->display();
     }
     

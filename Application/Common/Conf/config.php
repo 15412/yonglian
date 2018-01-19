@@ -47,4 +47,12 @@ return array(
 
     /* 文档模型配置 (文档模型核心配置，请勿更改) */
     'DOCUMENT_MODEL_TYPE' => array(2 => '主题', 1 => '目录', 3 => '段落'),
+
+    /* 语言包映射 */
+    'LANG_MAP' => array(
+        'zh-cn'=>'chs',
+        'zh-hk'=>'cht',
+        'zh-tw'=>'cht',
+        'en-us'=>'eng'
+    ),
 );
