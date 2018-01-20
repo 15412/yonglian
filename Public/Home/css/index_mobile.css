@@ -43,11 +43,12 @@ ul, li {
 }
 
 #myTab li {
+    font-size: 1rem;
     font-family: HYLiangPinXianJ;
     float: left;
     width: 20%;
-    height: 8rem;
-    line-height: 8rem;
+    height: 12rem;
+    line-height: 12rem;
     margin-left: 4%;
     padding: 0;
     text-align: center;
@@ -113,7 +114,7 @@ ul, li {
 .left p {
     font-family: JQXiYuanFT;
     font-size: 1rem;
-    line-height: 2rem;
+    line-height: 3rem;
     margin-left: 2rem;
 }
 
@@ -121,9 +122,8 @@ ul, li {
     margin-right: 1rem;
 }
 #culture .content{
-    /*background-color: red;*/
-    /*background: url("../images/YL_PNG/index/culture.png") right  bottom 50% no-repeat;*/
-    /*background-size: 50%;*/
+    background: url("../images/YL_PNG/index/culture_mobile.gif")  no-repeat;
+    background-size: 100%;
 
 }
 .content .right {
@@ -185,15 +185,18 @@ ul, li {
     z-index: 1;
     position: relative;
     float: left;
-    width: 40%;
-    margin-left: 5%;
-    margin-top: 1rem;
+    width: 90%;
+    margin: 10% 1rem;
     padding: 4px;
     border: 1px solid #D0CFCC;
     -webkit-box-shadow: 3px 3px 3px;
     -moz-box-shadow: 3px 3px 3px;
     box-shadow: 0rem 0rem 1rem 0rem rgba(6, 0, 1, 0.45);
     cursor: pointer;
+}
+.my-gallery{
+    margin: 0 auto;
+    text-align: center;
 }
 figure{
     -webkit-margin-before: 0em;
@@ -216,12 +219,12 @@ figure{
     position: absolute;
     display:table-cell;vertical-align:middle;
     color: #fff;
-    width: 96%;
-    height: 96%;
+    width: 98%;
+    height: 98%;
     line-height: 100%;
     background-color: #000;
-    top: 2%;
-    left: 2%;
+    top: 1%;
+    left: 1%;
     z-index: 100;
     opacity: 0.6;
     /*兼容IE8及以下版本浏览器*/
@@ -244,9 +247,9 @@ figure{
 .device {
     margin-top: 3rem;
     width: 100%;
-    height: 300px;
+    height: 325px;
     padding: 0;
-    margin-left:5%;
+    /*margin-left:5%;*/
     /*border-radius: 20px;*/
     /*background: #111;*/
     /*border: 3px solid white;*/
@@ -275,7 +278,7 @@ figure{
 }
 .swiper-container {
     height: 300px;
-    width: 640px;
+    width: 300px;
 }
 .content-slide {
     padding: 20px;
