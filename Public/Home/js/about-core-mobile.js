@@ -13,9 +13,9 @@ var firstInitImg = function(){
     // var midTop = parseInt($(".aboutDiv").height()) * 0.1416 + parseInt($(".navbar").height()) + 'px';
     //var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + parseInt($(".aboutDiv").offset().top) + 'px';
     var midTop = parseInt($(".aboutDiv").height()) * 0.1416  + 'px';
-    $(".mid1").css("top",midTop);
+    $(".mid1-mobile").css("top",midTop);
 
-    var img1Top = (parseInt($(".mid1").css("top")) + parseInt($(".mid1").children("img").css("height")) * 0.5) + 'px';
+    var img1Top = (parseInt($(".mid1-mobile").css("top")) + parseInt($(".mid1-mobile").children("img").css("height")) * 0.5) + 'px';
     $(".left1-mobile").css("top",img1Top);
     $(".right1-mobile").css("top",img1Top);
     var img2Top = (parseInt($(".left1-mobile").css("top")) + parseInt($(".left1-mobile").children("img").css("height")) * 0.98) + 'px';
@@ -31,7 +31,11 @@ var firstInitImg = function(){
     $(".mid2").css("top",img4Top);
     var contentTop = (parseInt($(".mid2").css("top")) + parseInt($(".mid2").children("img").css("height")) * 1.33) + 'px';;
     $(".aboutContent-mobile").css("top",contentTop);
-    
+    var img4Top = (parseInt($(".left3-mobile").css("top")) + parseInt($(".left3-mobile").children("img").css("height")) * 0.98) + 'px';
+    $(".left4-mobile").css("top",img4Top);
+    $(".right4-mobile").css("top",img4Top);
+    var img4Top = (parseInt($(".left3-mobile").css("top")) + parseInt($(".left3-mobile").children("img").css("height")) * 0.8) + 'px';
+    $(".mid2-mobile").css("top",img4Top);
     // var allHeight = (parseInt($(".about-bg-08").css("top")) + parseInt($(".about-bg-08").children("img").css("height"))) + 'px';
     // $(".about-empty").css("height",allHeight);
 
