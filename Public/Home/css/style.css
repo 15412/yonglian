@@ -138,18 +138,23 @@ html {
 	width: 10.8rem;
 	height: 5.67rem;
 	padding-bottom:0.5rem;
+	padding-left:1rem;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
 }
 
 .cotton_image_div{
+	height: 100%;
 	display:inline;
+	padding-left:1rem;
+	padding-right:1rem;
 }
 
 .cotton_image {
 	width: 7rem;
 	height: 5.7rem;
+	display:inline;
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
@@ -180,6 +185,14 @@ html {
 .contact_image{
 	width: 2.688rem;
 	height: 2.5rem;
+}
+
+.nav.language-menu.yl{
+	display:none;
+}
+
+.dropdown-backdrop{
+	display:none;
 }
 
 .contact_text {

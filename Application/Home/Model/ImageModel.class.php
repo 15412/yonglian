@@ -26,7 +26,8 @@ class ImageModel extends Model{
         if (!empty($result)) {
             $langMap = C('LANG_MAP');
             foreach ($result as $key => $value) {
-                $result[$key]['picture_id'] = $value[$langMap[LANG_SET].'_picture_id'];
+            	$pictureId = $value[$langMap[LANG_SET].'_picture_id'];
+                $result[$key]['picture_id'] = $pictureId?:$value[reset($langMap).'_picture_id'];
             }
         }
         return $result;
