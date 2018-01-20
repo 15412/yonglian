@@ -84,14 +84,32 @@
 	left:26.15%;
 	/* top:59.09%; */
 }
-
+.left4-mobile{
+	width:14.69%;
+	/* height:13.83%; */
+	left:26.15%;
+	/* top:59.09%; */
+}
 .right4{
 	width:14.64%;
 	/* height:13.76%; */
 	left:57.55%;
 	/* top:59.09%; */
 }
+.right4-mobile{
+	width:14.64%;
+	/* height:13.76%; */
+	left:57.55%;
+	/* top:59.09%; */
+}
 .mid2{
+	width:18.96%;
+	/* height:17.8%; */
+	left:40.36%;
+	/* top: 57.10%; */
+	z-index: 2;
+}
+.mid2-mobile{
 	width:18.96%;
 	/* height:17.8%; */
 	left:40.36%;
@@ -105,7 +123,13 @@
     /* top:23rem; */
 	top:17.17%;
 }
-
+.mid1-mobile{
+	width: 31.7%;
+	/* height: 29.8%; */
+    left:34.27%;
+    /* top:23rem; */
+	top:17.17%;
+}
 .about-bg-01{
 	width: 8.43%;
 	/* height: 13.69%; */
