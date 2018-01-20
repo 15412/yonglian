@@ -1,11 +1,23 @@
 <extend name="Base/common"/>
 
 <block name="header">
+    <!--<header class="jumbotron subhead" id="overview" >
+        <div class="container">
+            <h2>源自相同起点，演绎不同精彩！</h2>
+            <p class="lead"></p>
+        </div>
+    </header>-->
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
-            <link rel="stylesheet" href="__CSS__/honor-core.css">
-            <script src="__JS__/jquery.textfill.min.js"></script>
-            <!-- <script src="https://unpkg.com/fancy-textfill/dist/fancy-text-fill.jQuery.js"></script> -->
-            <script src="__JS__/honor-core.js"></script>
+        <!--<div class="container" style="height:25px;">
+            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
+                <img src="__IMG__/yl/car.jpg" width="140px" style="">
+            </marquee>
+        </div>-->
+        <!--<div class="" style="height:25px;">
+            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
+                <img src="__IMG__/yl/car.jpg" width="140px" style="">
+            </marquee>
+        </div>-->
     </header>
 </block>
 
@@ -20,42 +32,27 @@
 </block>
 
 <block name="body">
-<body>
-<div class="honor-title">
-    <div class="honor-title-word">
-        <span>1972-2018</span>
-    </div>
-</div>
-<div class="honor-content">
-        <div class="honor-tree">
-                <img src="__IMG__/YL_PNG/history/tree.png" />
-        </div>
-        <div class="honor-img-1">
-                <img src="__IMG__/YL_PNG/history/honor_img_1.png" />
-        </div>
-        <div id="leaf1" class="honor-leaf-1">
-            <span class="honor-left-word">2017</span>
-        </div>
-        <div class="honor-img-2">
-                <img src="__IMG__/YL_PNG/公司历史/honor_img_2.png" />
-        </div>
-        <div class="honor-img-3">
-                <img src="__IMG__/YL_PNG/公司历史/honor_img_1.png" />
-        </div>
-        <div class="honor-img-4">
-                <img src="__IMG__/YL_PNG/公司历史/honor_img_2.png" />
-        </div>
-        <div class="honor-img-5">
-                <img src="__IMG__/YL_PNG/公司历史/honor_img_1.png" />
-        </div>
-        <!-- <div class="honor-title-1">
-            <span>永联第38间服装加工厂正式开张</span>
-        </div>
-        <div class="honor-desc-1">
-            <p>2017年11月03日永联第38间服装加工厂正式开
-                    业，公司名为（永郭服装加工厂）在此送上热
-                    烈的祝贺，公司位于茂名化州市</p>
-        </div> -->
-    </div>
-</body>
+        <img src="__IMG__/yl/honor.jpg">
+                <!-- Contents
+        ================================================== -->
+        <!--<section id="contents">
+            <article:list name="article" category="1" child="true">
+                <div class="">
+                    <h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
+                </div>
+                <div>
+                    <p class="lead">{$article.description}</p>
+                </div>
+                <div>
+                    <span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>
+                    <span class="pull-right">
+                        <span class="author">{$article.uid|get_username}</span>
+                        <span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span>
+                        <a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} )
+                    </span>
+                </div>
+                <hr/>
+            </article:list>
+        </section>-->
+    <!--</div>-->
 </block>

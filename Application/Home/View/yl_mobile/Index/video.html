@@ -1,0 +1,41 @@
+<extend name="Base/common" />
+
+<block name="header">
+    <!--<header class="jumbotron subhead" id="overview" >
+        <div class="container">
+            <h2>源自相同起点，演绎不同精彩！</h2>
+            <p class="lead"></p>
+        </div>
+    </header>-->
+    <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
+        <script>
+            var InitVideo = function () {
+                document.getElementById("movie").style.height = $("#movie").width() * 0.6 + "px"
+                document.getElementById("movieDiv").style.height = $("#movieDiv").width() * 0.6 + "px"
+            }
+            window.onload = function () {
+                InitVideo();
+            }
+            window.onresize = function () {
+                InitVideo();
+            }
+        </script>
+    </header>
+</block>
+
+<block name="side">
+    <!-- 左侧 nav
+================================================== -->
+    <!--<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+            {:W('Category/lists', array(1, true))}
+        </ul>
+    </div>-->
+</block>
+
+<block name="body">
+    <div id="movieDiv" style="margin:0 auto; width:80%; padding-top:28%; padding-left:20%;">
+        <iframe id="movie" width="80%" src='http://player.youku.com/embed/XMzMyOTIxOTA4MA==' frameborder=0
+            'allowfullscreen'></iframe>
+    </div>
+</block>

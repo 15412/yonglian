@@ -1,0 +1,167 @@
+<extend name="Base/common" />
+<block name="header">
+    <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
+            <link rel="stylesheet" href="__CSS__/photoswipe.css">
+            <link rel="stylesheet" href="__CSS__/default-skin.css">
+            <link rel="stylesheet" href="__CSS__/about-core.css">
+            <script src="__JS__/jquery-1.9.1.min.js"></script>
+            <script src="__JS__/photoswipe.min.js"></script>
+            <script src="__JS__/photoswipe-ui-default.min.js"></script>
+            <script src="__JS__/about-core-mobile.js"></script>
+        </header>
+</block>
+
+<block name="side">
+    <!-- 左侧 nav
+================================================== -->
+    <!--<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+            {:W('Category/lists', array(1, true))}
+        </ul>
+    </div>-->
+</block>
+<!-- <div style="height:202px"></div> -->
+<block name="body">
+    <!-- <img src="__IMG__/yl/about.jpg"> -->
+
+    <body>
+        <!-- <div style="clear:both"></div> -->
+        
+        <div class="aboutDiv aboutBody">
+            <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg left1-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-left1.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_LEFT1_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg left2-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-left2.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_LEFT2_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg left3-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-left3.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_LEFT3_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg left4">
+                        <img src="__IMG__/YL_PNG/intro/about-left4.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_LEFT4_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg mid1">
+                        <img src="__IMG__/YL_PNG/intro/about-mid.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_MID1_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg mid2">
+                        <img src="__IMG__/YL_PNG/intro/about-mid2.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_MID2_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg right1-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-right1.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_RIGHT1_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg right2-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-right2.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_RIGHT2_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg right3-mobile">
+                        <img src="__IMG__/YL_PNG/intro/about-right3.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_RIGHT3_IMG_DESC')}</figcaption>
+                </figure>
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <div class="aboutImg right4">
+                        <img src="__IMG__/YL_PNG/intro/about-right4.png" itemprop="contentUrl" data-size="900x600" />
+                    </div>
+                    <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_RIGHT4_IMG_DESC')}</figcaption>
+                </figure>
+            </div>
+
+        </div>
+        <div class="aboutContent-mobile">
+            <p>{:L('ABOUT_CONTEXT')}
+            </p>
+        </div>
+
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+             It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader-active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+</block>

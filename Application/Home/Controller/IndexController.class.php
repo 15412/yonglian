@@ -118,4 +118,9 @@ class IndexController extends HomeController
         $this->display();
     }
 
+    public function video()
+    {
+        $this->display();
+    }
+
 }
