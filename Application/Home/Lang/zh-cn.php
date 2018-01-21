@@ -36,4 +36,6 @@ return array(
 	'ABOUT_RIGHT2_IMG_DESC' => '右二',	
 	'ABOUT_RIGHT3_IMG_DESC' => '右三',	
 	'ABOUT_RIGHT4_IMG_DESC' => '右四',	
+
+	'VIDEO_TITLE' => '公司视频',
 );
