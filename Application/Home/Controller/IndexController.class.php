@@ -29,11 +29,21 @@ class IndexController extends HomeController
      */
     public function index()
     {
-        //$category = D('Category')->getTree();
-        //$lists    = D('Document')->lists(null);
-        //$this->assign('category',$category);//栏目
-        //$this->assign('lists',$lists);//列表
-        //$this->assign('page',D('Document')->page);//分页
+        $image = D('Image');
+        $result['banner'] = $image->getByTag('index_banner');
+        $result['content'] = $image->getByTag('index_content');
+        $result['profile'] = $image->getByTag('index_profile');
+        $result['culture'] = $image->getByTag('index_culture');
+        //$result['strength'] = $image->getByTag('index_strength');
+        $result['strength_sample_room'] = $image->getByTag('index_strength_sample_room');
+        $result['strength_cloth_warehouse_area'] = $image->getByTag('index_strength_cloth_warehouse_area');
+        $result['strength_cutting_table_area'] = $image->getByTag('index_strength_cutting_table_area');
+        $result['strength_sewing_area'] = $image->getByTag('index_strength_sewing_area');
+        $result['strength_ironing_area'] = $image->getByTag('index_strength_ironing_area');
+        $result['strength_finished_product_area'] = $image->getByTag('index_strength_finished_product_area');
+        $result['strength_logistic_area'] = $image->getByTag('index_strength_logistic_area');
+        $result['product'] = $image->getByTag('index_product');
+        $this->assign('result', $result);
         $this->display();
     }
 
@@ -91,6 +101,9 @@ class IndexController extends HomeController
      */
     public function honor()
     {
+        $image = D('Image');
+        $result = $image->getByTag('about_honor');
+        $this->assign('result', $result);
         $this->display();
     }
 
@@ -99,6 +112,9 @@ class IndexController extends HomeController
      */
     public function history()
     {
+        $image = D('Image');
+        $result = $image->getByTag('about_history');
+        $this->assign('result', $result);
         $this->display();
     }
 
@@ -107,6 +123,10 @@ class IndexController extends HomeController
      */
     public function partners()
     {
+        $image = D('Image');
+        $result['banner'] = $image->getByTag('partners_banner');
+        $result['content'] = $image->getByTag('partners_content');
+        $this->assign('result', $result);
         $this->display();
     }
 
@@ -115,6 +135,9 @@ class IndexController extends HomeController
      */
     public function contact()
     {
+        $image = D('Image');
+        $result['banner'] = $image->getByTag('partners_banner');
+        $this->assign('result', $result);
         $this->display();
     }
 

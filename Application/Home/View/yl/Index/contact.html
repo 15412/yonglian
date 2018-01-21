@@ -36,32 +36,11 @@
 </block>
 
 <block name="body">
-    <img src="__IMG__/yl/contact_banner.jpg">
-    <!--<div class="span9">-->
-        <!-- Contents
-        ================================================== -->
-        <!--<section id="contents">
-            <article:list name="article" category="1" child="true">
-                <div class="">
-                    <h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
-                </div>
-                <div>
-                    <p class="lead">{$article.description}</p>
-                </div>
-                <div>
-                    <span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>
-                    <span class="pull-right">
-                        <span class="author">{$article.uid|get_username}</span>
-                        <span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span>
-                        <a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} )
-                    </span>
-                </div>
-                <hr/>
-            </article:list>
-        </section>-->
-    <!--</div>-->
+    <volist name="result.banner" id="vo">
+    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+    </volist>
 	<div class="container">
-		<div id="contact" style="margin:5rem 0;">
+		<div id="contact">
 			<div id="title">
 				<img src="__IMG__/yl/contactus_icon.png" class="contact_image"><span class="contact_text">{:L('CONTACT_US')}</span>
 			</div>
@@ -104,6 +83,40 @@
                     	</tr>
                     	<tr>
                     		<td>{:L('CONTACT_ZIP_CODE')}:523391</td>
+                    		<td>{:L('CONTACT_WEBSITE')}:www.wingluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_SHOP')}:https://minicaryibengbeng.tmall.com
+								<br/>&#160;&#160;&#160;&#160;&#160;http://www.rookie.cn
+							</td>
+                    	</tr>
+                    </tbody>
+	            </table>
+	            
+	            <table class="table table-noborder" id="min" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td>{:L('CONTACT_NAME')}:{:L('CONTACT_NAME_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:0769-88655088</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_PERSON')}:{:L('CONTACT_PERSON_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_ADDRESS_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:0769-88655089</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:Reception.Reception@winluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ZIP_CODE')}:523391</td>
+                    	</tr>
+                    	<tr>
                     		<td>{:L('CONTACT_WEBSITE')}:www.wingluen.com.hk</td>
                     	</tr>
                     	<tr>
@@ -171,7 +184,11 @@
 				</span>-->
 			</div>
 		</div>
-		<div id="allmap1" class="contact-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
+		<!--<div id="allmap1" class="contact-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
+东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
+			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
+		</div>-->
+		<div id="allmap1" class="contact-address-map" data-lat="23.058589" data-lng="113.904089" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
 东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
 			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
 		</div>

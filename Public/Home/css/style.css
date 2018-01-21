@@ -209,6 +209,10 @@ html {
 	margin-top:0.2rem;
 }
 
+#contact{
+	margin:5rem 0;
+}
+  
 .contact_content {
 	/*width: 26.625rem;*/
 	height: 9.313rem;
@@ -228,6 +232,11 @@ html {
 .contact_content #mini {
 	display:none;
 }
+
+.contact_content #min {
+	display:none;
+}
+
 
 .table.table-noborder th, .table.table-noborder td {
     border-top: 0px;
