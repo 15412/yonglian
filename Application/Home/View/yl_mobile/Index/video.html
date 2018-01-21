@@ -11,7 +11,7 @@
         <script>
             var InitVideo = function () {
                 document.getElementById("movie").style.height = $("#movie").width() * 0.6 + "px"
-                document.getElementById("movieDiv").style.height = $("#movieDiv").width() * 0.6 + "px"
+                // document.getElementById("movieDiv").style.height = $("#movieDiv").width() * 0.6 + "px"
             }
             window.onload = function () {
                 InitVideo();
@@ -34,7 +34,7 @@
 </block>
 
 <block name="body">
-    <div id="movieDiv" style="margin:0 auto; width:80%; padding-top:28%; padding-left:20%;">
+    <div id="movieDiv" style="margin:0 auto; width:115%; padding-top:20%; padding-left:5%;">
         <iframe id="movie" width="80%" src='http://player.youku.com/embed/XMzMyOTIxOTA4MA==' frameborder=0
             'allowfullscreen'></iframe>
     </div>
