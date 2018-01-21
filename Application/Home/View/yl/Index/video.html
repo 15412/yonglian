@@ -8,17 +8,9 @@
         </div>
     </header>-->
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
-        <script>
-            var InitVideo = function () {
-                document.getElementById("movie").style.height = $("#movie").width() * 0.6 + "px"
-            }
-            window.onload = function () {
-                InitVideo();
-            }
-            window.onresize = function () {
-                InitVideo();
-            }
-        </script>
+        <link rel="stylesheet" href="__CSS__/blueimp-gallery.min.css">
+        <link rel="stylesheet" href="__CSS__/blueimp-gallery-indicator.css">
+        <link rel="stylesheet" href="__CSS__/blueimp-gallery-video.css">
     </header>
 </block>
 
@@ -33,8 +25,43 @@
 </block>
 
 <block name="body">
-    <div style="padding-left:20%; padding-top:5%; padding-bottom:5%;">
-        <iframe id="movie" width="80%" src='http://player.youku.com/embed/XMzMyOTIxOTA4MA==' frameborder=0
-            'allowfullscreen'></iframe>
+    <div style="padding-left:15%; padding-right:15%;padding-bottom:2%; padding-top:1%;">
+        <!-- <h2>公司视频</h2> -->
+        <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
+        <div id="blueimp-video-carousel" class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-carousel">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="play-pause"></a>
+        </div>
     </div>
+    <script src="__JS__/blueimp-gallery.min.js"></script>
+    <script>
+        // Initialize the Gallery as video carousel:
+        $(function () {
+            'use strict'
+            blueimp.Gallery([{
+                    title: "{:L('VIDEO_TITLE')}",
+                    href: '__IMG__/' +
+                        'yonglian.mp4',
+                    type: 'video/mp4',
+                    poster: '__IMG__/startup.jpg'
+                },
+                {
+                    title: "{:L('VIDEO_TITLE')}",
+                    href: '__IMG__/' +
+                        'yonglian.mp4',
+                    type: 'video/mp4',
+                    poster: '__IMG__/YL_PNG/index/wuliuqu.jpg'
+                }
+            ], {
+                container: '#blueimp-video-carousel',
+                carousel: true
+            })
+        })
+        // window.onload = function () {
+        //     $(".video-content>a")[0].click();
+        // };
+    </script>
 </block>

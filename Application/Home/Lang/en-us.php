@@ -36,4 +36,6 @@ return array(
 	'ABOUT_RIGHT2_IMG_DESC' => 'RIGHT TWO',	
 	'ABOUT_RIGHT3_IMG_DESC' => 'RIGHT THREE',	
 	'ABOUT_RIGHT4_IMG_DESC' => 'RIGHT FOUR',	
+
+	'VIDEO_TITLE' => 'The Video Of Company',
 );
