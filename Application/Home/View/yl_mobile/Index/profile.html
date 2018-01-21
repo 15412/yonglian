@@ -92,11 +92,7 @@
                 <volist name='imageMap' id="vo" key="k">
                 	<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
 	                    <div class="aboutImg {$vo['position']}-mobile">
-                            <if condition="is_array($picture = get_cover($result[$vo['sort']-1]['picture_id']))">
-                                <img src="{$picture['path']}" itemprop="contentUrl" data-size="900x600" />
-                            <else/>
-                                <img src="" itemprop="contentUrl" data-size="900x600" />
-                            </if>
+                            <img src="{:get_cover($result[$vo['sort']-1]['picture_id'],'path')}" itemprop="contentUrl" data-size="900x600" />
 	                    </div>
 	                    <!-- <figcaption style="display:none" itemprop="caption description">{:L('ABOUT_'.strtoupper($vo['position']).'_IMG_DESC')}</figcaption> -->
 	                </figure>

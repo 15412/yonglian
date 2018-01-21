@@ -39,10 +39,16 @@
 <block name="body">
     <link href="__CSS__/index.css" rel="stylesheet" type="text/css">
     <div class="box banner">
-        <img src="__IMG__/YL_PNG/index/banner_03.png" alt="">
+        <!--<img src="__IMG__/YL_PNG/index/banner_03.png" alt="">-->
+        <volist name="result.banner" id="vo">
+        	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+        </volist>
     </div>
     <div class="box">
-        <img src="__IMG__/YL_PNG/index/topImg_03.png" alt="">
+        <!--<img src="__IMG__/YL_PNG/index/topImg_03.png" alt="">-->
+        <volist name="result.content" id="vo">
+        	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+        </volist>
     </div>
     <div class="box tab-content">
         <ul id="myTab" class="nav nav-tabs">
@@ -75,7 +81,10 @@
                 <div class="content">
                     <div class="line">
                         <div id="profileImg">
-                            <img src="__IMG__/YL_PNG/intro/about-mid.png" alt="">
+                            <!--<img src="__IMG__/YL_PNG/intro/about-mid.png" alt="">-->
+					        <volist name="result.profile" id="vo">
+					        	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+					        </volist>
                         </div>
                     </div>
                     <div class="line">
@@ -117,8 +126,7 @@
                     Production ability / 生产实力
                 </div>
                 <div class="content">
-                    <div class="row firstRow">
-
+                    <!--<div class="row firstRow">
                         <div class="my-gallery" >
                             <figure>
                                 <div class="imgGroup">
@@ -127,7 +135,6 @@
                                         <div class="text">板房</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">板房</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -149,7 +156,6 @@
                                         <div class="text">布仓区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -170,7 +176,6 @@
                                         <div class="text">裁床区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -187,7 +192,6 @@
                                         <div class="text">车缝区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -204,7 +208,6 @@
                                         <div class="text">烫衣区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -224,7 +227,6 @@
                                         <div class="text">成品区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -241,7 +243,6 @@
                                         <div class="text">物流区</div>
                                     </div>
                                 </div>
-                                <!--<figcaption style="display:none">布仓区</figcaption>-->
                             </figure>
                             <figure style="display:none">
                                 <div class="imgGroup">
@@ -250,6 +251,119 @@
                             </figure>
                         </div>
 
+                    </div>-->
+                    <div class="row firstRow">
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_sample_room" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">板房</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_cloth_warehouse_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">布仓区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row secondRow">
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_cutting_table_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">裁床区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_sewing_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">车缝区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_ironing_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">烫衣区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="row thirdRow">
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_finished_product_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">成品区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
+                        <div class="my-gallery" >
+                        	<volist name="result.strength_logistic_area" id="vo">
+                            <figure>
+                                <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
+                                    <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
+                                    <eq name="i" value="1">
+                                    <div class="mask">
+                                        <div class="text">物流区</div>
+                                    </div>
+                                    </eq>
+                                </div>
+                            </figure>
+                            </volist>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -258,7 +372,10 @@
                     Product center / 产品中心
                 </div>
                 <div class="content">
-                    <img src="__IMG__/YL_PNG/index/product.jpg" alt="">
+                    <!--<img src="__IMG__/YL_PNG/index/product.jpg" alt="">-->
+			        <volist name="result.product" id="vo">
+			        	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+			        </volist>
                 </div>
             </div>
             <!--<div class="tab-pane fade" id="jmeter">-->

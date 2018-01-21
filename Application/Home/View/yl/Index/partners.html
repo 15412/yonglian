@@ -8,16 +8,6 @@
         </div>
     </header>-->
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
-        <!--<div class="container" style="height:25px;">
-            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
-                <img src="__IMG__/yl/car.jpg" width="140px" style="">
-            </marquee>
-        </div>-->
-        <!--<div class="" style="height:25px;">
-            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
-                <img src="__IMG__/yl/car.jpg" width="140px" style="">
-            </marquee>
-        </div>-->
     </header>
 </block>
 
@@ -32,33 +22,14 @@
 </block>
 
 <block name="body">
-    <img src="__IMG__/yl/partners_banner.jpg">
+    <volist name="result.banner" id="vo">
+    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+    </volist>
 	<div class="container">
-		<div id="content" style="padding-top:100px;">
-	    	<img src="__IMG__/yl/partners_content.jpg">
+		<div id="content" style="padding-top:5rem;">
+		    <volist name="result.content" id="vo">
+		    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+		    </volist>
 		</div>
     </div>
-    <!--<div class="span9">-->
-        <!-- Contents
-        ================================================== -->
-        <!--<section id="contents">
-            <article:list name="article" category="1" child="true">
-                <div class="">
-                    <h3><a href="{:U('Article/detail?id='.$article['id'])}">{$article.title}</a></h3>
-                </div>
-                <div>
-                    <p class="lead">{$article.description}</p>
-                </div>
-                <div>
-                    <span><a href="{:U('Article/detail?id='.$article['id'])}">查看全文</a></span>
-                    <span class="pull-right">
-                        <span class="author">{$article.uid|get_username}</span>
-                        <span>于 {$article.create_time|date='Y-m-d H:i',###}</span> 发表在 <span>
-                        <a href="{:U('Article/lists?category='.get_category_name($article['category_id']))}">{$article.category_id|get_category_title}</a></span> ( 阅读：{$article.view} )
-                    </span>
-                </div>
-                <hr/>
-            </article:list>
-        </section>-->
-    <!--</div>-->
 </block>

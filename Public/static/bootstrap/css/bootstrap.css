@@ -4836,7 +4836,7 @@ nav-yl,
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
   background-repeat: repeat-x;
   border-color: #ffffff;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffffffff', GradientType=0);
 }
 
 .navbar-inverse .brand,
