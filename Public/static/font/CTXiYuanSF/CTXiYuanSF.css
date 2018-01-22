@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "CTXiYuanSF";
+  src: url("CTXiYuanSF.woff2") format("woff2"),
+       url("CTXiYuanSF.woff") format("woff"),
+       url("CTXiYuanSF.ttf") format("truetype"),
+       url("CTXiYuanSF.eot") format("embedded-opentype"),
+       url("CTXiYuanSF.svg") format("svg"),
+       url("CTXiYuanSF.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
