@@ -4567,7 +4567,8 @@ nav-yl,
 
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
-  border-width: 0 0 1px;
+  /*border-width: 0 0 1px;*/
+  border-width: 0 0 0px;
 }
 
 .navbar-fixed-bottom .navbar-inner {

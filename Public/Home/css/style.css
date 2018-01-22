@@ -173,8 +173,9 @@ html {
 .car_div{
 	/*height:2.5rem;*/
 	/*height:1.5rem;*/
-	height:1.75rem;
+	/*height:1.75rem;*/
 	/*height:2rem;*/
+	height:1.6667rem;
 	cursor:default;
 	-moz-user-select: none;
 	-khtml-user-select: none;
@@ -184,8 +185,11 @@ html {
 .car_image{
 	/*width:13.746rem;*/
 	/*width:8.2476rem;*/
-	width:9.6222rem;
+	/*width:9.6222rem;*/
 	/*width:10.9968rem;*/
+	width:9.1667rem;
+	height:1.6667rem;
+    vertical-align: top;
 }
 
 .contact_image{
