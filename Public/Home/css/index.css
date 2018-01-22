@@ -4,6 +4,9 @@
 p {
     margin: 0 auto;
 }
+body{
+    text-align: center;
+}
 
 a:hover {
     text-decoration: none;
@@ -22,8 +25,8 @@ ul, li {
 .box {
     width: 80%;
     padding: 0 10%;
+    margin: 0 auto;
 }
-
 .banner {
     width: 100%;
     padding: 0;
@@ -38,17 +41,16 @@ ul, li {
 
 #myTab li {
     font-family: HYLiangPinXianJ;
+    font-size: 1rem;
     float: left;
     width: 10%;
     height: 8rem;
     line-height: 8rem;
     margin-left: 12%;
     padding: 0;
-    text-align: center;
     /*border:1px solid;*/
     /*border-radius:8rem;*/
 }
-
 #myTab .active {
     color: #fff;
     /*border: none;*/
@@ -90,6 +92,7 @@ ul, li {
     border-bottom:1px solid;
     font-size: 1rem;
     font-weight: normal;
+    text-align: left;
 }
 
 .content {
@@ -109,6 +112,7 @@ ul, li {
     font-size: 1rem;
     line-height: 2rem;
     margin-left: 2rem;
+    text-align: left;
 }
 
 .left p::first-letter {
@@ -137,10 +141,10 @@ ul, li {
 
 .line p {
     line-height: 2.5rem;
+    text-align: left;
 }
 
 #profileImg {
-    text-align: center;
     margin: 0 auto;
     padding: 0.8rem;
     width: 60%;
@@ -219,7 +223,6 @@ ul, li {
     position: absolute;
     font-family: SimHei;
     font-size: 1.3rem;
-    text-align: center;
     top: 50%;
     left: 50%;
     display: table-cell; vertical-align: middle;
