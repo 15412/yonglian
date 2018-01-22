@@ -6,7 +6,7 @@ return array(
 	'MENU_PROFILE'=>'永聯簡介',
 	'MENU_HONOR'=>'公司榮譽',
 	'MENU_HISTORY'=>'發展歷程',
-	'MENU_VIDEO'=>'公司视频',
+	'MENU_VIDEO'=>'公司視頻',
 	'MENU_PARTNERS'=>'合作夥伴',
 	'MENU_CONTACT'=>'聯繫我們',
 	
