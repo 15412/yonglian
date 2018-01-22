@@ -1,4 +1,4 @@
-﻿body{
+﻿body {
     /*margin: 0 auto;*/
     /*padding: 0;*/
 }
@@ -6,6 +6,7 @@
 a {
     color: #000;
 }
+
 p {
     margin: 0 auto;
 }
@@ -22,9 +23,10 @@ a:hover {
 ul, li {
     display: inline;
     list-style: none;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
+
 .box {
     width: 100%;
     padding: 0;
@@ -43,7 +45,6 @@ ul, li {
 }
 
 #myTab li {
-    font-size: 1rem;
     font-family: HYLiangPinXianJ;
     float: left;
     width: 20%;
@@ -54,6 +55,22 @@ ul, li {
     text-align: center;
     /*border:1px solid;*/
     /*border-radius:8rem;*/
+}
+
+@media screen and (max-device-width: 480px) {
+    #myTab li {
+        font-size: 1rem;
+    }
+}
+@media screen and  (min-device-width: 480px)and (max-device-width: 640px) {
+    #myTab li {
+        font-size: 1.3rem;
+    }
+}
+@media screen and (min-device-width: 640px) {
+    #myTab li {
+        font-size: 1.6rem;
+    }
 }
 
 #myTab .active {
@@ -94,7 +111,7 @@ ul, li {
     height: 2rem;
     line-height: 2rem;
     width: 18rem;
-    border-bottom:1px solid;
+    border-bottom: 1px solid;
     font-size: 1rem;
     font-weight: normal;
 }
@@ -121,11 +138,13 @@ ul, li {
 .left p::first-letter {
     margin-right: 1rem;
 }
-#culture .content{
-    background: url("../images/YL_PNG/index/culture_mobile.gif")  no-repeat;
+
+#culture .content {
+    background: url("../images/YL_PNG/index/culture_mobile.gif") no-repeat center 0;
     background-size: 100%;
 
 }
+
 .content .right {
     z-index: 1;
     position: absolute;
@@ -194,11 +213,13 @@ ul, li {
     box-shadow: 0rem 0rem 1rem 0rem rgba(6, 0, 1, 0.45);
     cursor: pointer;
 }
-.my-gallery{
+
+.my-gallery {
     margin: 0 auto;
     text-align: center;
 }
-figure{
+
+figure {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
     -webkit-margin-start: 0px;
@@ -214,10 +235,10 @@ figure{
     display: none;
 }
 
-
 .mask {
     position: absolute;
-    display:table-cell;vertical-align:middle;
+    display: table-cell;
+    vertical-align: middle;
     color: #fff;
     width: 98%;
     height: 98%;
@@ -231,7 +252,7 @@ figure{
     filter: alpha(opacity=70);
 }
 
-.text{
+.text {
     width: 100%;
     position: absolute;
     font-family: SimHei;
@@ -239,8 +260,9 @@ figure{
     text-align: center;
     top: 50%;
     left: 50%;
-    display: table-cell; vertical-align: middle;
-    transform:translate(-50%,-50%);
+    display: table-cell;
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
     z-index: 999;
 }
 
@@ -258,6 +280,7 @@ figure{
     /*box-shadow: 0px 0px 5px #000;*/
     overflow: hidden;
 }
+
 .device .arrow-left {
     background: url(../images/yl/arrows.png) no-repeat left top;
     position: absolute;
@@ -267,6 +290,7 @@ figure{
     width: 17px;
     height: 30px;
 }
+
 .device .arrow-right {
     background: url(../images/yl/arrows.png) no-repeat left bottom;
     position: absolute;
@@ -276,10 +300,12 @@ figure{
     width: 17px;
     height: 30px;
 }
+
 .swiper-container {
     height: 300px;
     width: 300px;
 }
+
 .content-slide {
     padding: 20px;
     color: #fff;
@@ -289,10 +315,11 @@ figure{
     position: absolute;
     left: 0;
     text-align: center;
-    bottom:5px;
+    bottom: 5px;
     width: 100%;
     z-index: 999;
 }
+
 .swiper-pagination-switch {
     display: inline-block;
     width: 10px;
@@ -303,6 +330,7 @@ figure{
     margin: 0 3px;
     cursor: pointer;
 }
+
 .swiper-active-switch {
     background: #fff;
 }
