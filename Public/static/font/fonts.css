@@ -105,3 +105,29 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@charset "UTF-8";
+@font-face {
+  font-family: "CTXiYuanSJ";
+  src: url("CTXiYuanSJ.woff2") format("woff2"),
+       url("CTXiYuanSJ.woff") format("woff"),
+       url("CTXiYuanSJ.ttf") format("truetype"),
+       url("CTXiYuanSJ.eot") format("embedded-opentype"),
+       url("CTXiYuanSJ.svg") format("svg"),
+       url("CTXiYuanSJ.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@charset "UTF-8";
+@font-face {
+  font-family: "CTXiYuanSF";
+  src: url("CTXiYuanSF.woff2") format("woff2"),
+       url("CTXiYuanSF.woff") format("woff"),
+       url("CTXiYuanSF.ttf") format("truetype"),
+       url("CTXiYuanSF.eot") format("embedded-opentype"),
+       url("CTXiYuanSF.svg") format("svg"),
+       url("CTXiYuanSF.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
