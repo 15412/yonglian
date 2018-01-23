@@ -86,7 +86,7 @@ html {
 .company {
 	width: 12rem;
 	height: 1.75rem;
-	font-family: JQXiYuanFT;
+	/*font-family: JQXiYuanFT;*/
 	font-size: 1.776rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -98,7 +98,7 @@ html {
 .since {
 	width: 5.063rem;
 	height: 0.625rem;
-	font-family: ComicSansMS;
+	/*font-family: ComicSansMS;*/
 	font-size: 0.796rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -110,7 +110,7 @@ html {
 .menu {
 	/*width: 2.75rem;
 	height: 1.00rem;*/
-	font-family: HYLiangPinXianJ;
+	/*font-family: HYLiangPinXianJ;*/
 	font-size: 1.1024rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -125,7 +125,7 @@ html {
 .language {
 	/*width: 7.75rem;
 	height: 1.188rem;*/
-	font-family: SimHei;
+	/*font-family: SimHei;*/
 	font-size: 0.896rem;
 	font-weight: normal;
 	font-stretch: normal;
@@ -208,7 +208,7 @@ html {
 .contact_text {
 	width: 6.125rem;
 	height: 1.25rem;
-	font-family: SimHei;
+	/*font-family: SimHei;*/
 	font-size: 1.229rem;
 	font-weight: bold;
 	font-stretch: normal;
@@ -226,7 +226,7 @@ html {
 .contact_content {
 	/*width: 26.625rem;*/
 	height: 9.313rem;
-	font-family: SimHei;
+	/*font-family: SimHei;*/
 	font-size: 1.302rem;
 	font-weight: normal;
 	font-stretch: normal;
