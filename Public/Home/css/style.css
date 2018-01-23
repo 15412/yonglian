@@ -255,3 +255,7 @@ html {
 .contact-address-map{
 	margin-top:1rem;
 }
+
+#down a{
+	margin: 0 0.45rem;
+}

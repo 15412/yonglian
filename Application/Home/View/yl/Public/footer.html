@@ -14,15 +14,15 @@
 				<div id="middle">
 					<img src="__IMG__/yl/footer_13.png" width="354px">
 				</div>
-				<div id="down" style="padding-top:5px;">
+				<div id="down" style="padding-top:5px;text-align: center;display: inline-flex">
 					<!--<a href="{:C('WEB_SITE_WECHAT_LINK')}" target="_blank"><img src="__IMG__/yl/footer_17.png" class="link_image"></a>
 					<a href="{:C('WEB_SITE_SINA_LINK')}" target="_blank"><img src="__IMG__/yl/footer_19.png" class="link_image"></a>
 					<a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank"><img src="__IMG__/yl/footer_21.png" class="link_image"></a>
 					<a href="{:C('WEB_SITE_SHARE_LINK')}" target="_blank"><img src="__IMG__/yl/footer_23.png" class="link_image"></a>-->
-					<a href="{:C('WEB_SITE_WECHAT_LINK')}" target="_self"><img src="__IMG__/yl/wechat_black.png" class="link_image"></a>
-					<a href="{:C('WEB_SITE_SINA_LINK')}" target="_self"><img src="__IMG__/yl/weibo_black.png" class="link_image"></a>
-					<a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank"><img src="__IMG__/yl/tmall_black.png" class="link_image"></a>
-					<a href="{:C('WEB_SITE_SHARE_LINK')}" target="_self"><img src="__IMG__/yl/share_black.png" class="link_image"></a>
+						<a href="{:C('WEB_SITE_WECHAT_LINK')}" target="_self"><img id="wechat" src="__IMG__/yl/wechat_black.png" class="link_image"></a>
+						<a href="{:C('WEB_SITE_SINA_LINK')}" target="_self"><img id="weibo" src="__IMG__/yl/weibo_black.png" class="link_image"></a>
+						<a href="{:C('WEB_SITE_TMALL_LINK')}" target="_blank"><img id="tmall" src="__IMG__/yl/tmall_black.png" class="link_image"></a>
+						<a href="{:C('WEB_SITE_SHARE_LINK')}" target="_self"><img id="share" src="__IMG__/yl/share_black.png" class="link_image"></a>
 				</div>
 			</div>
 			<div id="right" style="display:inline;">
@@ -33,7 +33,27 @@
     </footer>
 
 <include file="Public/var"/>
-<block name="script"></block> <!-- 用于加载js代码 -->
+<block name="script">
+	<script>
+		$(function(){
+			$("#wechat").hover(function(){
+				$(this).attr('src','__IMG__/yl/wechat_color.png');
+			},function(){
+				$(this).attr('src','__IMG__/yl/wechat_black.png');
+			});
+			$("#weibo").hover(function(){
+				$(this).attr('src','__IMG__/yl/weibo_color.png');
+			},function(){
+				$(this).attr('src','__IMG__/yl/weibo_black.png');
+			});
+			$("#share").hover(function(){
+				$(this).attr('src','__IMG__/yl/share_color.png');
+			},function(){
+				$(this).attr('src','__IMG__/yl/share_black.png');
+			});
+		});
+	</script>
+</block> <!-- 用于加载js代码 -->
 <!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
 {:hook('pageFooter', 'widget')}
 <div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
