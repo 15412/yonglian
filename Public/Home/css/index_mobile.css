@@ -107,7 +107,7 @@ ul, li {
 }
 
 .title {
-    font-family: ¹ã½Ý¾ÓÃÔÄã×Ö¿â;
+    /*font-family: ¹ã½Ý¾ÓÃÔÄã×Ö¿â;*/
     height: 2rem;
     line-height: 2rem;
     width: 18rem;
@@ -129,7 +129,7 @@ ul, li {
 }
 
 .left p {
-    font-family: JQXiYuanFT;
+    /*font-family: JQXiYuanFT;*/
     font-size: 1rem;
     line-height: 3rem;
     margin-left: 2rem;
@@ -156,7 +156,7 @@ ul, li {
 .line {
     margin: 3rem 0;
     width: 100%;
-    font-family: HYLiangPinXianJ;
+    /*font-family: HYLiangPinXianJ;*/
     font-size: 1rem;
 }
 
