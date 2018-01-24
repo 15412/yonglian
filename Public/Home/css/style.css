@@ -259,6 +259,9 @@ html {
 	margin-top:1rem;
 }
 
-#down a{
-	margin: 0 0.45rem;
+#down{
+	width: 100%;
+}
+#down div{
+	width: 25%;
 }

@@ -38,4 +38,14 @@ return array(
 	'ABOUT_RIGHT4_IMG_DESC' => '右四',	
 
 	'VIDEO_TITLE' => '公司视频',
+
+	'INDEX_TAB_INTRODUCTION' => '公司简介',
+	'INDEX_TAB_CULTURE' => '公司文化',
+	'INDEX_TAB_PRODUCE' => '生产实力',
+	'INDEX_TAB_PRODUCT' => '产品中心',
+
+	'INDEX_TAB_INTRODUCTION_TEXT' => '公司简介',
+	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
+	'INDEX_TAB_PRODUCE_TEXT' => '生产实力',
+	'INDEX_TAB_PRODUCT_TEXT' => '产品中心',
 );

@@ -22,7 +22,10 @@
 </block>
 
 <block name="body">
-    <volist name="result" id="vo">
-    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
-    </volist>
+    <div style="width: 100%;text-align: center;margin: 0 auto">
+        <volist name="result" id="vo">
+            <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+        </volist>
+    </div>
+
 </block>
