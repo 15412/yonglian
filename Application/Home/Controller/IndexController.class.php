@@ -136,7 +136,7 @@ class IndexController extends HomeController
     public function contact()
     {
         $image = D('Image');
-        $result['banner'] = $image->getByTag('partners_banner');
+        $result['banner'] = $image->getByTag('contact_banner');
         $this->assign('result', $result);
         $this->display();
     }

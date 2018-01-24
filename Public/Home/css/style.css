@@ -170,16 +170,19 @@ html {
 	height: 2.25rem;
 }
 
+.no_select{
+	cursor:default;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
+
 .car_div{
 	/*height:2.5rem;*/
 	/*height:1.5rem;*/
 	/*height:1.75rem;*/
 	/*height:2rem;*/
 	height:1.6667rem;
-	cursor:default;
-	-moz-user-select: none;
-	-khtml-user-select: none;
-	user-select: none;
 }
 
 .car_image{

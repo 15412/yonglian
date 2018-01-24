@@ -3,21 +3,9 @@
 <block name="header">
     <!--<header class="jumbotron subhead" id="overview" >
         <div class="container">
-            <h2>源自相同起点，演绎不同精彩！</h2>
-            <p class="lead"></p>
         </div>
     </header>-->
     <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
-        <!--<div class="container" style="height:25px;">
-            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
-                <img src="__IMG__/yl/car.jpg" width="140px" style="">
-            </marquee>
-        </div>-->
-        <!--<div class="" style="height:25px;">
-            <marquee behavior="scroll" contenteditable="true" scrollamount="-1" onstart="this.firstChild.innerHTML+=this.firstChild.innerHTML;" onmouseover="this.stop();" onmouseout="this.start();" vspace="0px" >
-                <img src="__IMG__/yl/car.jpg" width="140px" style="">
-            </marquee>
-        </div>-->
     </header>
 </block>
 
@@ -188,7 +176,7 @@
 东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
 			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
 		</div>-->
-		<div id="allmap1" class="contact-address-map" data-lat="23.058589" data-lng="113.904089" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
+		<div id="allmap1" class="contact-address-map" data-lat="23.05852" data-lng="113.904113" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
 			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
 		</div>
 	</div>
@@ -235,7 +223,7 @@
 	function createMap(userlng,userlat,obj,address,title,phone,url,img){
 		var map = new BMap.Map(obj);
 		var poi = new BMap.Point(userlng,userlat);
-		map.centerAndZoom(poi, 16);//位置，默认放大倍数
+		map.centerAndZoom(poi, 19);//位置，默认放大倍数
 		
 		var content = '<div style="margin:0;line-height:15px;">'+
 			  				'<div class="panoInfoBox" onclick="panoramaMap(\''+ obj +'\',' + userlng+','+userlat+');">'+
