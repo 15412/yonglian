@@ -987,9 +987,24 @@
   .contact_content #mini {
 	display: initial !important;
   }
+  .contact_content #min {
+	display: none !important;
+  }
+  /*.contact_content .normal {
+	display: none !important;
+  }
+  .contact_content .mini {
+	display: initial !important;
+  }
+  .contact_content .min {
+	display: none !important;
+  }*/
   .table.table-noborder th, .table.table-noborder td {
     padding: 2px;
     /*line-height: 16px;*/
+  }
+  #contact{
+  	margin:2rem 1rem !important;
   }
 }
 
@@ -1292,6 +1307,15 @@
   .contact_content #min {
 	display: initial !important;
   }
+  /*.contact_content .normal {
+	display: none !important;
+  }
+  .contact_content .mini {
+	display: none !important;
+  }
+  .contact_content .min {
+	display: initial !important;
+  }*/
   #contact{
   	margin:2rem 1rem !important;
   }

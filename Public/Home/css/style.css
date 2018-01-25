@@ -209,7 +209,7 @@ html {
 }
 
 .contact_text {
-	width: 6.125rem;
+	/*width: 6.125rem;*/
 	height: 1.25rem;
 	/*font-family: SimHei;*/
 	font-size: 1.229rem;
@@ -233,7 +233,7 @@ html {
 	font-size: 1.302rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 3.125rem;
+	line-height: 1.302rem !important;
 	letter-spacing: 0rem;
 	color: #2b261e;
 	height: 100%;
@@ -242,17 +242,48 @@ html {
 	text-overflow: ellipsis;
 }
 
+.contact_content td{
+	line-height: 1.302rem !important;
+}
+
+.contact_content a:hover{
+	text-decoration: none;
+}
+
 .contact_content #mini {
 	display:none;
 }
 
 .contact_content #min {
-	display:none;
+	display:none
 }
-
 
 .table.table-noborder th, .table.table-noborder td {
     border-top: 0px;
+}
+
+/*.contact_content .normal, .contact_content .mini, .contact_content .min {
+	margin-top:4.688rem;
+}*/
+
+/*.contact_content .mini {
+	display:none;
+}
+
+.contact_content .min {
+	display:none
+}*/
+
+.contact_content_title {
+	/*width: 15rem;*/
+	height: 1.625rem;
+	/*font-family: MicrosoftYaHei;*/
+	font-size: 1.563rem;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 1.625rem;
+	letter-spacing: 0.075rem;
+	color: #9ab274;
 }
 
 .contact-address-map{
