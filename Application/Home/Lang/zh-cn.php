@@ -48,4 +48,16 @@ return array(
 	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
 	'INDEX_TAB_PRODUCE_TEXT' => '生产实力',
 	'INDEX_TAB_PRODUCT_TEXT' => '产品中心',
+
+
+	'CULTURE_TEXT_1' => '效率不是空说出来，效率确是安排出来',
+	'CULTURE_TEXT_2' => '品质不是检查出来，品质确是制造出来',
+	'CULTURE_TEXT_3' => '品质是不能够永远说对不起',
+	'CULTURE_TEXT_4' => '品质是手上最重要的事业',
+	'CULTURE_TEXT_5' => '先做人後做事，先明理後收成',
+	'CULTURE_TEXT_6' => '员工好与坏，在乎沟通与关怀',
+	'CULTURE_TEXT_7' => '诚信为本、务实创新、共赢共融',
+	'CULTURE_TEXT_8' => '品质改善必须是『主动』而非『被动』',
+	'CULTURE_TEXT_9' => '“多想”“多听”“多问”“多做”',
+	'CULTURE_TEXT_10' => '多一点虚心沟通，少一点不必要错',
 );

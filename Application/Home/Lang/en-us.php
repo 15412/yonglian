@@ -49,4 +49,16 @@ return array(
 	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
 	'INDEX_TAB_PRODUCE_TEXT' => '生產實力',
 	'INDEX_TAB_PRODUCT_TEXT' => '產品中心',
+
+
+	'CULTURE_TEXT_1' => 'Efficiency is not empty, efficiency is really arranged',
+	'CULTURE_TEXT_2' => 'Quality is not checked, quality is made',
+	'CULTURE_TEXT_3' => 'Quality is not always able to say sorry',
+	'CULTURE_TEXT_4' => 'Quality is the most important business on hand',
+	'CULTURE_TEXT_5' => 'The first thing to do is to do things first and then to make it clear',
+	'CULTURE_TEXT_6' => 'Good and bad employees care about communication and care',
+	'CULTURE_TEXT_7' => 'Good faith, pragmatic innovation and win-win cooperation',
+	'CULTURE_TEXT_8' => 'Quality improvement must be "initiative" rather than "passive"',
+	'CULTURE_TEXT_9' => '"Think more", "listen more", "ask more" and "do more"',
+	'CULTURE_TEXT_10' => 'A little more mental communication, less need to be wrong',
 );

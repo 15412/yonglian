@@ -49,4 +49,16 @@ return array(
 	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
 	'INDEX_TAB_PRODUCE_TEXT' => '生產實力',
 	'INDEX_TAB_PRODUCT_TEXT' => '產品中心',
+
+
+	'CULTURE_TEXT_1' => '效率不是空說出來，效率確是安排出來',
+	'CULTURE_TEXT_2' => '品質不是檢查出來，品質確是制造出來',
+	'CULTURE_TEXT_3' => '品質是不能夠永遠說對不起',
+	'CULTURE_TEXT_4' => '品質是手上最重要的事業',
+	'CULTURE_TEXT_5' => '先做人後做事，先明理後收成',
+	'CULTURE_TEXT_6' => '員工好與壞，在乎溝通與關懷',
+	'CULTURE_TEXT_7' => '誠信爲本、務實創新、共贏共融',
+	'CULTURE_TEXT_8' => '品質改善必須是『主動』而非『被動』',
+	'CULTURE_TEXT_9' => '“多想”“多聽”“多問”“多做”',
+	'CULTURE_TEXT_10' => '多一點虛心溝通，少一點不必要錯',
 );
