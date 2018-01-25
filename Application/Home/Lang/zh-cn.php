@@ -60,4 +60,28 @@ return array(
 	'CULTURE_TEXT_8' => '品质改善必须是『主动』而非『被动』',
 	'CULTURE_TEXT_9' => '“多想”“多听”“多问”“多做”',
 	'CULTURE_TEXT_10' => '多一点虚心沟通，少一点不必要错',
+
+
+	'CONTACT_TEXT_TITLE_1' => '东莞茶山永联织造厂',
+	'CONTACT_TEXT_PHONE_1' => '(86)0769-8865 5088',
+	'CONTACT_TEXT_FAX_1' => '(86)0769-8865 5089',
+	'CONTACT_TEXT_EMAIL_1' => 'enquiry@wingluen.com.hk',
+	'CONTACT_TEXT_ADDRESS_1' => '广东省东莞市茶山镇南社工业区立本工业园  523391',
+
+	'CONTACT_TEXT_TITLE_2' => '永联织造厂',
+	'CONTACT_TEXT_PHONE_2' => '(852)2741 3933',
+	'CONTACT_TEXT_FAX_2' => '(852)2785 4050',
+	'CONTACT_TEXT_EMAIL_2' => 'enquiry@wingluen.com.hk',
+	'CONTACT_TEXT_ADDRESS_2' => '香港九龙长沙湾长裕街2号嘉图工厂大厦9字楼',
+
+	'CONTACT_TEXT_TITLE_3' => '始兴县天河制衣有限公司',
+	'CONTACT_TEXT_PHONE_3' => '(86)0751-3442888',
+	'CONTACT_TEXT_FAX_3' => '(86)0751-3442883',
+	'CONTACT_TEXT_EMAIL_3' => 'enquiry@wingluen.com.hk',
+	'CONTACT_TEXT_ADDRESS_3' => '广东省韶关市始兴县江口兴盛工业园  512500',
+
+	'CONTACT_TEXT_TITLE_4' => 'Y&W Garment Co. Ltd.',
+	'CONTACT_TEXT_ADDRESS_4' => 'No. 272 ST217 Phum Prek Chrey, Sangkat Spean
+Thmor, Khan Dangkor, Phnom Penh, Cambodia',
+
 );
