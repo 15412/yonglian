@@ -40,7 +40,7 @@ ul, li {
 }
 
 #myTab li {
-    font-family: HYLiangPinXianJ;
+    /*font-family: HYLiangPinXianJ;*/
     font-size: 1rem;
     float: left;
     width: 10%;
@@ -221,7 +221,7 @@ ul, li {
 .text{
     width: 100%;
     position: absolute;
-    font-family: SimHei;
+    /*font-family: SimHei;*/
     font-size: 1.3rem;
     top: 50%;
     left: 50%;
