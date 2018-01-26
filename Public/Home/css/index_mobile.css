@@ -140,9 +140,8 @@ ul, li {
 }
 
 #culture .content {
-    background: url("../images/YL_PNG/index/culture_mobile.gif") center 0;
+    background: url("../images/YL_PNG/index/culture_mobile.png") no-repeat center center;
     background-size: 100%;
-
 }
 
 .content .right {
