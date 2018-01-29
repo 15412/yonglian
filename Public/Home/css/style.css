@@ -261,6 +261,7 @@ html {
 .table.table-noborder th, .table.table-noborder td {
 	white-space: normal;
     border-top: 0px;
+	padding: 5px;
 }
 
 /*.contact_content .normal, .contact_content .mini, .contact_content .min {
