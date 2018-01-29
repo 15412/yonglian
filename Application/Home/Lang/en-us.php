@@ -1,5 +1,7 @@
 <?php
 return array(
+	'WEB_SITE_TITLE' => 'Wing Luen Knitting Factory',
+
 	'COMPANY_NAME'=>'WingLuen',
 	'MENU_INDEX'=>'Home',
 	'MENU_ABOUT'=>'About',

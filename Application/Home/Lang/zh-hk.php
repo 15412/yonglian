@@ -1,5 +1,7 @@
 <?php
 return array(
+	'WEB_SITE_TITLE' => '永聯織造廠',
+
 	'COMPANY_NAME'=>'永聯',
 	'MENU_INDEX'=>'首頁',
 	'MENU_ABOUT'=>'關於永聯',
