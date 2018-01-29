@@ -4,12 +4,13 @@
 }
 
 .content_box_line{
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     width: 100%;
     height: 17rem;
 }
 
 .content_box_div{
+    margin-top: 2rem;
     width: 50%;
     float: left;
     /*word-wrap:break-all;*/

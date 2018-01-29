@@ -1006,6 +1006,9 @@
   #contact{
   	margin:2rem 1rem !important;
   }
+  .content_box_div {
+    width: 100% !important;
+}
 }
 
 @media (max-width: 480px) {
