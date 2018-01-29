@@ -259,6 +259,7 @@ html {
 }
 
 .table.table-noborder th, .table.table-noborder td {
+	white-space: normal;
     border-top: 0px;
 }
 

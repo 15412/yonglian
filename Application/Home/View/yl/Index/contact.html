@@ -10,6 +10,7 @@
 </block>
 
 <block name="style">
+	<link rel="stylesheet" type="text/css" href="__CSS__/contact.css">
 	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 </block>
 
@@ -114,229 +115,39 @@
                     	</tr>
                     </tbody>
 	            </table>-->
+
+				<div class="content_box">
+					<div class="content_box_line">
+						<div class="content_box_div">
+							<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</div>
+							<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</div>
+							<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</div>
+							<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+							<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</div>
+						</div>
+						<div class="content_box_div">
+							<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</div>
+							<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</div>
+							<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</div>
+							<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+							<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</div>
+						</div>
+					</div>
+					<div class="content_box_line">
+						<div class="content_box_div">
+							<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</div>
+							<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</div>
+							<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</div>
+							<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+							<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</div>
+						</div>
+						<div class="content_box_div">
+							<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</div>
+							<div class="last_line">{:L('CONTACT_TEXT_ADDRESS_4')}</div>
+						</div>
+					</div>
+				</div>
 				
-				
-				
-				<table class="table table-noborder normal" id="normal" height="100%">
-                    <tbody>
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
-                    		<!--<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>-->
-                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
-                    		<!--<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>-->
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
-                    		<!--<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>-->
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
-                    		<!--<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>-->
-                    	</tr>
-                    </tbody>
-	            </table>
-	            
-				<table class="table table-noborder mini" id="mini" height="100%">
-                    <tbody>
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_3')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
-                    	</tr>
-                    	<!--<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>-->
-                    	<tr>
-                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>
-                    </tbody>
-	            </table>
-	            
-				<table class="table table-noborder min" id="min" height="100%">
-                    <tbody>
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_3')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
-                    	</tr>
-                    	
-                    	<tr>
-                    		<td  style="height:4.688rem;"></td>
-                    	</tr>
-                    	<tr>
-                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
-                    	</tr>
-                    	<!--<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>-->
-                    	<tr>
-                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>
-                    </tbody>
-	            </table>
 			</div>
 		</div>
 		<!--<div id="allmap1" class="contact-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="

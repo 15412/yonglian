@@ -1,0 +1,428 @@
+<extend name="Base/common"/>
+
+<block name="header">
+    <!--<header class="jumbotron subhead" id="overview" >
+        <div class="container">
+        </div>
+    </header>-->
+    <header class="subhead" id="overview" style="background: linear-gradient(45deg, #ffffff 0%,#ffffff 100%);">
+    </header>
+</block>
+
+<block name="style">
+	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</block>
+
+<block name="side">
+<!-- 左侧 nav
+================================================== -->
+    <!--<div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+            {:W('Category/lists', array(1, true))}
+        </ul>
+    </div>-->
+</block>
+
+<block name="body">
+    <volist name="result.banner" id="vo">
+    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+    </volist>
+	<div class="container">
+		<div id="contact">
+			<div id="title">
+				<img src="__IMG__/yl/contactus_icon.png" class="contact_image"><span class="contact_text">{:L('CONTACT_US')}</span>
+			</div>
+			<div id="content" class="contact_content">
+	            <!--<table class="table table-noborder normal" id="normal">
+                    <tbody>
+                    	<tr>
+                    		<td>{:L('CONTACT_NAME')}:{:L('CONTACT_NAME_VALUE')}</td>
+                    		<td>{:L('CONTACT_TEL')}:0769-88655088</td>
+                    		<td>{:L('CONTACT_PERSON')}:{:L('CONTACT_PERSON_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_ADDRESS_VALUE')}</td>
+                    		<td>{:L('CONTACT_FAX')}:0769-88655089</td>
+                    		<td>{:L('CONTACT_EMAIL')}:Reception.Reception@winluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ZIP_CODE')}:523391</td>
+                    		<td>{:L('CONTACT_WEBSITE')}:www.wingluen.com.hk</td>
+                    		<td>{:L('CONTACT_SHOP')}:https://minicaryibengbeng.tmall.com
+								<br/>&#160;&#160;&#160;&#160;&#160;http://www.rookie.cn
+							</td>
+                    	</tr>
+                    </tbody>
+	            </table>
+	            
+	            <table class="table table-noborder mini" id="mini" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td>{:L('CONTACT_NAME')}:{:L('CONTACT_NAME_VALUE')}</td>
+                    		<td>{:L('CONTACT_TEL')}:0769-88655088</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_PERSON')}:{:L('CONTACT_PERSON_VALUE')}</td>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_ADDRESS_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:0769-88655089</td>
+                    		<td>{:L('CONTACT_EMAIL')}:Reception.Reception@winluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ZIP_CODE')}:523391</td>
+                    		<td>{:L('CONTACT_WEBSITE')}:www.wingluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_SHOP')}:https://minicaryibengbeng.tmall.com
+								<br/>&#160;&#160;&#160;&#160;&#160;http://www.rookie.cn
+							</td>
+                    	</tr>
+                    </tbody>
+	            </table>
+	            
+	            <table class="table table-noborder min" id="min" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td>{:L('CONTACT_NAME')}:{:L('CONTACT_NAME_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:0769-88655088</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_PERSON')}:{:L('CONTACT_PERSON_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_ADDRESS_VALUE')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:0769-88655089</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:Reception.Reception@winluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ZIP_CODE')}:523391</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_WEBSITE')}:www.wingluen.com.hk</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_SHOP')}:https://minicaryibengbeng.tmall.com
+								<br/>&#160;&#160;&#160;&#160;&#160;http://www.rookie.cn
+							</td>
+                    	</tr>
+                    </tbody>
+	            </table>-->
+				
+				
+				
+				<table class="table table-noborder normal" id="normal" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
+                    		<!--<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>-->
+                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
+                    		<!--<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>-->
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
+                    		<!--<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>-->
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
+                    		<!--<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>-->
+                    	</tr>
+                    </tbody>
+	            </table>
+	            
+				<table class="table table-noborder mini" id="mini" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_3')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
+                    	</tr>
+                    	<!--<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
+                    	</tr>-->
+                    	<tr>
+                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
+                    	</tr>
+                    </tbody>
+	            </table>
+	            
+				<table class="table table-noborder min" id="min" height="100%">
+                    <tbody>
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_3')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
+                    	</tr>
+                    	
+                    	<tr>
+                    		<td  style="height:4.688rem;"></td>
+                    	</tr>
+                    	<tr>
+                    		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
+                    	</tr>
+                    	<!--<tr>
+                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
+                    	</tr>
+                    	<tr>
+                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
+                    	</tr>-->
+                    	<tr>
+                    		<td style="white-space: pre;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
+                    	</tr>
+                    </tbody>
+	            </table>
+			</div>
+		</div>
+		<!--<div id="allmap1" class="contact-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
+东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
+			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
+		</div>-->
+		<div id="allmap1" class="contact-address-map" data-lat="23.05852" data-lng="113.904113" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="东莞茶山永联织造厂" data-phone="" data-url="http://map.baidu.com/?newmap=1&s=s%26wd%3D%2520%25E4%25B8%259C%25E8%258E%259E%25E8%258C%25B6%25E5%25B1%25B1%25E6%25B0%25B8%25E8%2581%2594%25E7%25BB%2587%25E9%2580%25A0%25E5%258E%2582%26c%3D119" data-img="__IMG__/yl/baidu_map.jpg"
+			 style="height: 27.25rem;width:80%;overflow: hidden;display: block;margin: 0 auto;">
+		</div>
+	</div>
+</block>
+<block name="script">
+<script src="http://api.map.baidu.com/api?v=2.0&ak=RvufqHb1h9WY4qwhBmGWs2Wv">
+	//v1.5版本的引用方式：src="http://api.map.baidu.com/api?v=1.5&ak=您的密钥"
+	//v1.4版本及以前版本的引用方式：src="http://api.map.baidu.com/api?v=1.4&key=您的密钥&callback=initialize"
+</script>
+<script src="http://api.map.baidu.com/library/TextIconOverlay/1.2/src/TextIconOverlay_min.js"></script>
+<script src="http://api.map.baidu.com/library/MarkerClusterer/1.2/src/MarkerClusterer_min.js"></script>
+<script src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+<script>
+	
+	$(".contact-address-map").each(function(index,element){
+		var userlng = $(this).attr('data-lng');
+		var userlat = $(this).attr('data-lat');
+		var title = $(this).attr('data-title');
+		//var obj	 = "allmap"+index;
+		var obj	 = $(this).attr('id');
+		var address = $(this).attr('address');
+		var phone = $(this).attr('data-phone');
+		var url = $(this).attr('data-url');
+		var img = $(this).attr('data-img');
+		createMap(userlng,userlat,obj,address,title,phone,url,img);//生成地图
+	});
+	
+	function panoramaMap(obj,userlng,userlat){
+		//var map = new BMap.Map('panorama');
+		//map.centerAndZoom(new BMap.Point(userlng, userlat), 12);
+		//map.centerAndZoom(poi, 12);
+		//map.addTileLayer(new BMap.PanoramaCoverageLayer());
+		
+		//var panorama = new BMap.Panorama('panorama'); 
+		var panorama = new BMap.Panorama(obj); 
+		panorama.setPov({heading: -40, pitch: 6});
+		//document.getElementById(obj+'_panorama').onclick = function(){ 
+			panorama.setPosition(new BMap.Point(userlng, userlat)); //根据经纬度坐标展示全景图
+			//$(".pano_close").css('display','block'); 
+		//};
+	}
+	
+	// 百度地图API功能
+	function createMap(userlng,userlat,obj,address,title,phone,url,img){
+		var map = new BMap.Map(obj);
+		var poi = new BMap.Point(userlng,userlat);
+		map.centerAndZoom(poi, 19);//位置，默认放大倍数
+		
+		var content = '<div style="margin:0;line-height:15px;">'+
+			  				'<div class="panoInfoBox" onclick="panoramaMap(\''+ obj +'\',' + userlng+','+userlat+');">'+
+								  '<img src="'+img+'" alt="" style="zoom:1;overflow:hidden;width:100%;height:82px;"/>' +
+								  '<div class="panoInfoBoxTitleBg"></div>'+
+								  '<a href="javascript:void(0)" class="panoInfoBoxTitleContent" id="'+obj+'_panorama">进入全景&gt;&gt;</a>'+
+							  '</div>'+
+							  '<p style="line-height:22px">地址：'+address+'</p><p style="line-height:22px">电话：'+phone+'</p>'+
+						  '</div>';
+		
+		//创建检索信息窗口对象
+		// var searchInfoWindow = null;
+		var searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+			title  : title+'<a href="'+url+'"><span>详情 ></span></a>',	  //标题
+			width  : 282,			 //宽度
+			// height : 115,			  //高度
+			panel  : "panel",		 //检索结果面板
+			enableAutoPan : true,	 //自动平移
+			searchTypes   :[
+				BMAPLIB_TAB_TO_HERE,  //到这里去
+				BMAPLIB_TAB_FROM_HERE, //从这里出发
+				BMAPLIB_TAB_SEARCH   //周边检索
+			]
+			,enableSendToPhone:false //是否启用发送到手机
+		});
+		var marker = new BMap.Marker(poi); //创建marker对象
+		// marker.enableDragging(); //marker可拖拽
+		marker.addEventListener("click", function(e){
+			searchInfoWindow.open(marker);
+		})
+		map.addOverlay(marker); //在地图中添加marker
+		map.enableScrollWheelZoom();
+	}
+</script>
+</block>
