@@ -22,7 +22,10 @@ class ImageModel extends Model{
 	 * @author rohochan <rohochan@gmail.com>
 	 */
 	public function getByTag($tag=''){
-        $result = $this->field('i.*')->alias('i')->join('left join __GENERAL_CATEGORY__ as c on i.image_category_id=c.id')->where(array('c.tag'=>$tag, 'i.status'=>1))->select();
+        $result = $this->field('i.*')->alias('i')->join('left join __GENERAL_CATEGORY__ as c on i.image_category_id=c.id')
+            ->where(array('c.tag'=>$tag, 'i.status'=>1))
+            ->order('sort asc')
+            ->select();
         if (!empty($result)) {
             $langMap = C('LANG_MAP');
             foreach ($result as $key => $value) {
