@@ -230,3 +230,22 @@ body {
 h1 {
     font-size: 2.4rem;
 } */
+
+@media screen and (max-width: 1599px) {
+	.aboutContent{
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+}
+@media screen and (min-width: 1600px)and (max-width: 2055px) {
+	.aboutContent{
+		font-size: 1.35rem;
+		line-height: 2.7rem;
+	}
+}
+@media screen and (min-width: 2056px) {
+	.aboutContent{
+		font-size: 1.5rem;
+		line-height: 3rem;
+	}
+}
