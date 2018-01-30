@@ -7,6 +7,34 @@ p {
 body{
     text-align: center;
 }
+@media screen and (max-width: 1599px) {
+    body {
+        font-size: 1rem;
+    }
+    .left p{
+        line-height: 2rem;
+        height: 2rem;
+    }
+}
+@media screen and (min-width: 1600px)and (max-width: 2055px) {
+    body {
+        font-size: 1.35rem;
+    }
+    .left p{
+        line-height: 3rem;
+        height: 3rem;
+    }
+}
+
+@media screen and (min-width: 2056px) {
+    body {
+        font-size: 1.5rem;
+    }
+    .left p{
+        line-height: 3rem;
+        height: 3rem;
+    }
+}
 
 a:hover {
     text-decoration: none;
@@ -41,11 +69,11 @@ ul, li {
 
 #myTab li {
     /*font-family: HYLiangPinXianJ;*/
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     float: left;
     width: 10%;
-    height: 8rem;
-    line-height: 8rem;
+    height: 13rem;
+    line-height: 13rem;
     margin-left: 12%;
     padding: 0;
     /*border:1px solid;*/
@@ -77,11 +105,12 @@ ul, li {
 }
 
 .tab-content {
-    margin: 3rem 0;
+    /*margin: 3rem 0;*/
+    margin-bottom: 3rem;
 }
 
 #myTabContent {
-    margin: 5rem 10% 0 10%;
+    margin: 3rem 10% 0 10%;
 }
 
 .title {
@@ -90,7 +119,7 @@ ul, li {
     line-height: 2rem;
     width: 27rem;
     border-bottom:1px solid;
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     font-weight: normal;
     text-align: left;
 }
@@ -109,9 +138,9 @@ ul, li {
 
 .left p {
     /*font-family: JQXiYuanFT;*/
-    font-size: 1rem;
-    line-height: 2rem;
-    margin-left: 2rem;
+    /*font-size: 1rem;*/
+    /*line-height: 2rem;*/
+    /*margin-left: 2rem;*/
     text-align: left;
 }
 
@@ -136,7 +165,7 @@ ul, li {
     margin: 3rem 0;
     width: 100%;
     /*font-family: HYLiangPinXianJ;*/
-    font-size: 1rem;
+    /*font-size: 1rem;*/
 }
 
 .line p {
