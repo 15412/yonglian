@@ -472,8 +472,11 @@
 	/*margin-right: 20px;*/
     margin-left: 0rem;
   }
-  .menu{
-  	margin-left:1rem;
+  .nav>li>a .menu{
+  	margin-right:1rem;
+  }
+  .dropdown-menu.yl>li>a .menu{
+  	line-height:2rem;
   }
 }
 
@@ -1261,8 +1264,8 @@
   .nav-collapse.collapse .nav{
     margin-left: 4rem;
   }
-  .menu{
-  	margin-left:2rem;
+  .nav>li>a .menu{
+  	margin-right:2rem;
   }
   .cotton_image_div{
     margin-left: 3rem;
@@ -1289,8 +1292,8 @@
   .nav-collapse.collapse .nav{
     margin-left: 6rem;
   }
-  .menu{
-  	margin-left:3rem;
+  .nav>li>a .menu{
+  	margin-right:3rem;
   }
   .cotton_image_div{
     margin-left: 4rem;
