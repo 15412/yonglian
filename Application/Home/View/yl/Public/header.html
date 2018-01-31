@@ -2,7 +2,7 @@
 ================================================== -->
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="container">
+        <div class="container" style="width:90%;position: relative;">
         	<div class="nav-yl pull-left" >
 	        	<!--<a class="brand" href="{:U('index/index')}">-->
 		        	<!--<img src="__IMG__/yl/logo_min.png">
@@ -11,7 +11,7 @@
 	            	<div class="cotton_image_div"><img src="__IMG__/yl/cotton_merge_text.png" class="cotton_image">	</div>
 		        	<!--<div class="company">{:L('CONTACT_NAME_VALUE')}</div>-->
 	        	<!--</a>-->
-	        	
+
                 <ul class="nav language-menu yl">
                     <li>
                         <a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简</span></a>
@@ -31,7 +31,7 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="nav-collapse collapse">
-                <ul class="nav">
+                <ul class="nav" style="margin-top: 3rem;margin-left: 2rem;text-align: center;">
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
                     	<if condition="'MENU_ABOUT' == $nav['title']">
@@ -55,7 +55,7 @@
                     </li>-->
                 </ul>
             </div>
-            <div class="nav-collapse collapse pull-right">
+            <div class="nav-collapse collapse pull-right" style="margin:0 auto;position: absolute;right: 0;">
             	<!--<div class="language-menu">
 	            	<a href="{:U('',array('l'=>'zh-cn'))}"><span class="language">简体</a></span>
 	            	<a href="{:U('',array('l'=>'zh-tw'))}"><span class="language">繁体</span></a>

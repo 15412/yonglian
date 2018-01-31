@@ -199,10 +199,10 @@
 	left:26.77%;
 	/*font-family: JQXiYuanFT;*/
 	/*font-family: HYLiangPinXianJ;*/
-	font-size: 1rem;
+	font-size: 1.35rem;
 	font-weight: normal;
 	font-stretch: normal;
-	line-height: 2rem;
+	line-height: 2.7rem;
 	letter-spacing: 0rem;
 	color: #565656;
 	overflow: hidden;
@@ -231,6 +231,7 @@ h1 {
     font-size: 2.4rem;
 } */
 
+/*
 @media screen and (max-width: 1599px) {
 	.aboutContent{
 		font-size: 1rem;
@@ -248,4 +249,4 @@ h1 {
 		font-size: 1.5rem;
 		line-height: 3rem;
 	}
-}
+}*/
