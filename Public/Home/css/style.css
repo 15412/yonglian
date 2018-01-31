@@ -292,6 +292,10 @@ html {
 	margin-top:1rem;
 }
 
+.banner{
+	width: 100%;
+}
+
 #down{
 	width: 100%;
 }

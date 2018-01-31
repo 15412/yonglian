@@ -25,7 +25,7 @@
 
 <block name="body">
     <volist name="result.banner" id="vo">
-    	<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
+    	<img class="banner" src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
     </volist>
 	<div class="container">
 		<div id="contact">
