@@ -1280,7 +1280,7 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1599px) {
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 1570px; !important;
   }
@@ -1293,7 +1293,7 @@
     margin-left: 6rem;
   }
   .nav>li>a .menu{
-  	margin-right:3rem;
+  	margin-right:2rem;
   }
   .cotton_image_div{
     margin-left: 4rem;
@@ -1308,6 +1308,11 @@
   }
 }
 
+@media (min-width: 1900px) {
+  .nav>li>a .menu{
+    margin-right:3rem;
+  }
+}
 @media (max-width: 480px) {
   .nav-yl .nav.language-menu.yl{
 	margin-top: 0px;
