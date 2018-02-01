@@ -86,4 +86,11 @@ return array(
 	'CONTACT_TEXT_ADDRESS_4' => 'No. 272 ST217 Phum Prek Chrey, Sangkat Spean
 Thmor, Khan Dangkor, Phnom Penh, Cambodia',
 
+	'PRODUCT_TEXT_1' => '板房区',
+	'PRODUCT_TEXT_2' => '布仓区',
+	'PRODUCT_TEXT_3' => '裁床区',
+	'PRODUCT_TEXT_4' => '车缝区',
+	'PRODUCT_TEXT_5' => '烫衣区',
+	'PRODUCT_TEXT_6' => '成品区',
+	'PRODUCT_TEXT_7' => '物流区',
 );

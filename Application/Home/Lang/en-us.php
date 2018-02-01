@@ -88,4 +88,12 @@ Shixing County, ShaoguanCity, Guangdong Province, China. 512500',
 	'CONTACT_TEXT_TITLE_4' => 'Y&W Garment Co. Ltd.',
 	'CONTACT_TEXT_ADDRESS_4' => 'No. 272 ST217 Phum Prek Chrey, Sangkat Spean
 Thmor, Khan Dangkor, Phnom Penh, Cambodia',
+
+	'PRODUCT_TEXT_1' => '板房區',
+	'PRODUCT_TEXT_2' => '布倉區',
+	'PRODUCT_TEXT_3' => '裁牀區',
+	'PRODUCT_TEXT_4' => '車縫區',
+	'PRODUCT_TEXT_5' => '燙衣區',
+	'PRODUCT_TEXT_6' => '成品區',
+	'PRODUCT_TEXT_7' => '物流區',
 );
