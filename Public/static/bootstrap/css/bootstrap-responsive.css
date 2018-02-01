@@ -473,7 +473,7 @@
     margin-left: 0rem;
   }
   .nav>li>a .menu{
-  	margin-right:1rem;
+    margin-left:1rem;
   }
   .dropdown-menu.yl>li>a .menu{
   	line-height:2rem;
@@ -1265,7 +1265,7 @@
     margin-left: 4rem;
   }
   .nav>li>a .menu{
-  	margin-right:2rem;
+  	margin-left:1rem;
   }
   .cotton_image_div{
     margin-left: 3rem;
@@ -1293,7 +1293,7 @@
     margin-left: 6rem;
   }
   .nav>li>a .menu{
-  	margin-right:2rem;
+    margin-left:1rem;
   }
   .cotton_image_div{
     margin-left: 4rem;
@@ -1308,11 +1308,6 @@
   }
 }
 
-@media (min-width: 1900px) {
-  .nav>li>a .menu{
-    margin-right:3rem;
-  }
-}
 @media (max-width: 480px) {
   .nav-yl .nav.language-menu.yl{
 	margin-top: 0px;

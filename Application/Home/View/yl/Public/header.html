@@ -31,13 +31,13 @@
                 <span class="icon-bar"></span>
             </button>
             <div class="nav-collapse collapse">
-                <ul class="nav" style="margin-top: 3rem;margin-left: 2rem;text-align: center;">
+                <ul class="nav" style="margin-top: 3rem;margin-left: 10rem;text-align: center;">
                     <think:nav name="nav">
                     	<eq name="nav.pid" value="0">
                     	<if condition="'MENU_ABOUT' == $nav['title']">
                     	<li class="dropdown yl">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" ><span class="menu">{:L($nav['title'])}</span><!--<b class="caret"></b>--></a>
-                            <ul class="dropdown-menu yl">
+                            <ul class="dropdown-menu yl" style="left:1rem;">
                                 <li><a href="{:get_nav_url('Index/profile')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_PROFILE')}</span></a></li>
                                 <li><a href="{:get_nav_url('Index/honor')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_HONOR')}</span></a></li>
                                 <li><a href="{:get_nav_url('Index/history')}" target="<eq name='nav.target' value='1'>_blank<else/>_self</eq>"><span class="menu">{:L('MENU_HISTORY')}</span></a></li>
