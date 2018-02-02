@@ -43,8 +43,8 @@ return array(
 
 	'INDEX_TAB_INTRODUCTION' => 'profile',
 	'INDEX_TAB_CULTURE' => 'culture',
-	'INDEX_TAB_PRODUCE' => 'strength',
-	'INDEX_TAB_PRODUCT' => 'office',
+	'INDEX_TAB_PRODUCE' => 'ability',
+	'INDEX_TAB_PRODUCT' => 'product',
 
 	'INDEX_TAB_INTRODUCTION_TEXT' => '公司簡介',
 	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
