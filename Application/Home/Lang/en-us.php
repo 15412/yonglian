@@ -43,8 +43,8 @@ return array(
 
 	'INDEX_TAB_INTRODUCTION' => 'profile',
 	'INDEX_TAB_CULTURE' => 'culture',
-	'INDEX_TAB_PRODUCE' => 'strength',
-	'INDEX_TAB_PRODUCT' => 'office',
+	'INDEX_TAB_PRODUCE' => 'ability',
+	'INDEX_TAB_PRODUCT' => 'product',
 
 	'INDEX_TAB_INTRODUCTION_TEXT' => '公司簡介',
 	'INDEX_TAB_CULTURE_TEXT' => '公司文化',
@@ -88,11 +88,11 @@ Shixing County, ShaoguanCity, Guangdong Province, China. 512500',
 	'CONTACT_TEXT_ADDRESS_4' => 'No. 272 ST217 Phum Prek Chrey, Sangkat Spean
 Thmor, Khan Dangkor, Phnom Penh, Cambodia',
 
-	'PRODUCT_TEXT_1' => '板房區',
-	'PRODUCT_TEXT_2' => '布倉區',
-	'PRODUCT_TEXT_3' => '裁牀區',
-	'PRODUCT_TEXT_4' => '車縫區',
-	'PRODUCT_TEXT_5' => '燙衣區',
-	'PRODUCT_TEXT_6' => '成品區',
-	'PRODUCT_TEXT_7' => '物流區',
+	'PRODUCT_TEXT_1' => 'Sample Room',
+	'PRODUCT_TEXT_2' => 'Cloth Warehouse',
+	'PRODUCT_TEXT_3' => 'Cutting Area',
+	'PRODUCT_TEXT_4' => 'Sewing Area',
+	'PRODUCT_TEXT_5' => 'Ironing Area',
+	'PRODUCT_TEXT_6' => 'Finished Area',
+	'PRODUCT_TEXT_7' => 'Logistics Area',
 );
