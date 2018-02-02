@@ -64,18 +64,17 @@ return array(
 	'CULTURE_TEXT_9' => '“多想”“多聽”“多問”“多做”',
 	'CULTURE_TEXT_10' => '多一點虛心溝通，少一點不必要錯',
 
-
-	'CONTACT_TEXT_TITLE_1' => '東莞茶山永聯織造廠',
-	'CONTACT_TEXT_PHONE_1' => '(86)0769-8865 5088',
-	'CONTACT_TEXT_FAX_1' => '(86)0769-8865 5089',
+	'CONTACT_TEXT_TITLE_1' => '永聯織造廠',
+	'CONTACT_TEXT_PHONE_1' => '(852)2741 3933',
+	'CONTACT_TEXT_FAX_1' => '(852)2785 4050',
 	'CONTACT_TEXT_EMAIL_1' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_1' => '廣東省東莞市茶山鎮南社工業區立本工業園  523391',
+	'CONTACT_TEXT_ADDRESS_1' => '香港九龍長沙灣長裕街2號嘉圖工廠大廈9字樓',
 
-	'CONTACT_TEXT_TITLE_2' => '永聯織造廠',
-	'CONTACT_TEXT_PHONE_2' => '(852)2741 3933',
-	'CONTACT_TEXT_FAX_2' => '(852)2785 4050',
+	'CONTACT_TEXT_TITLE_2' => '東莞茶山永聯織造廠',
+	'CONTACT_TEXT_PHONE_2' => '(86)0769-8865 5088',
+	'CONTACT_TEXT_FAX_2' => '(86)0769-8865 5089',
 	'CONTACT_TEXT_EMAIL_2' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_2' => '香港九龍長沙灣長裕街2號嘉圖工廠大廈9字樓',
+	'CONTACT_TEXT_ADDRESS_2' => '廣東省東莞市茶山鎮南社工業區立本工業園  523391',
 
 	'CONTACT_TEXT_TITLE_3' => '始興縣天河制衣有限公司',
 	'CONTACT_TEXT_PHONE_3' => '(86)0751-3442888',

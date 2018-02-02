@@ -63,20 +63,19 @@ return array(
 	'CULTURE_TEXT_9' => '"Think more", "listen more", "ask more" and "do more"',
 	'CULTURE_TEXT_10' => 'A little more mental communication, less need to be wrong',
 
-
-	'CONTACT_TEXT_TITLE_1' => 'ChaShan Wing Luen Knitting Factory',
-	'CONTACT_TEXT_PHONE_1' => '(86)0769-8865 5088',
-	'CONTACT_TEXT_FAX_1' => '(86)0769-8865 5089',
+	'CONTACT_TEXT_TITLE_1' => 'Wing Luen Knitting Factory',
+	'CONTACT_TEXT_PHONE_1' => '(852)2741 3933',
+	'CONTACT_TEXT_FAX_1' => '(852)2785 4050',
 	'CONTACT_TEXT_EMAIL_1' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_1' => 'Li Ben Industrial Park, Nan She Industrial Dist,
-Cha Shan ,Dongguan , Guangdong Province, China.  523391',
-
-	'CONTACT_TEXT_TITLE_2' => 'Wing Luen Knitting Factory',
-	'CONTACT_TEXT_PHONE_2' => '(852)2741 3933',
-	'CONTACT_TEXT_FAX_2' => '(852)2785 4050',
-	'CONTACT_TEXT_EMAIL_2' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_2' => '9/F,Ka To Factory Building,2 Cheung Yue
+	'CONTACT_TEXT_ADDRESS_1' => '9/F,Ka To Factory Building,2 Cheung Yue
 Steet, Cheung Sha Wan, Kowloon,Hong Kong',
+
+	'CONTACT_TEXT_TITLE_2' => 'ChaShan Wing Luen Knitting Factory',
+	'CONTACT_TEXT_PHONE_2' => '(86)0769-8865 5088',
+	'CONTACT_TEXT_FAX_2' => '(86)0769-8865 5089',
+	'CONTACT_TEXT_EMAIL_2' => 'enquiry@wingluen.com.hk',
+	'CONTACT_TEXT_ADDRESS_2' => 'Li Ben Industrial Park, Nan She Industrial Dist,
+Cha Shan ,Dongguan , Guangdong Province, China.  523391',
 
 	'CONTACT_TEXT_TITLE_3' => 'Shixing Tianhe Garment co.Ltd',
 	'CONTACT_TEXT_PHONE_3' => '(86)0751-3442888',

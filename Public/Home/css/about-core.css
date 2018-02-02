@@ -192,11 +192,13 @@
 }
 
 .aboutContent{
+	width: 60%;
+	margin: 0 auto;
 	/* position: absolute; */
-	margin-left:26.77%;
-	width:47.76%;
+	/*margin-left:26.77%;*/
+	/*width:47.76%;*/
 	height:15.31%;
-	left:26.77%;
+	/*left:26.77%;*/
 	/*font-family: JQXiYuanFT;*/
 	/*font-family: HYLiangPinXianJ;*/
 	font-size: 1.35rem;

@@ -64,17 +64,17 @@ return array(
 	'CULTURE_TEXT_10' => '多一点虚心沟通，少一点不必要错',
 
 
-	'CONTACT_TEXT_TITLE_1' => '东莞茶山永联织造厂',
-	'CONTACT_TEXT_PHONE_1' => '(86)0769-8865 5088',
-	'CONTACT_TEXT_FAX_1' => '(86)0769-8865 5089',
+	'CONTACT_TEXT_TITLE_1' => '永联织造厂',
+	'CONTACT_TEXT_PHONE_1' => '(852)2741 3933',
+	'CONTACT_TEXT_FAX_1' => '(852)2785 4050',
 	'CONTACT_TEXT_EMAIL_1' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_1' => '广东省东莞市茶山镇南社工业区立本工业园  523391',
+	'CONTACT_TEXT_ADDRESS_1' => '香港九龙长沙湾长裕街2号嘉图工厂大厦9字楼',
 
-	'CONTACT_TEXT_TITLE_2' => '永联织造厂',
-	'CONTACT_TEXT_PHONE_2' => '(852)2741 3933',
-	'CONTACT_TEXT_FAX_2' => '(852)2785 4050',
+	'CONTACT_TEXT_TITLE_2' => '东莞茶山永联织造厂',
+	'CONTACT_TEXT_PHONE_2' => '(86)0769-8865 5088',
+	'CONTACT_TEXT_FAX_2' => '(86)0769-8865 5089',
 	'CONTACT_TEXT_EMAIL_2' => 'enquiry@wingluen.com.hk',
-	'CONTACT_TEXT_ADDRESS_2' => '香港九龙长沙湾长裕街2号嘉图工厂大厦9字楼',
+	'CONTACT_TEXT_ADDRESS_2' => '广东省东莞市茶山镇南社工业区立本工业园  523391',
 
 	'CONTACT_TEXT_TITLE_3' => '始兴县天河制衣有限公司',
 	'CONTACT_TEXT_PHONE_3' => '(86)0751-3442888',
