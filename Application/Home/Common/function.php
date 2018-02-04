@@ -68,3 +68,8 @@ function get_nav_url($url){
     }
     return $url;
 }
+
+function get_lang(){
+	$langMap = C('LANG_MAP');
+	return $langMap[LANG_SET];
+}

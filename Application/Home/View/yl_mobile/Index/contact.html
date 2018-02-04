@@ -10,6 +10,7 @@
 </block>
 
 <block name="style">
+	<link rel="stylesheet" type="text/css" href="__CSS__/contact.css">
 	<link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
 </block>
 
@@ -27,8 +28,8 @@
     <volist name="result.banner" id="vo">
     	<img class="banner" src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}">
     </volist>
-	<div class="container">
-		<div id="contact">
+	<div class="container" style="width: 80%;">
+		<div id="contact" style="width: 100%;">
 			<div id="title">
 				<img src="__IMG__/yl/contactus_icon.png" class="contact_image"><span class="contact_text">{:L('CONTACT_US')}</span>
 			</div>
@@ -117,7 +118,7 @@
 				
 				
 				
-				<table class="table table-noborder normal" id="normal" height="100%">
+				<!--<table class="table table-noborder normal" id="normal" height="100%">
                     <tbody>
                     	<tr>
                     		<td  style="height:4.688rem;"></td>
@@ -154,20 +155,16 @@
                     	</tr>
                     	<tr>
                     		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</td>
-                    		<!--<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>-->
                     		<td style="white-space: normal;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
                     	</tr>
                     	<tr>
                     		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</td>
-                    		<!--<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>-->
                     	</tr>
                     	<tr>
                     		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_3')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></td>
-                    		<!--<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_2')}</a></td>-->
                     	</tr>
                     	<tr>
                     		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</td>
-                    		<!--<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>-->
                     	</tr>
                     </tbody>
 	            </table>
@@ -237,18 +234,6 @@
                     	<tr>
                     		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
                     	</tr>
-                    	<!--<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>-->
                     	<tr>
                     		<td style="white-space: normal;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
                     	</tr>
@@ -320,23 +305,50 @@
                     	<tr>
                     		<td class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</td>
                     	</tr>
-                    	<!--<tr>
-                    		<td>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_4')}</td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_4')}" >{:L('CONTACT_TEXT_EMAIL_4')}</a></td>
-                    	</tr>
-                    	<tr>
-                    		<td>{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_4')}</td>
-                    	</tr>-->
                     	<tr>
                     		<td style="white-space: normal;">{:L('CONTACT_TEXT_ADDRESS_4')}</td>
                     	</tr>
                     </tbody>
-	            </table>
+	            </table>-->
+                
+                
+                
+				<div class="content_box">
+					<!--<div class="content_box_div">
+						<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_1')}</div>
+						<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_1')}</div>
+						<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_1')}</div>
+						<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+						<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_1')}</div>
+					</div>
+					<div class="content_box_div">
+						<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_2')}</div>
+						<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_2')}</div>
+						<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_2')}</div>
+						<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_2')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+						<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_2')}</div>
+					</div>
+					<div class="content_box_div">
+						<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_3')}</div>
+						<div>{:L('CONTACT_TEL')}:{:L('CONTACT_TEXT_PHONE_3')}</div>
+						<div>{:L('CONTACT_FAX')}:{:L('CONTACT_TEXT_FAX_3')}</div>
+						<div>{:L('CONTACT_EMAIL')}:<a href="mailto:{:L('CONTACT_TEXT_EMAIL_1')}" >{:L('CONTACT_TEXT_EMAIL_1')}</a></div>
+						<div class="last_line">{:L('CONTACT_ADDRESS')}:{:L('CONTACT_TEXT_ADDRESS_3')}</div>
+					</div>
+					<div class="content_box_div">
+						<div class="contact_content_title">{:L('CONTACT_TEXT_TITLE_4')}</div>
+						<div class="last_line">{:L('CONTACT_TEXT_ADDRESS_4')}</div>
+					</div>-->
+                    <volist name="result.contact" id="vo">
+                        <div class="content_box_div">
+    						<div class="contact_content_title">{$vo.company_name}</div>
+    						<notempty name="vo.tel"><div><if condition="1 == $vo['is_show_prefix']">{:L('CONTACT_TEL')}:</if>{$vo.tel}</div></notempty>
+    						<notempty name="vo.fax"><div><if condition="1 == $vo['is_show_prefix']">{:L('CONTACT_FAX')}:</if>{$vo.fax}</div></notempty>
+    						<notempty name="vo.email"><div><if condition="1 == $vo['is_show_prefix']">{:L('CONTACT_EMAIL')}:</if><a href="mailto:{$vo.email}" >{$vo.email}</a></div></notempty>
+    						<notempty name="vo.address"><div class="last_line"><if condition="1 == $vo['is_show_prefix']">{:L('CONTACT_ADDRESS')}:</if>{$vo.address}</div></notempty>
+    					</div>
+                    </volist>
+                </div>
 			</div>
 		</div>
 		<!--<div id="allmap1" class="contact-address-map" data-lat="23.060906" data-lng="113.905576" address="广东省东莞市茶山镇南社工业区立本工业园东莞永联织造厂" data-title="
