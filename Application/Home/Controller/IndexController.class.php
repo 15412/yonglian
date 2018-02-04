@@ -43,6 +43,7 @@ class IndexController extends HomeController
         $result['strength_finished_product_area'] = $image->getByTag('index_strength_finished_product_area');
         $result['strength_logistic_area'] = $image->getByTag('index_strength_logistic_area');
         $result['product'] = $image->getByTag('index_product');
+        $this->assign('profile', C('WEB_SITE_PROFILE_'.strtoupper(get_lang())));
         $this->assign('result', $result);
         $this->display();
     }
@@ -67,6 +68,7 @@ class IndexController extends HomeController
         $image = D('Image');
         $result = $image->getByTag('about_profile');
         $this->assign('imageMap', $imageMap);
+        $this->assign('profile', C('WEB_SITE_PROFILE_'.strtoupper(get_lang())));
         $this->assign('result', $result);
         $this->display();
     }
@@ -92,6 +94,7 @@ class IndexController extends HomeController
         $image = D('Image');
         $result = $image->getByTag('about_profile');
         $this->assign('imageMap', $imageMap);
+        $this->assign('profile', C('WEB_SITE_PROFILE_'.strtoupper(get_lang())));
         $this->assign('result', $result);
         $this->display();
     }
@@ -137,6 +140,8 @@ class IndexController extends HomeController
     {
         $image = D('Image');
         $result['banner'] = $image->getByTag('contact_banner');
+        $contact = D('Contact');
+        $result['contact'] = $contact->getActive();
         $this->assign('result', $result);
         $this->display();
     }

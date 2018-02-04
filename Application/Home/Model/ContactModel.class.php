@@ -11,28 +11,27 @@ namespace Home\Model;
 use Think\Model;
 
 /**
- * 图片模型
+ * 联系我们模型
  */
-class ImageModel extends Model{
+class ContactModel extends Model{
 
 	/**
-	 * 根据图片分类标签获取图片列表
-	 * @param  string $tag 图片标签
+	 * 根据生效数据列表
 	 * @return array 结果
 	 * @author rohochan <rohochan@gmail.com>
 	 */
-	public function getByTag($tag=''){
-        $result = $this->field('i.*')->alias('i')->join('left join __GENERAL_CATEGORY__ as c on i.image_category_id=c.id')
-            ->where(array('c.tag'=>$tag, 'i.status'=>1))
-            ->order('sort asc')
-            ->select();
+	public function getActive(){
+        $result = $this->where(array('status'=>1))->order('sort asc')->select();
         if (!empty($result)) {
             $langMap = C('LANG_MAP');
             $lang = $langMap[LANG_SET];
             $defaultLang = reset($langMap);
             foreach ($result as $key => $value) {
-            	$pictureId = $value[$lang.'_picture_id'];
-                $result[$key]['picture_id'] = $pictureId?:$value[$defaultLang.'_picture_id'];
+                $result[$key]['company_name'] = $value['company_name_'.$lang];
+                $result[$key]['tel'] = $value['tel_'.$lang];
+                $result[$key]['fax'] = $value['fax_'.$lang];
+                $result[$key]['email'] = $value['email_'.$lang];
+                $result[$key]['address'] = $value['address_'.$lang];
             }
         }
         return $result;
