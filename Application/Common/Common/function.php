@@ -1114,8 +1114,8 @@ function tree_to_html ($tree,$id=0,$level=0,$child = '_child',$isDisableParent=f
 			$select = ($id == $value['id']) ? 'selected':'';
 		}
 		$disable = (isset($value[$child]) && $isDisableParent)?'disabled="disabled"':'';
-		$html .= $level != 0?"<option value='{$value['id']}' {$select} {$disable}>{$separator}{$value['name']}</option>":"<option value='{$value['id']}' {$select} {$disable}>{$value['name']}</option>";
-		//$html .= "<option value='{$value['id']}' {$select}>{$separator}{$value['name']}</option>";
+		$html .= $level != 0?"<option value='{$value['id']}' data-is_multiple='{$value['is_multiple']}' {$select} {$disable}>{$separator}{$value['name']}</option>":"<option value='{$value['id']}' data-is_multiple='{$value['is_multiple']}' {$select} {$disable}>{$value['name']}</option>";
+		//$html .= "<option value='{$value['id']}' data-is_multiple='{$value['is_multiple']}' {$select}>{$separator}{$value['name']}</option>";
 		if (isset($value[$child])) {
 			$html .= tree_to_html($value[$child],$id,$level+1,$child,$isDisableParent);
 		}
@@ -1136,7 +1136,6 @@ function tree_to_html ($tree,$id=0,$level=0,$child = '_child',$isDisableParent=f
  **/
 function parse_field($name, $id = 0, $disableFlag='', $level = 0, $isDisableParent = false) {
 	$name = substr($name,0,-3);
-    dump($isDisableParent);
 	switch ($name) {
 		case 'user':
 			$user = M('user');
@@ -1146,7 +1145,7 @@ function parse_field($name, $id = 0, $disableFlag='', $level = 0, $isDisablePare
 			/*分类类型:1:图片分类*/
 			$type = array('image_category'=>1);
 			$generalCategory = M('GeneralCategory');
-			$result = $generalCategory->field('id,pid,name,sort')->order('sort asc,create_time')->where(array('status'=>1,'type'=>$type[$name]))->select();
+			$result = $generalCategory->field('id,pid,name,sort,is_multiple')->order('sort asc,create_time')->where(array('status'=>1,'type'=>$type[$name]))->select();
 			//$result = list_to_tree(list_sort_by($result,'sort','asc'));
 			//$result = tree_to_level_tree($result);
 			$result = list_to_tree($result);
@@ -1154,11 +1153,55 @@ function parse_field($name, $id = 0, $disableFlag='', $level = 0, $isDisablePare
 				array_unshift($result, array('id'=>0,'name'=>'不关联'));
 			}
 			$result = tree_to_html($result,$id,$level,'_child',$isDisableParent);
-            dump($result);
 			break;
 		default:
 			$result = array();
 			break;
 	}
 	return $result;
+}
+
+function get_name_from_path($path=''){
+	$result = '';
+	if (!empty($path)) {
+		//$separator = DIRECTORY_SEPARATOR;
+		$separator = '/';
+		$result = end(explode($separator,$path));
+	}
+	return $result;
+}
+
+function get_cover_from_ids($ids=0){
+	$result = array();
+	if (!empty($ids)) {
+		$ids = explode(',',$ids);
+		if (!is_array($ids)) {
+			$ids = array($ids);
+		}
+		$ids = array_filter(array_values($ids));
+		if (!empty($ids)) {
+			foreach ($ids as $key => $value) {
+				$origin = get_cover($value);
+				if (!empty($origin)) {
+					$origin['name'] = get_name_from_path($origin['path']);
+				}
+				$result[] = $origin;
+			}
+		}
+		
+	}
+	return $result;
+}
+
+function get_uploader_json($ids=0){
+	$result = array();
+	if (!empty($ids)) {
+		$origin = get_cover_from_ids($ids);
+		if (!empty($origin)) {
+			foreach ($origin as $key => $value) {
+				$result[] = array('src'=>$value['path'],'name'=>$value['name'],'attrs'=>array('data-server-file'=>true,'data-delete-url'=>'','data-id'=>$value['id']));
+			}
+		}
+	}
+	return json_encode($result);
 }

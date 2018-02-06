@@ -258,113 +258,134 @@
                                 </div>-->
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_sample_room" id="vo">
+                                    	<volist name="result.strength_sample_room" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_1')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_cloth_warehouse_area" id="vo">
+                                    	<volist name="result.strength_cloth_warehouse_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_2')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_cutting_table_area" id="vo">
+                                    	<volist name="result.strength_cutting_table_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_3')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_sewing_area" id="vo">
+                                        <volist name="result.strength_sewing_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_4')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_ironing_area" id="vo">
+                                    	<volist name="result.strength_ironing_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_5')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_finished_product_area" id="vo">
+                                    	<volist name="result.strength_finished_product_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_6')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="my-gallery" >
-                                    	<volist name="result.strength_logistic_area" id="vo">
+                                    	<volist name="result.strength_logistic_area" id="vo" key="k">
+                                        <volist name="$t = get_cover_from_ids($vo['picture_id'])" id="voo" key="kk">
                                         <figure>
-                                            <div class="imgGroup" <neq name="i" value="1">style="display:none"</neq>>
-                                                <img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>
-                                                <eq name="i" value="1">
+                                            <div class="imgGroup" <if condition="1 neq $k || 1 neq $kk">style="display:none"</if>>
+                                                <!--<img src="{:get_cover($vo['picture_id'],'path')}" alt="{$vo.name}" data-size="600x400"/>-->
+                                                <img src="{$voo['path']}" alt="{$vo.name}" data-size="600x400"/>
+                                                <if condition="1 eq $k && 1 eq $kk">
                                                 <div class="mask">
                                                     <div class="text">{:L('PRODUCT_TEXT_7')}</div>
                                                 </div>
-                                                </eq>
+                                                </if>
                                             </div>
                                         </figure>
+                                        </volist>
                                         </volist>
                                     </div>
                                 </div>
