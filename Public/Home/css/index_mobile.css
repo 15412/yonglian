@@ -110,6 +110,7 @@ ul, li {
 
 .title {
     /*font-family: ¹ã½Ý¾ÓÃÔÄã×Ö¿â;*/
+    text-align: left;
     height: 2rem;
     line-height: 2rem;
     width: 18rem;
