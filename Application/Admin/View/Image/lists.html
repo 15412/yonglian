@@ -2,9 +2,9 @@
 
 <block name="body">
     <!-- 标题栏 -->
-    <div class="main-title">
-        <h2>[{$model['title']}] 列表</h2>
-    </div>
+    <!--<div class="main-title">-->
+        <!--<h2>[{$model['title']}] 列表</h2>-->
+    <!--</div>-->
 	<div class="cf">
 		<div class="fl">
 		<empty name="model.extend">
@@ -16,7 +16,7 @@
 		</empty>
 		</div>
 		<!-- 高级搜索 -->
-		<div class="search-form fr cf">
+		<div class="search-form fl cf">
 			<div class="sleft">
 				<input type="text" name="{$model['search_key']|default='title'}" class="search-input" value="{:I('title')}" placeholder="请输入关键字">
 				<a class="sch-btn" href="javascript:;" id="search" url="{:U('Think/lists','model='.$model['name'],false)}"><i class="btn-search"></i></a>
@@ -33,9 +33,9 @@
                 <!-- 表头 -->
                 <thead>
                     <tr>
-                        <th class="row-selected row-selected">
-                            <input class="check-all" type="checkbox">
-                        </th>
+                        <!--<th class="row-selected row-selected">-->
+                            <!--<input class="check-all" type="checkbox">-->
+                        <!--</th>-->
                         <volist name="list_grids" id="field">
                             <th>{$field.title}</th>
                         </volist>
@@ -46,7 +46,7 @@
                 <tbody>
                     <volist name="list_data" id="data">
                         <tr>
-                            <td><input class="ids" type="checkbox" value="{$data['id']}" name="ids[]"></td>
+                            <td style="display: none;"><input class="ids" type="checkbox" value="{$data['id']}" name="ids[]"></td>
                             <volist name="list_grids" id="grid">
                                 <td>{:get_list_field($data,$grid)}</td>
                             </volist>
