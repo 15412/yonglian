@@ -264,7 +264,7 @@ html {
   
 .contact_content {
 	/*width: 26.625rem;*/
-	height: 9.313rem;
+	/*height: 9.313rem;*/
 	/*font-family: SimHei;*/
 	font-size: 1.302rem;
 	font-weight: normal;
@@ -276,6 +276,7 @@ html {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	margin-left: 10%;
 }
 
 .contact_content td{
